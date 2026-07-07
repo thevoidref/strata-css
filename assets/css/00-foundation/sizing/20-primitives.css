@@ -89,11 +89,14 @@
   /* Content */
   /* -------------------------------------------------------------------------- */
 
-  /* Typography */
+  /* Heading */
 
   --heading-width:                  none;
   --hero-width:                     var(--measure-xs);
   --subheading-width:               var(--measure-sm);
+
+  /* Paragraph */
+
   --paragraph-width:                100%;
   --subtitle-width:                 var(--measure-md);
   --lead-width:                     var(--measure-lg);
@@ -107,6 +110,10 @@
   /* Label */
 
   --label-width:                    var(--measure-xs);
+
+  /* Blockquote */
+
+  --blockquote-width:               var(--measure-lg);
 
   /* -------------------------------------------------------------------------- */
   /* Visual */

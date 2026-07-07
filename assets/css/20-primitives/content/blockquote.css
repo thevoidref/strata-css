@@ -4,7 +4,12 @@
   margin:                       0;
   padding-inline:               var(--blockquote-padding);
 
+  inline-size:                  min(100%, var(--blockquote-width));
+
   color:                        var(--blockquote-fg);
 
   border-inline-start:          var(--blockquote-border);
+
+  line-height: var(--line-relaxed);
+  
 }

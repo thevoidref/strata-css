@@ -11,3 +11,7 @@
 .u-line-clamp-2 > * { line-clamp: 2; -webkit-line-clamp: 2; }
 .u-line-clamp-3 > * { line-clamp: 3; -webkit-line-clamp: 3; }
 .u-line-clamp-4 > * { line-clamp: 4; -webkit-line-clamp: 4; }
+
+.u-nowrap {
+  white-space: nowrap;
+}

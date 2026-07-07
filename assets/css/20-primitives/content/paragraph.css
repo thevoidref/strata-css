@@ -3,7 +3,7 @@
 .paragraph {
   margin:                       0;
 
-  max-inline-size:              var(--paragraph-width);
+  inline-size:                  min(100%, var(--paragraph-width));
 
   color:                        var(--paragraph-fg);
 
@@ -27,15 +27,18 @@
   --paragraph-width:            var(--lead-width);
 }
 
+.paragraph[data-paragraph-type="strong"] {
+  --paragraph-fg:               var(--text-strong);
+}
+
+.paragraph[data-paragraph-type="secondary"] {
+  --paragraph-fg:               var(--text-secondary);
+}
+
 .paragraph[data-paragraph-type="muted"] {
-  --paragraph-fg:               var(--muted-fg);
+  --paragraph-fg:               var(--text-muted);
 }
 
-.paragraph[data-paragraph-type="subtitle"] {
-  --paragraph-width:            var(--subtitle-width);
-  --paragraph-fg:               var(--subtitle-fg);
-}
-
-.paragraph[data-paragraph-type="technical"] {
-  --paragraph-width:            var(--technical-width);
+.paragraph[data-paragraph-type="disabled"] {
+  --paragraph-fg:               var(--text-disabled);
 }

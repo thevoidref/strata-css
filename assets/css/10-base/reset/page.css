@@ -20,7 +20,7 @@ body {
   min-height:         100svh;
 
   background-color:   var(--page-bg);
-  color:              var(--paragraph-fg);
+  color:              var(--text-primary);
 
   font-family:        var(--paragraph-family);
   font-size:          var(--paragraph-size);

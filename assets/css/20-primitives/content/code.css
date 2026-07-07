@@ -11,10 +11,8 @@
   font-weight:                  var(--code-weight);
   line-height:                  var(--code-line);
   letter-spacing:               var(--code-tracking);
-  text-wrap:                    var(--code-wrap);
+  text-wrap:                    nowrap;
 
   border:                       var(--code-border);
   border-radius:                var(--code-radius);
-
-  box-shadow:                   var(--code-shadow);
 }

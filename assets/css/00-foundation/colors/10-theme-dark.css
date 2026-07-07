@@ -24,15 +24,14 @@
   /* -------------------------------------------------------------------------- */
 
   --text-strong:                var(--color-light-200);
-  --text-highlight:             var(--color-light-400);
-  --text-primary:               var(--color-light-600);
-  --text-secondary:             var(--color-light-800);
-  
-  --text-inverse:               var(--color-dark-800);
 
-  --text-placeholder:           var(--color-gray-200);
+  --text-primary:               var(--color-light-400);
+  --text-secondary:             var(--color-light-800);
+
   --text-muted:                 var(--color-gray-400);
   --text-disabled:              var(--color-gray-800);
+  
+  --text-inverse:               var(--color-dark-800);
 
   --text-accent:                var(--accent-primary-bg);
 

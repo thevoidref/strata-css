@@ -1,9 +1,7 @@
 /* 10-base/interaction/disabled.css */
 
-:where(
-  [hidden] 
-) {
-  display:        none !important;
+:where([hidden]) {
+  display:          none !important;
 }
 
 :where(
@@ -11,9 +9,11 @@
   [aria-disabled="true"],
   .is-disabled
 ) {
-  cursor:         default;
-  pointer-events: none;
-  user-select:    none;
+  cursor:           default;
+  pointer-events:   none;
+  user-select:      none;
 
-  opacity:        var(--opacity-disabled);
+  color:            var(--text-disabled);
+
+  opacity:          var(--opacity-disabled);
 }

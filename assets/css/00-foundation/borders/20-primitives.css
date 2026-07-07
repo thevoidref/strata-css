@@ -144,7 +144,7 @@
 
     /* Table */
 
-    --table-border:              var(--divider-border);
+    --table-divider:             var(--divider-border);
 
     /* Code */
 

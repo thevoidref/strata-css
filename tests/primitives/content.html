@@ -36,7 +36,7 @@
       box-shadow: var(--shadow-sm);
     }
 
-    @media (min-width: 52rem) {
+    @media (min-width: 50rem) {
       .panel--half {
         grid-column: span 6;
       }
@@ -97,7 +97,7 @@
 
     <section class="section">
       <div class="container" data-container-width="wide">
-        <div class="columns">
+        <div class="columns" data-columns="12">
 
           <!-- Headings -->
           <article class="panel surface">
@@ -120,7 +120,7 @@
 
               <div class="cluster">
                 <span class="meta sample-label">heading 3</span>
-                <h3 class="heading> sample-value">Subsection heading for local structure</h3>
+                <h3 class="heading sample-value" data-heading-level="3">Subsection heading for local structure</h3>
               </div>
             </div>
           </article>
@@ -129,25 +129,33 @@
           <article class="panel panel--half surface">
             <div class="panel-header">
               <p class="eyebrow">Paragraphs</p>
-              <h2 class="heading>">Paragraph variants</h2>
+              <h2 class="heading">Paragraph variants</h2>
             </div>
 
             <div class="stack">
+              <p class="paragraph" data-paragraph-type="lead">
+                Lead text introduces a page or major section. It gives the opening message
+                greater presence and establishes context for the content that follows.
+              </p>
+
+              <p class="paragraph" data-paragraph-type="strong">
+                Strong text gives important supporting content greater emphasis. It is useful
+                for prominent statements, summaries, and key information that should stand out.
+              </p>
+
               <p class="paragraph">
-                Standard paragraph text for readable interface and content copy. Calm density,
-                predictable rhythm, and strong legibility.
+                Primary text is the default for body copy. It is used for ordinary reading,
+                explanations, descriptions, and general content.
               </p>
 
-              <p class="paragraph paragraph--lead">
-                Lead paragraph text introduces a page or section with more presence.
+              <p class="paragraph" data-paragraph-type="muted">
+                Muted text carries low-priority supporting information. It is suited to notes,
+                metadata, contextual details, and information that should remain unobtrusive.
               </p>
 
-              <p class="paragraph paragraph--subtitle">
-                Subtitle paragraph text works as supporting copy under a heading.
-              </p>
-
-              <p class="paragraph paragraph--muted">
-                Muted paragraph text is lower-emphasis copy for secondary explanations.
+              <p class="paragraph" data-paragraph-type="disabled">
+                Disabled text represents unavailable or inactive content. It should be reserved
+                for interface states rather than used as a general level of text emphasis.
               </p>
             </div>
           </article>
@@ -156,18 +164,17 @@
           <article class="panel panel--half surface">
             <div class="panel-header">
               <p class="eyebrow">Small text</p>
-              <h2 class="heading" data-heading-level="3">Labels, captions, meta</h2>
+              <h2 class="heading">Labels, captions, meta</h2>
             </div>
 
             <div class="stack">
-              <div>
-                <p class="label">Label text</p>
-                <p class="caption">Caption text explains a field, image, table, or supporting detail.</p>
-              </div>
+              <p class="label">Label text </p>
 
-              <p class="meta">UPDATED · VERSION 0.1 · TOKEN PREVIEW</p>
+              <p class="caption">Caption text explains a field, image, table, or supporting detail.</p>
 
-              <p class="eyebrow">Assistance informatique · cours particuliers</p>
+              <p class="meta">Meta text: UPDATED · VERSION 0.1 · TOKEN PREVIEW</p>
+
+              <p class="eyebrow">Eyebrow: Assistance informatique · cours particuliers</p>
             </div>
           </article>
 
@@ -175,17 +182,19 @@
           <article class="panel panel--half surface">
             <div class="panel-header">
               <p class="eyebrow">Inline code</p>
-              <h2 class="heading" data-heading-level="3">Code primitive</h2>
+              <h2 class="heading">Code primitive</h2>
             </div>
 
             <div class="stack">
               <p class="paragraph">
-                Use <code class="code">.code</code> for inline tokens, commands, filenames, or technical fragments.
+                Use <code class="code">.code</code> for inline tokens,
+                commands, filenames, or technical fragments.
               </p>
 
               <p class="paragraph">
                 Example tokens: <code class="code">--paragraph-line</code>,
-                <code class="code">--spacing-24</code>, and <code class="code">--component-scale</code>.
+                <code class="code">--spacing-24</code>, and 
+                <code class="code">--component-scale</code>.
               </p>
             </div>
           </article>
@@ -194,7 +203,7 @@
           <article class="panel panel--half surface">
             <div class="panel-header">
               <p class="eyebrow">Quote</p>
-              <h2 class="heading" data-heading-level="3">Blockquote primitive</h2>
+              <h2 class="heading">Blockquote primitive</h2>
             </div>
 
             <blockquote class="blockquote">
@@ -206,7 +215,7 @@
           <article class="panel surface">
             <div class="panel-header">
               <p class="eyebrow">Tables</p>
-              <h2 class="heading" data-heading-level="3">Table primitive</h2>
+              <h2 class="heading">Table primitive</h2>
             </div>
 
             <table class="table">

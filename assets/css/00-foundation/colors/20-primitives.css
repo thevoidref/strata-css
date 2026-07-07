@@ -101,17 +101,17 @@
   /* -------------------------------------------------------------------------- */
 
   --heading-fg:             var(--text-strong);
-  --h3-fg:                  var(--text-highlight);
+  --h3-fg:                  var(--text-primary);
 
-  --paragraph-fg:           var(--text-primary);
-  --lead-fg:                var(--text-highlight);
+  --paragraph-fg:           inherit;
+  --lead-fg:                var(--text-primary);
   --muted-fg:               var(--text-muted);
   --prose-fg:               var(--paragraph-fg);
 
   --subtitle-fg:            var(--text-secondary);
   --caption-fg:             var(--text-secondary);
   --eyebrow-fg:             var(--text-accent);
-  --label-fg:               var(--text-muted);
+  --label-fg:               var(--text-secondary);
   --meta-fg:                var(--text-muted);
 
   --blockquote-fg:          var(--text-secondary);
@@ -260,7 +260,7 @@
   /* Input */
 
   --input-fg:                     var(--text-primary);
-  --input-placeholder-fg:         var(--text-placeholder);
+  --input-placeholder-fg:         var(--text-secondary);
 
   --input-bg:                     var(--bg-muted);
   --input-bg-hover:               var(--bg-muted);
