@@ -1,0 +1,273 @@
+/* 00-foundation/colors/10-theme-dark.css */
+
+:root,
+[data-theme="dark"] {
+
+  /* -------------------------------------------------------------------------- */
+  /* Neutral Dark */
+  /* -------------------------------------------------------------------------- */
+
+  --bg-page:                    var(--color-dark-800);
+  --bg-surface:                 var(--color-dark-600);
+  --bg-raised:                  var(--color-dark-400);
+  --bg-floating:                var(--color-dark-200);
+
+  --bg-muted:                   var(--color-gray-800);
+  --bg-disabled:                var(--color-gray-600);
+
+  --surface-hover:              var(--color-dark-400);
+  --surface-selected:           var(--color-green-900);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Text */
+  /* -------------------------------------------------------------------------- */
+
+  --text-strong:                var(--color-light-200);
+  --text-highlight:             var(--color-light-400);
+  --text-primary:               var(--color-light-600);
+  --text-secondary:             var(--color-light-800);
+  
+  --text-inverse:               var(--color-dark-800);
+
+  --text-placeholder:           var(--color-gray-200);
+  --text-muted:                 var(--color-gray-400);
+  --text-disabled:              var(--color-gray-800);
+
+  --text-accent:                var(--accent-primary-bg);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Border */
+  /* -------------------------------------------------------------------------- */
+
+  --border-sunken-color:        var(--color-dark-800);
+  --border-base-color:          var(--color-dark-400);
+  --border-raised-color:        var(--color-dark-200);
+  --border-floating-color:      var(--color-gray-800);
+
+  --border-hover-color:         var(--accent-primary-border-hover);
+  --border-active-color:        var(--accent-primary-border-active);
+  --border-focus-color:         var(--accent-blue-ring);
+
+  --border-success-color:       var(--accent-aqua-border);
+  --border-warning-color:       var(--accent-yellow-border);
+  --border-error-color:         var(--accent-red-border);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Action */
+  /* -------------------------------------------------------------------------- */
+
+  --action-primary:             var(--accent-primary-bg);
+  --action-primary-hover:       var(--accent-primary-bg-hover);
+  --action-primary-active:      var(--accent-primary-bg-active);
+  
+  --action-primary-text:        var(--accent-primary-fg);
+  --action-primary-text-hover:  var(--accent-primary-fg-hover);
+
+
+  --action-secondary:           var(--color-dark-400);
+  --action-secondary-hover:     var(--color-gray-800);
+  --action-secondary-active:    var(--color-gray-600);
+
+  --action-secondary-text:      var(--text-muted);
+  --action-secondary-text-hover:
+                                var(--text-primary);
+
+
+  --action-danger:              var(--accent-red-bg);
+  --action-danger-hover:        var(--accent-red-bg-hover);
+  --action-danger-active:       var(--accent-red-bg-active);
+
+  --action-danger-text:         var(--accent-red-fg);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Accent */
+  /* -------------------------------------------------------------------------- */
+
+    /* Accent Green */
+
+  --accent-green-bg:              var(--color-green-400);
+  --accent-green-bg-hover:        var(--color-green-500);
+  --accent-green-bg-active:       var(--color-green-600);
+
+  --accent-green-fg:              var(--text-inverse);
+  --accent-green-fg-hover:        var(--text-primary);
+  --accent-green-fg-muted:        var(--color-green-300);
+
+  --accent-green-border:          var(--color-green-500);
+  --accent-green-border-hover:    var(--color-green-600);
+  --accent-green-border-active:   var(--color-green-800);
+
+  --accent-green-ring:            var(--color-green-300);
+
+
+    /* Accent Yellow */
+
+  --accent-yellow-bg:             var(--color-yellow-500);
+  --accent-yellow-bg-hover:       var(--color-yellow-500);
+  --accent-yellow-bg-active:      var(--color-yellow-600);
+
+  --accent-yellow-fg:             var(--text-inverse);
+  --accent-yellow-fg-hover:       var(--text-primary);
+  --accent-yellow-fg-muted:       var(--color-yellow-300);
+
+  --accent-yellow-border:         var(--color-yellow-500);
+  --accent-yellow-border-hover:   var(--color-yellow-600);
+
+  --accent-yellow-ring:           var(--color-yellow-300);
+
+
+    /* Accent Blue */
+
+  --accent-blue-bg:               var(--color-blue-400);
+  --accent-blue-bg-hover:         var(--color-blue-500);
+  --accent-blue-bg-active:        var(--color-blue-600);
+
+  --accent-blue-fg:               var(--text-inverse);
+  --accent-blue-fg-hover:         var(--text-primary);
+  --accent-blue-fg-muted:         var(--color-blue-300);
+
+  --accent-blue-border:           var(--color-blue-500);
+  --accent-blue-border-hover:     var(--color-blue-600);
+
+  --accent-blue-ring:             var(--color-blue-300);
+
+
+    /* Accent Orange */
+
+  --accent-orange-bg:             var(--color-orange-500);
+  --accent-orange-bg-hover:       var(--color-orange-500);
+  --accent-orange-bg-active:      var(--color-orange-600);
+
+  --accent-orange-fg:             var(--text-inverse);
+  --accent-orange-fg-hover:       var(--text-primary);
+  --accent-orange-fg-muted:       var(--color-orange-300);
+
+  --accent-orange-border:         var(--color-orange-500);
+  --accent-orange-border-hover:   var(--color-orange-600);
+
+  --accent-orange-ring:           var(--color-orange-300);
+
+
+    /* Accent Red */
+
+  --accent-red-bg:                var(--color-red-500);
+  --accent-red-bg-hover:          var(--color-red-500);
+  --accent-red-bg-active:         var(--color-red-600);
+
+  --accent-red-fg:                var(--text-inverse);
+  --accent-red-fg-hover:          var(--text-primary);
+  --accent-red-fg-muted:          var(--color-red-300);
+
+  --accent-red-border:            var(--color-red-500);
+  --accent-red-border-hover:      var(--color-red-600);
+
+  --accent-red-ring:              var(--color-red-300);
+
+
+    /* Accent Purple */
+
+  --accent-purple-bg:             var(--color-purple-500);
+  --accent-purple-bg-hover:       var(--color-purple-500);
+  --accent-purple-bg-active:      var(--color-purple-600);
+
+  --accent-purple-fg:             var(--text-inverse);
+  --accent-purple-fg-hover:       var(--text-primary);
+  --accent-purple-fg-muted:       var(--color-purple-300);
+
+  --accent-purple-border:         var(--color-purple-500);
+  --accent-purple-border-hover:   var(--color-purple-600);
+
+  --accent-purple-ring:           var(--color-purple-300);
+
+
+    /* Accent Aqua */
+
+  --accent-aqua-bg:               var(--color-aqua-500);
+  --accent-aqua-bg-hover:         var(--color-aqua-500);
+  --accent-aqua-bg-active:        var(--color-aqua-600);
+
+  --accent-aqua-fg:               var(--text-inverse);
+  --accent-aqua-fg-hover:         var(--text-primary);
+  --accent-aqua-fg-muted:         var(--color-aqua-300);
+
+  --accent-aqua-border:           var(--color-aqua-500);
+  --accent-aqua-border-hover:     var(--color-aqua-600);
+
+  --accent-aqua-ring:             var(--color-aqua-300);
+
+
+    /* Accent Primary */
+
+  --accent-primary-bg:            var(--accent-green-bg);
+  --accent-primary-bg-hover:      var(--accent-green-bg-hover);
+  --accent-primary-bg-active:     var(--accent-green-bg-active);
+
+  --accent-primary-fg:            var(--accent-green-fg);
+  --accent-primary-fg-hover:      var(--accent-green-fg-hover);
+
+  --accent-primary-border:        var(--accent-green-border);
+  --accent-primary-border-hover:  var(--accent-green-border-hover);
+  --accent-primary-border-active: var(--accent-green-border-active);
+
+  --accent-primary-ring:          var(--accent-green-ring);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Link */
+  /* -------------------------------------------------------------------------- */
+
+  --link-color:                 var(--accent-blue-fg-muted);
+  --link-hover:                 var(--accent-primary-bg);
+  --link-visited:               var(--accent-purple-fg-muted);
+  --link-current:               var(--accent-primary-bg);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Status */
+  /* -------------------------------------------------------------------------- */
+
+  --status-success-text:        var(--accent-aqua-fg-muted);
+  --status-success-bg:          var(--color-aqua-900);
+  --status-success-border:      var(--accent-aqua-border);
+
+  --status-warning-text:        var(--accent-yellow-fg-muted);
+  --status-warning-bg:          var(--color-yellow-900);
+  --status-warning-border:      var(--accent-yellow-border);
+
+  --status-error-text:          var(--accent-red-fg-muted);
+  --status-error-bg:            var(--color-red-900);
+  --status-error-border:        var(--accent-red-border);
+
+  --status-info-text:           var(--accent-blue-fg-muted);
+  --status-info-bg:             var(--color-blue-900);
+  --status-info-border:         var(--accent-blue-border);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* UI */
+  /* -------------------------------------------------------------------------- */
+
+    /* Selection */
+
+  --selection-bg:               var(--accent-primary-bg);
+  --selection-fg:               var(--accent-primary-fg);
+
+
+    /* Scrollbar */
+
+  --scrollbar-track:            var(--color-dark-600);
+  --scrollbar-thumb:            var(--color-dark-200);
+  --scrollbar-thumb-hover:      var(--color-gray-600);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Overlay */
+  /* -------------------------------------------------------------------------- */
+
+  --overlay-bg:                 rgb(0 0 0 / 0.72);
+
+}

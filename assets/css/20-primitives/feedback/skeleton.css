@@ -1,0 +1,43 @@
+/* 20-primitives/visual/skeleton.css */
+
+.skeleton {
+  display:             block;
+
+  inline-size:         var(--skeleton-width, 100%);
+  block-size:          var(--skeleton-height, 1rem);
+
+  background:          var(--skeleton-bg);
+  border-radius:       var(--skeleton-radius);
+
+  overflow:            hidden;
+}
+
+.skeleton[data-skeleton-shape="circle"] {
+  inline-size:         var(--skeleton-diameter);
+  block-size:          var(--skeleton-diameter);
+
+  border-radius:       var(--radius-full);
+}
+
+.skeleton[data-skeleton-shape="text"] {
+  inline-size:         var(--skeleton-text-width, 100%);
+  block-size:          var(--skeleton-text-height);
+
+  border-radius:       var(--skeleton-text-radius, var(--skeleton-radius));
+}
+
+.skeleton[data-skeleton-animated="true"] {
+  animation:           skeleton-pulse var(--skeleton-pulse-duration) ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton[data-skeleton-animated="true"] {
+    animation:         none;
+  }
+}
+
+@keyframes skeleton-pulse {
+  50% {
+    opacity:           var(--skeleton-pulse-opacity);
+  }
+}

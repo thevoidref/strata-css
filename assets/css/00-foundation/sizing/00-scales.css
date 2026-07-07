@@ -1,0 +1,68 @@
+/* 00-foundation/sizing/00-scales.css */
+
+:root {
+
+  /* -------------------------------------------------------------------------- */
+  /* Global */
+  /* -------------------------------------------------------------------------- */
+
+  --site-margin:                  var(--spacing-24);
+  --gutter:                       var(--spacing-16);
+  --gap:                          var(--spacing-12);
+
+  /* -------------------------------------------------------------------------- */
+  /* Hero Height */
+  /* -------------------------------------------------------------------------- */
+
+  --hero-min-height:              clamp(31.25rem, 70svh, 68.75rem);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Container Width */
+  /* -------------------------------------------------------------------------- */
+
+  --container-width-narrow:       calc(35rem * var(--container-scale));
+  --container-width-default:      calc(50rem * var(--container-scale));
+  --container-width-expanded:     calc(67.5rem * var(--container-scale));
+  --container-width-wide:         calc(80rem * var(--container-scale));
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Text Measure */
+  /* -------------------------------------------------------------------------- */
+
+  --measure-10:                   14ch;
+  --measure-24:                   24ch;
+  --measure-40:                   40ch;
+  --measure-56:                   56ch;
+  --measure-72:                   72ch;
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Control Height */
+  /* -------------------------------------------------------------------------- */
+
+  --control-height-xs:            calc(1.5rem * var(--component-scale));
+  --control-height-sm:            calc(2.5rem * var(--component-scale));
+  --control-height-md:            calc(3rem * var(--component-scale));
+  --control-height-lg:            calc(3.5rem * var(--component-scale));
+  --control-height-xl:            calc(4.5rem * var(--component-scale));
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Icon Size */
+  /* -------------------------------------------------------------------------- */
+
+  --icon-size-xs:                 0.75rem;
+  --icon-size-sm:                 0.875rem;
+  --icon-size-md:                 1rem;
+  --icon-size-lg:                 1.25rem;
+  --icon-size-xl:                 1.5rem;
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Touch Target */
+  /* -------------------------------------------------------------------------- */
+
+  --touch-target-min:             2.75rem;
+}

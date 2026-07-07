@@ -1,0 +1,6 @@
+/* 20-primitives/forms/textarea.css */
+
+.textarea {
+  min-height:  var(--textarea-min-height);
+  resize:      var(--textarea-resize);
+}

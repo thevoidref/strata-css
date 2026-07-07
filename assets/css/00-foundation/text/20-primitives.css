@@ -1,0 +1,222 @@
+/* 00-foundation/text/20-primitives.css */
+
+:root {
+
+  /* -------------------------------------------------------------------------- */
+  /* Content */
+  /* -------------------------------------------------------------------------- */
+
+  /* Heading */
+
+    /* H1 */
+
+  --h1-family:                  var(--heading-family);
+  --h1-size:                    var(--size-3xl);
+  --h1-weight:                  var(--weight-bold);
+  --h1-line:                    var(--line-tight);
+  --h1-tracking:                var(--tracking-tighter);
+  --h1-wrap:                    balance;
+
+    /* H2 */
+
+  --h2-family:                  var(--heading-family);
+  --h2-size:                    var(--size-2xl);
+  --h2-weight:                  var(--weight-bold);
+  --h2-line:                    var(--line-tight);
+  --h2-tracking:                var(--tracking-tight);
+  --h2-wrap:                    balance;
+
+    /* H3 */
+
+  --h3-family:                  var(--heading-family);
+  --h3-size:                    var(--size-xl);
+  --h3-weight:                  var(--weight-semibold);
+  --h3-line:                    var(--line-tight);
+  --h3-tracking:                var(--tracking-normal);
+  --h3-wrap:                    balance;
+  
+    /* Default */
+
+  --heading-size:               var(--h2-size);
+  --heading-weight:             var(--h2-weight);
+  --heading-line:               var(--h2-line);
+  --heading-tracking:           var(--h2-tracking);
+  --heading-wrap:               var(--h2-wrap);
+
+  
+  /* Paragraph */
+
+    /* Lead */
+
+  --lead-size:                  var(--size-lg);
+  --lead-line:                  var(--line-relaxed);
+
+    /* Default */
+
+  --paragraph-family:           var(--text-family);
+  --paragraph-size:             var(--size-md);
+  --paragraph-weight:           var(--weight-regular);
+  --paragraph-line:             var(--line-normal);
+  --paragraph-tracking:         var(--tracking-normal);
+  --paragraph-wrap:             pretty;
+
+  /* Caption */
+
+  --caption-family:             var(--text-family);
+  --caption-size:               var(--size-xs);
+  --caption-weight:             var(--weight-regular);
+  --caption-line:               var(--line-normal);
+  --caption-tracking:           var(--tracking-normal);
+  --caption-wrap:               pretty;
+  --caption-align:              center;
+
+  /* Eyebrow */
+
+  --eyebrow-family:             var(--mono-family);
+  --eyebrow-size:               var(--size-xs);
+  --eyebrow-weight:             var(--weight-semibold);
+  --eyebrow-line:               var(--line-tight);
+  --eyebrow-tracking:           var(--tracking-widest);
+  --eyebrow-wrap:               nowrap;
+  --eyebrow-transform:          uppercase;
+
+  /* Label */
+
+  --label-family:               var(--ui-family);
+  --label-size:                 var(--size-sm);
+  --label-weight:               var(--weight-medium);
+  --label-line:                 var(--line-tight);
+  --label-tracking:             var(--tracking-normal);
+  --label-wrap:                 nowrap;
+
+  /* Code */
+
+  --code-family:                var(--mono-family);
+  --code-size:                  var(--size-sm);
+  --code-weight:                var(--weight-regular);
+  --code-line:                  var(--line-normal);
+  --code-tracking:              var(--tracking-normal);
+  --code-wrap:                  normal;
+
+  /* Prose */
+
+  --prose-family:                var(--paragraph-family);
+  --prose-size:                  var(--paragraph-size);
+  --prose-weight:                var(--paragraph-weight);
+  --prose-line:                  var(--paragraph-line);
+  --prose-tracking:              var(--paragraph-tracking);
+
+  /* Meta */
+
+  --meta-family:                var(--ui-family);
+  --meta-size:                  var(--size-xs);
+  --meta-weight:                var(--weight-regular);
+  --meta-line:                  var(--line-normal);
+  --meta-tracking:              var(--tracking-normal);
+  --meta-wrap:                  nowrap;
+
+  /* Table */
+
+    /* Main */
+
+  --table-family:               var(--paragraph-family);
+  --table-size:                 var(--paragraph-size);
+  --table-weight:               var(--paragraph-weight);
+  --table-heading-weight:       var(--weight-semibold);
+  --table-line:                 var(--paragraph-line);
+  --table-tracking:             var(--paragraph-tracking);
+
+    /* Table Caption */
+    
+  --table-caption-family:       var(--caption-family);
+  --table-caption-size:         var(--caption-size);
+  --table-caption-weight:       var(--caption-weight);
+  --table-caption-line:         var(--caption-line);
+  --table-caption-tracking:     var(--caption-tracking);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Action */
+  /* -------------------------------------------------------------------------- */
+
+  /* Button */
+
+    /* Button Max */
+
+  --button-max-size:            var(--size-3xl);
+  --button-max-weight:          var(--weight-black);
+  --button-max-line:            var(--line-normal);
+
+    /* Button Default */
+
+  --button-family:              var(--ui-family);
+  --button-size:                var(--size-md);
+  --button-weight:              var(--weight-semibold);
+  --button-line:                var(--line-none);
+  --button-tracking:            var(--tracking-normal);
+  --button-decoration:          none;
+  --button-wrap:                nowrap;
+
+  --button-size-sm:             var(--size-sm);
+  --button-size-lg:             var(--size-control);
+
+
+  /* Link */
+
+  --link-decoration:            underline;
+  --link-decoration-thickness:  0.15em;
+  --link-decoration-offset:     0.2em;
+  
+  --link-subtle-size:           var(--size-sm);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Form */
+  /* -------------------------------------------------------------------------- */
+
+  /* Field */
+
+  --field-optional-size:        var(--caption-size);
+
+  /* Input */
+
+  --input-font:                 inherit;
+  --input-line:                 var(--line-normal);
+
+  /* Select */
+
+  --select-line:                var(--input-line);
+
+  /* Checkbox - Radio - Switch */
+
+  --checkbox-label-line:        var(--input-label-line);
+  --radio-label-line:           var(--checkbox-label-line);
+  --switch-label-line:          var(--checkbox-label-line);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Visual */
+  /* -------------------------------------------------------------------------- */
+
+  /* Avatar */
+
+  --avatar-family:              var(--mono-family);
+  --avatar-size:                var(--size-md);
+  --avatar-weight:              var(--weight-black);
+  --avatar-line:                var(--line-none);
+  --avatar-tracking:            var(--tracking-normal);
+  
+  /* Chip */
+
+  --chip-family:                var(--mono-family);
+  --chip-size:                  var(--size-xs);
+  --chip-weight:                var(--weight-semibold);
+  --chip-line:                  var(--line-normal);
+  --chip-tracking:              var(--tracking-wide);
+  --chip-transform:             uppercase;
+
+  /* Skeleton */
+
+  --skeleton-text-height:        var(--size-sm);
+  --skeleton-text-width:         100%;
+}

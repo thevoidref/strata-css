@@ -1,0 +1,13 @@
+/* 90-utilities/line-clamp.css */
+
+[class*="u-line-clamp"],
+[class*="u-line-clamp"] > * {
+	display: -webkit-box;
+  line-clamp: 1;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+.u-line-clamp-2 > * { line-clamp: 2; -webkit-line-clamp: 2; }
+.u-line-clamp-3 > * { line-clamp: 3; -webkit-line-clamp: 3; }
+.u-line-clamp-4 > * { line-clamp: 4; -webkit-line-clamp: 4; }

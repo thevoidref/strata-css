@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Content Primitives Preview</title>
+
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <style>
+
+    body {
+      background:
+        radial-gradient(circle at top left, rgb(184 187 38 / 0.08), transparent 32rem),
+        var(--page-bg);
+    }
+
+    .shell {
+      width: min(100% - calc(var(--site-margin) * 2), var(--container-wide-width));
+      margin-inline: auto;
+      padding-block: var(--section-padding-lg);
+    }
+
+    .hero {
+      padding-bottom: var(--section-padding-md);
+      margin-bottom: var(--section-padding-md);
+      border-bottom: var(--divider-border);
+    }
+
+    .hero-stack {
+      display: grid;
+      gap: var(--component-spacing-24);
+      max-width: var(--lead-measure);
+    }
+
+    .panel {
+      grid-column: span 12;
+      padding: var(--spacing-48);
+      background: var(--surface-bg);
+      border: var(--border-base);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+    }
+
+    @media (min-width: 52rem) {
+      .panel--half {
+        grid-column: span 6;
+      }
+    }
+
+    .panel-header {
+      display: grid;
+      gap: var(--component-spacing-8);
+      margin-bottom: var(--component-spacing-24);
+      padding-bottom: var(--component-spacing-16);
+      border-bottom: var(--divider-border);
+    }
+
+    .cluster {
+      align-items: baseline;
+      justify-content: space-between;
+      border-bottom: var(--divider-border);
+      padding-bottom: var(--component-spacing-16);
+    }
+
+    .cluster:last-child {
+      border-bottom: 0;
+    }
+
+    .sample-label {
+      min-width: var(--measure-10);
+    }
+
+    .sample-value {
+      flex: 1;
+    }
+
+    .swatch-line {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--component-spacing-8);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="shell">
+    <header class="hero">
+      <div class="hero-stack">
+        <p class="eyebrow">Content</p>
+        <h1 class="heading heading--1">Calm, clear, reliable typography.</h1>
+        <p class="paragraph paragraph--lead">
+          Preview heading, paragraph, caption, eyebrow, label, meta, code,
+          blockquote, table, and prose rhythm.
+        </p>
+
+        <div class="swatch-line">
+          <span class="chip" data-type="interactive">Gruvbox</span>
+          <span class="chip" data-type="interactive">Business-grade</span>
+          <span class="chip" data-type="interactive">Content system</span>
+          <span class="chip" data-type="interactive">Stable renderers</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="columns" data-columns="12">
+
+      <!-- Headings -->
+      <article class="panel">
+        <div class="panel-header">
+          <p class="eyebrow">Headings</p>
+          <h2 class="heading heading--2">Heading hierarchy</h2>
+          <p class="caption">Testing scale, line, tracking, and wrap behavior.</p>
+        </div>
+
+        <div class="stack" data-gap="2xl">
+          <div class="cluster">
+            <span class="meta sample-label">heading--1</span>
+            <h1 class="heading heading--1 sample-value">Main page title with balanced wrapping</h1>
+          </div>
+
+          <div class="cluster">
+            <span class="meta sample-label">heading--2</span>
+            <h2 class="heading heading--2 sample-value">Section heading for content groups</h2>
+          </div>
+
+          <div class="cluster">
+            <span class="meta sample-label">heading--3</span>
+            <h3 class="heading heading--3 sample-value">Subsection heading for local structure</h3>
+          </div>
+        </div>
+      </article>
+
+      <!-- Paragraphs -->
+      <article class="panel panel--half">
+        <div class="panel-header">
+          <p class="eyebrow">Paragraphs</p>
+          <h2 class="heading heading--3">Paragraph variants</h2>
+        </div>
+
+        <div class="stack">
+          <p class="paragraph">
+            Standard paragraph text for readable interface and content copy. Calm density,
+            predictable rhythm, and strong legibility.
+          </p>
+
+          <p class="paragraph paragraph--lead">
+            Lead paragraph text introduces a page or section with more presence.
+          </p>
+
+          <p class="paragraph paragraph--subtitle">
+            Subtitle paragraph text works as supporting copy under a heading.
+          </p>
+
+          <p class="paragraph paragraph--muted">
+            Muted paragraph text is lower-emphasis copy for secondary explanations.
+          </p>
+        </div>
+      </article>
+
+      <!-- Small text -->
+      <article class="panel panel--half">
+        <div class="panel-header">
+          <p class="eyebrow">Small text</p>
+          <h2 class="heading heading--3">Labels, captions, meta</h2>
+        </div>
+
+        <div class="stack">
+          <div>
+            <p class="label">Label text</p>
+            <p class="caption">Caption text explains a field, image, table, or supporting detail.</p>
+          </div>
+
+          <p class="meta">UPDATED · VERSION 0.1 · TOKEN PREVIEW</p>
+
+          <p class="eyebrow">Assistance informatique · cours particuliers</p>
+        </div>
+      </article>
+
+      <!-- Code (inline) -->
+      <article class="panel panel--half">
+        <div class="panel-header">
+          <p class="eyebrow">Inline code</p>
+          <h2 class="heading heading--3">Code primitive</h2>
+        </div>
+
+        <div class="stack">
+          <p class="paragraph">
+            Use <code class="code">.code</code> for inline tokens, commands, filenames, or technical fragments.
+          </p>
+
+          <p class="paragraph">
+            Example tokens: <code class="code">--paragraph-line</code>,
+            <code class="code">--spacing-24</code>, and <code class="code">--component-scale</code>.
+          </p>
+        </div>
+      </article>
+
+      <article class="panel panel--half">
+        <div class="panel-header">
+          <p class="eyebrow">Quote</p>
+          <h2 class="heading heading--3">Blockquote primitive</h2>
+        </div>
+
+        <blockquote class="blockquote">
+          Clarity is the mark of professionalism. The interface should inspire trust before it tries to impress.
+        </blockquote>
+      </article>
+
+      <article class="panel">
+        <div class="panel-header">
+          <p class="eyebrow">Tables</p>
+          <h2 class="heading heading--3">Table primitive</h2>
+        </div>
+
+        <table class="table">
+          <caption>Primitive token responsibility overview</caption>
+          <thead>
+            <tr>
+              <th>Primitive</th>
+              <th>Role</th>
+              <th>Tokenized decisions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Paragraph</td>
+              <td>Default body copy</td>
+              <td>Color, type, wrap, measure</td>
+            </tr>
+            <tr>
+              <td>Caption</td>
+              <td>Supporting explanatory text</td>
+              <td>Color, type, line, tracking</td>
+            </tr>
+            <tr>
+              <td>Blockquote</td>
+              <td>Editorial emphasis</td>
+              <td>Color, padding, border recipe</td>
+            </tr>
+            <tr>
+              <td>Table</td>
+              <td>Structured data</td>
+              <td>Cell padding, divider, heading weight</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article class="panel">
+        <div class="panel-header">
+          <p class="eyebrow">Prose</p>
+          <h2 class="heading heading--2">Content flow preview</h2>
+          <p class="caption">Prose controls rhythm and spacing, not component appearance.</p>
+        </div>
+
+        <div class="prose" style="max-width: var(--technical-measure);">
+          <h1 class="heading heading--1">A long-form content title</h1>
+
+          <p class="paragraph">
+            This prose container demonstrates vertical rhythm. Children receive consistent top spacing,
+            while the individual text primitives keep their own renderer stable.
+          </p>
+
+          <h2 class="heading heading--2">A new content section</h2>
+
+          <p class="paragraph">
+            The larger margin before this heading communicates a new section. Paragraph spacing remains
+            stable and predictable.
+          </p>
+
+          <ul>
+            <li>Lists inherit prose rhythm.</li>
+            <li>List items use a small internal gap.</li>
+            <li>Component styling is not duplicated inside prose.</li>
+          </ul>
+
+          <h3 class="heading heading--3">A smaller subsection</h3>
+
+          <p class="paragraph">
+            Inline primitives still work normally, such as <code class="code">.code</code> inside a paragraph.
+          </p>
+
+          <blockquote class="blockquote">
+            Prose should orchestrate content flow. It should not become a second typography framework.
+          </blockquote>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,74 @@
+/* 20-primitives/feedback/spinners/default.css */
+
+.spinner {
+  --spinner-duration:   2.4s;
+  --spinner-offset:     45deg;
+  --spinner-diameter:   calc(var(--spinner-scale) * 48px);
+  --spinner-border-width: 
+                        calc(var(--spinner-scale) * 6px);
+
+  display:              inline-block;
+  flex-shrink:          0;
+
+  inline-size:          var(--spinner-diameter);
+  block-size:           var(--spinner-diameter);
+
+  color:                currentColor;
+
+  border:               var(--spinner-border-width) solid currentColor;
+  border-radius:        50%;
+
+  animation:            
+    rFlex   var(--spinner-duration) linear infinite,
+    r360    1.2s                    linear infinite;
+  
+  border-inline-end-color:    unset;
+  border-inline-start-color:  unset;
+}
+
+.spinner[data-spinner-size="xs"] {
+  --spinner-scale:   var(--spinner-scale-xs);
+}
+
+.spinner[data-spinner-size="sm"] {
+  --spinner-scale:   var(--spinner-scale-sm);
+}
+
+.spinner[data-spinner-size="lg"] {
+  --spinner-scale:   var(--spinner-scale-lg);
+}
+
+.spinner[data-spinner-size="xl"] {
+  --spinner-scale:   var(--spinner-scale-xl);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spinner {
+    animation-duration: var(--spinner-duration-reduced);
+  }
+}
+
+@keyframes r360 {
+  from {
+    transform:          rotate(var(--spinner-offset));
+  }
+
+  to {
+    transform:          rotate(calc(var(--spinner-offset) + 1turn));
+  }
+}
+
+@keyframes rFlex {
+  0%    { clip-path: polygon( 50%  50%, 0    0   , 0    0   , 0    0   , 0    0   , 50%  0   ); }
+  8%    { clip-path: polygon( 50%  50%, 0    0   , 100% 0   , 100% 0   , 100% 0   , 100% 0   ); }
+  16%   { clip-path: polygon( 50%  50%, 0    0   , 100% 0   , 100% 100%, 100% 100%, 100% 100%); }
+  24%   { clip-path: polygon( 50%  50%, 0    0   , 100% 0   , 100% 100%, 0    100%, 0    100%); }
+  32%   { clip-path: polygon( 50%  50%, 0    0   , 100% 0   , 100% 100%, 0    100%, 0    50% ); }
+  40%   { clip-path: polygon( 50%  50%, 0    0   , 100% 0   , 100% 100%, 0    100%, 0    50% ); }
+  48%   { clip-path: polygon( 50%  50%, 100% 0   , 100% 0   , 100% 100%, 0    100%, 0    50% ); }
+  56%   { clip-path: polygon( 50%  50%, 100% 100%, 100% 100%, 100% 100%, 0    100%, 0    50% ); }
+  64%   { clip-path: polygon( 50%  50%, 0    100%, 0    100%, 0    100%, 0    100%, 0    50% ); }
+  74%   { clip-path: polygon( 50%  50%, 0    100%, 0    100%, 0    100%, 0    100%, 0    50% ); }
+  92%   { clip-path: polygon( 50%  50%, 0    50% , 0    0   , 0    0   , 0    0   , 0    0   ); }
+  100%  { clip-path: polygon( 50%  50%, 0    0   , 0    0   , 0    0   , 0    0   , 50%  0   ); }
+}

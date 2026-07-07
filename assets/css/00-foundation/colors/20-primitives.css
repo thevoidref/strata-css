@@ -1,0 +1,432 @@
+/* 00-foundation/colors/20-primitives.css */
+
+:root {
+  /* -------------------------------------------------------------------------- */
+  /* Global */
+  /* -------------------------------------------------------------------------- */
+
+  --page-bg:                      var(--bg-page);
+  --raised-bg:                    var(--bg-raised);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Wrapper */
+  /* -------------------------------------------------------------------------- */
+
+  /* Surface */
+
+    /* Surface Sunken */
+
+  --surface-sunken-bg:            var(--bg-page);
+
+    /* Surface Base */
+
+  --surface-base-bg:              var(--bg-surface);
+
+    /* Surface Raised */
+
+  --surface-raised-bg:            var(--bg-raised);
+
+    /* Surface Floating */
+
+  --surface-floating-bg:          var(--bg-floating);
+
+    /* Surface Default */
+
+  --surface-bg:                   var(--surface-base-bg);
+  --surface-bg-hover:             var(--surface-hover);
+  --surface-bg-selected:          var(--surface-selected);
+
+  /* -------------------------------------------------------------------------- */
+  /* Visual */
+  /* -------------------------------------------------------------------------- */
+  
+  /* Avatar */
+
+  --avatar-bg:                    var(--surface-raised-bg);
+  --avatar-fg:                    var(--text-strong);
+    
+  /* Skeleton */
+
+  --skeleton-bg:                  var(--bg-muted);
+
+  /* Chip */
+
+    /* Chip Green */
+  
+  --chip-green-bg:          var(--accent-green-bg);
+  --chip-green-fg:          var(--accent-green-fg);
+
+    /* Chip Yellow */
+  
+  --chip-yellow-bg:         var(--accent-yellow-bg);
+  --chip-yellow-fg:         var(--accent-yellow-fg);
+
+    /* Chip Blue */
+  
+  --chip-blue-bg:           var(--accent-blue-bg);
+  --chip-blue-fg:           var(--accent-blue-fg);
+
+    /* Chip Orange */
+  
+  --chip-orange-bg:         var(--accent-orange-bg);
+  --chip-orange-fg:         var(--accent-orange-fg);
+
+    /* Chip Red */
+  
+  --chip-red-bg:            var(--accent-red-bg);
+  --chip-red-fg:            var(--accent-red-fg);
+
+    /* Chip Purple */
+  
+  --chip-purple-bg:         var(--accent-purple-bg);
+  --chip-purple-fg:         var(--accent-purple-fg);
+
+    /* Chip Aqua */
+  
+  --chip-aqua-bg:           var(--accent-aqua-bg);
+  --chip-aqua-fg:           var(--accent-aqua-fg);
+
+    /* Chip Neutral */
+  
+  --chip-neutral-bg:        var(--bg-raised);
+  --chip-neutral-fg:        var(--text-muted);
+
+    /* Chip Default */
+  
+  --chip-bg:                var(--chip-neutral-bg);
+  --chip-fg:                var(--chip-neutral-fg);
+  
+  --chip-accent-bg:         var(--action-primary);
+  --chip-accent-fg:         var(--text-inverse);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Content */
+  /* -------------------------------------------------------------------------- */
+
+  --heading-fg:             var(--text-strong);
+  --h3-fg:                  var(--text-highlight);
+
+  --paragraph-fg:           var(--text-primary);
+  --lead-fg:                var(--text-highlight);
+  --muted-fg:               var(--text-muted);
+  --prose-fg:               var(--paragraph-fg);
+
+  --subtitle-fg:            var(--text-secondary);
+  --caption-fg:             var(--text-secondary);
+  --eyebrow-fg:             var(--text-accent);
+  --label-fg:               var(--text-muted);
+  --meta-fg:                var(--text-muted);
+
+  --blockquote-fg:          var(--text-secondary);
+  
+
+  /* Table */
+
+  --table-fg:                     var(--paragraph-fg);
+  --table-heading-fg:             var(--heading-fg);
+  --table-caption-fg:             var(--caption-fg);
+
+
+  /* Code */
+
+  --code-fg:                      var(--text-accent);
+  --code-bg:                      var(--bg-floating);
+  --code-border-color:            var(--border-sunken-color);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Action */
+  /* -------------------------------------------------------------------------- */
+
+  /* Link */
+
+    /* Link Base */
+
+  --link-base-fg:                     var(--link-color);
+  --link-base-fg-hover:               var(--link-hover);
+
+  --link-base-fg-visited:             var(--link-visited);
+
+  --link-base-decoration-color:       currentColor;
+  --link-base-decoration-color-hover: currentColor;
+
+    /* Link Muted */
+    
+  --link-muted-fg:                    var(--text-muted);
+  --link-muted-fg-hover:              var(--link-hover);
+
+  --link-muted-fg-visited:            var(--link-muted-fg);
+
+  --link-muted-decoration-color:      currentColor;
+  --link-muted-decoration-color-hover:
+                                      currentColor;
+
+    /* Link Subtle */
+    
+  --link-subtle-fg:                   currentColor;
+  --link-subtle-fg-hover:             var(--link-subtle-fg);
+
+  --link-subtle-fg-visited:           var(--link-subtle-fg);
+
+  --link-subtle-decoration-color:     transparent;
+  --link-subtle-decoration-color-hover:
+                                      currentColor;
+
+    /* Link Default */
+
+  --link-fg:                          var(--link-base-fg);
+  --link-fg-hover:                    var(--link-base-fg-hover);
+
+  --link-fg-visited:                  var(--link-base-fg-visited);
+
+  --link-decoration-color:            var(--link-base-decoration-color);
+  --link-decoration-color-hover:      var(--link-base-decoration-color-hover);
+
+
+  /* Button */
+
+    /* Button Solid */
+
+  --button-solid-fg:                  var(--action-primary-text);
+  --button-solid-fg-hover:            var(--action-primary-text-hover);
+
+  --button-solid-bg:                  var(--action-primary);
+  --button-solid-bg-hover:            var(--action-primary-hover);
+
+  --button-solid-border-color:        transparent;
+  --button-solid-border-color-hover:
+                                      transparent;
+
+    /* Button Outline */
+
+  --button-outline-fg:                var(--action-secondary-text);
+  --button-outline-fg-hover:          var(--action-secondary-text-hover);
+
+  --button-outline-bg:                transparent;
+  --button-outline-bg-hover:          transparent;
+
+  --button-outline-border-color:
+                                      var(--button-outline-fg);
+  --button-outline-border-color-hover:
+                                      var(--button-outline-fg-hover);
+
+    /* Button Ghost */
+
+  --button-ghost-fg:                  var(--action-secondary-text);
+  --button-ghost-fg-hover:            var(--action-secondary-text-hover);
+
+  --button-ghost-bg:                  var(--action-secondary);
+  --button-ghost-bg-hover:            var(--action-secondary-hover);
+
+  --button-ghost-border-color:        transparent;
+  --button-ghost-border-color-hover:
+                                      transparent;
+
+    /* Button Default */
+
+  --button-fg:                        var(--button-solid-fg);
+  --button-fg-hover:                  var(--button-solid-fg-hover);
+
+  --button-bg:                        var(--button-solid-bg);
+  --button-bg-hover:                  var(--button-solid-bg-hover);
+
+  --button-border-color:              var(--button-solid-border-color);
+  --button-border-color-hover:        var(--button-solid-border-color-hover);
+
+  
+  /* Icon Button */
+
+  --icon-button-fg:                     var(--button-fg);
+  --icon-button-fg-hover:               var(--button-fg-hover);
+
+  --icon-button-bg:                     var(--button-bg);
+  --icon-button-bg-hover:               var(--button-bg-hover);
+
+  --icon-button-border-color:           var(--button-border-color);
+  --icon-button-border-color-hover:     var(--button-border-color-hover);
+
+  --icon-button-outline-border-color:   var(--button-outline-border-color);
+  --icon-button-outline-border-color-hover: 
+                                        var(--button-outline-border-color-hover);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Form */
+  /* -------------------------------------------------------------------------- */
+
+  /* Field */
+
+  --field-required-fg:            var(--status-error-text);
+  --field-optional-fg:            var(--text-muted);
+  --field-error-fg:               var(--status-error-text);
+
+  /* Input */
+
+  --input-fg:                     var(--text-primary);
+  --input-placeholder-fg:         var(--text-placeholder);
+
+  --input-bg:                     var(--bg-muted);
+  --input-bg-hover:               var(--bg-muted);
+
+  --input-border-color:           var(--border-base-color);
+  --input-border-color-hover:     var(--border-hover-color);
+  --input-border-color-focus:     var(--input-border-color-hover);
+  --input-border-color-success:   var(--border-success-color);
+  --input-border-color-warning:   var(--border-warning-color);
+  --input-border-color-error:     var(--border-error-color);
+
+  --input-outline-color:          var(--border-active-color);
+
+  /* Select */
+
+  --select-fg:                    var(--input-fg);
+  --select-placeholder-fg:        var(--input-placeholder-fg);
+
+  --select-bg:                    var(--input-bg);
+  --select-bg-hover:              var(--input-bg-hover);
+
+  --select-option-fg:             var(--input-fg);
+  --select-option-bg:             var(--input-bg);
+
+  --select-border-color:          var(--input-border-color);
+  --select-border-color-hover:    var(--input-border-color-hover);
+  --select-border-color-focus:    var(--input-border-color-focus);
+  --select-border-color-success:  var(--input-border-color-success);
+  --select-border-color-warning:  var(--input-border-color-warning);
+  --select-border-color-error:    var(--input-border-color-error);
+
+  /* Checkbox */
+
+  --checkbox-label-fg:            var(--text-secondary);
+
+  --checkbox-bg:                  var(--input-bg);
+  --checkbox-bg-hover:            var(--input-bg-hover);
+  --checkbox-bg-checked:          var(--checkbox-bg-hover);
+
+  --checkbox-border-color:        var(--input-border-color);
+  --checkbox-border-color-hover:  var(--input-border-color-hover);
+  --checkbox-border-color-checked:
+                                  transparent; 
+
+  --checkbox-mark-fg:             transparent;
+  --checkbox-mark-fg-checked:     var(--input-fg);
+
+  /* Radio */
+
+  --radio-label-fg:               var(--checkbox-label-fg);
+
+  --radio-bg:                     var(--checkbox-bg);
+  --radio-bg-hover:               var(--checkbox-bg-hover);
+  --radio-bg-checked:             var(--checkbox-bg-checked);
+
+  --radio-border-color:           var(--checkbox-border-color);
+  --radio-border-color-hover:     var(--checkbox-border-color-hover);
+  --radio-border-color-checked:   var(--checkbox-border-color-checked);
+
+  --radio-mark-fg:                transparent;
+  --radio-mark-fg-checked:        var(--checkbox-mark-fg-checked);
+
+  /* Switch */
+
+  --switch-label-fg:                var(--checkbox-label-fg);
+
+  --switch-bg:                      var(--input-bg);
+  --switch-bg-hover:                var(--switch-bg);
+  --switch-bg-checked:              var(--accent-primary-bg);
+  --switch-bg-checked-hover:        var(--switch-bg-checked);
+
+  --switch-border-color:            var(--checkbox-border-color);
+  --switch-border-color-hover:      var(--checkbox-border-color-hover);
+  --switch-border-color-checked:    var(--text-inverse);
+  --switch-border-color-checked-hover:
+                                    var(--switch-border-color);
+
+  --switch-thumb-bg:                var(--switch-border-color);
+  --switch-thumb-bg-hover:          var(--switch-bg-checked);
+  --switch-thumb-bg-checked:        var(--switch-border-color-checked);
+  --switch-thumb-bg-checked-hover:  var(--switch-thumb-bg);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Alert */
+  /* -------------------------------------------------------------------------- */
+
+  --alert-success-fg:             var(--status-success-text);
+  --alert-success-bg:             var(--status-success-bg);
+  --alert-success-border-color:   var(--status-success-border);
+
+  --alert-warning-fg:             var(--status-warning-text);
+  --alert-warning-bg:             var(--status-warning-bg);
+  --alert-warning-border-color:   var(--status-warning-border);
+
+  --alert-error-fg:               var(--status-error-text);
+  --alert-error-bg:               var(--status-error-bg);
+  --alert-error-border-color:     var(--status-error-border);
+
+  --alert-info-fg:                var(--status-info-text);
+  --alert-info-bg:                var(--status-info-bg);
+  --alert-info-border-color:      var(--status-info-border);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Overlay */
+  /* -------------------------------------------------------------------------- */
+  
+  /* Badge */
+
+    /* Badge Solid */
+  
+  --badge-solid-bg:       var(--action-primary);
+  --badge-solid-fg:       var(--text-primary);
+
+    /* Badge Muted */
+  
+  --badge-muted-bg:       var(--bg-muted);
+  --badge-muted-fg:       var(--text-secondary);
+
+    /* Badge Success */
+  
+  --badge-success-bg:     var(--status-success-bg);
+  --badge-success-fg:     var(--status-success-text);
+
+    /* Badge Error */
+  
+  --badge-error-bg:       var(--status-error-bg);
+  --badge-error-fg:       var(--status-error-text);
+
+    /* Badge Warning */
+  
+  --badge-warning-bg:     var(--status-warning-bg);
+  --badge-warning-fg:     var(--status-warning-text);
+
+    /* Badge Info */
+  
+  --badge-info-bg:        var(--status-info-bg);
+  --badge-info-fg:        var(--status-info-text);
+
+    /* Badge Default */
+
+  --badge-bg:             var(--badge-solid-bg);
+  --badge-fg:             var(--badge-solid-fg);
+
+
+  /* Tooltip */
+
+  --tooltip-fg:                   var(--bg-page);
+  --tooltip-bg:                   var(--text-strong);
+  --tooltip-border-color:         var(--border-strong-color);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Feedback */
+  /* -------------------------------------------------------------------------- */
+  
+  /* Progress */
+
+  --progress-border-color:        currentColor;
+  --progress-fg:                  currentColor;
+  --progress-bg:                  inherit;
+
+}

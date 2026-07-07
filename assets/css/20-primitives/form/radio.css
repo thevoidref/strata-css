@@ -1,0 +1,62 @@
+/* 20-primitives/forms/radio.css */
+
+.radio {
+  display:      inline-flex;
+  align-items:  center;
+  gap:          var(--radio-gap);
+
+  color:        var(--radio-label-fg);
+  cursor:       pointer;
+}
+
+.radio__input {
+  appearance:      none;
+
+  display:         grid;
+  place-content:   center;
+
+  width:           var(--radio-width);
+  aspect-ratio:    1;
+
+  flex:            0 0 auto;
+
+  color:           var(--radio-mark-fg);
+  background:      var(--radio-bg);
+  border:          var(--radio-border);
+  border-radius:   var(--radio-radius);
+  box-shadow:      var(--radio-shadow);
+
+  cursor:          pointer;
+  transition:      var(--radio-transition);
+}
+
+.radio__input::before {
+  content:          "";
+  width:            var(--radio-mark-width);
+  aspect-ratio:     1;
+
+  background:       currentColor;
+  border-radius:    var(--radius-full);
+
+  transform:        scale(0);
+  transition:       var(--radio-mark-transition);
+}
+
+.radio__input:not(:disabled):not([aria-disabled="true"]):not(.is-disabled):hover {
+  border-color:     var(--radio-border-color-hover);
+  background:       var(--radio-bg-hover);
+}
+
+.radio__input:checked {
+  color:            var(--radio-mark-fg-checked);
+  background:       var(--radio-bg-checked);
+  border-color:     var(--radio-border-color-checked);
+}
+
+.radio__input:checked::before {
+  transform:        scale(1);
+}
+
+.radio__label {
+  line-height:      var(--radio-label-line);
+}

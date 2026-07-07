@@ -1,0 +1,7 @@
+/* /components/feedbacks/_index.css */
+
+@import "./skeleton.css";
+
+@import "./spinners/_index.css";
+
+@import "./progress/_index.css";

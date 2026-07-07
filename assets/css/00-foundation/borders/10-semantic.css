@@ -1,0 +1,39 @@
+/* 00-foundation/borders/10-semantic.css */
+
+:root {
+  
+  /* -------------------------------------------------------------------------- */
+  /* Radius */
+  /* -------------------------------------------------------------------------- */
+
+  --radius-none:            var(--radius-0);
+  --radius-sm:              var(--radius-2);
+  --radius-md:              var(--radius-4);
+  --radius-lg:              var(--radius-8);
+  --radius-xl:              var(--radius-16);
+  --radius-full:            var(--radius-9999);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Border Types */
+  /* -------------------------------------------------------------------------- */
+
+  --border-solid-2:         var(--border-width-2) solid;
+  --border-solid-4:         var(--border-width-4) solid;
+
+  --border-none-2:          var(--border-solid-2) transparent;
+
+  --border-type-default:    var(--border-solid-2);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Border Prefabs */
+  /* -------------------------------------------------------------------------- */
+
+  --border-sunken:          var(--border-solid-2) var(--border-sunken-color);
+  --border-base:            var(--border-solid-2) var(--border-base-color);
+  --border-raised:          var(--border-solid-2) var(--border-raised-color);
+  --border-floating:        var(--border-solid-2) var(--border-floating-color);
+  
+  --border-none:            var(--border-none-2); 
+} 

@@ -1,0 +1,61 @@
+/* 20-primitives/visual/avatar.css */
+
+.avatar {
+  --avatar-size:        calc(var(--avatar-diameter) * 0.7 - 0.3rem);
+
+  display:              inline-flex;
+  align-items:          center;
+  justify-content:      center;
+  flex-shrink:          0;
+
+  inline-size:          var(--avatar-diameter);
+  block-size:           var(--avatar-diameter);
+
+  color:                var(--avatar-fg);
+  background:           var(--avatar-bg);
+  
+  border:               var(--avatar-border);
+  border-radius:        var(--avatar-radius);
+
+  overflow:             hidden;
+
+  font-family:          var(--avatar-family);
+  font-size:            var(--avatar-size);
+  font-weight:          var(--avatar-weight);
+  line-height:          var(--avatar-line);
+}
+
+.avatar > img,
+.avatar > svg {
+  display:              block;
+  flex:                 0 0 100%;
+
+  inline-size:          100%;
+  block-size:           100%;
+
+  object-fit:           cover;
+}
+
+.avatar[data-avatar-size="xs"] {
+  --avatar-diameter:    var(--avatar-diameter-xs);
+}
+
+.avatar[data-avatar-size="sm"] {
+  --avatar-diameter:    var(--avatar-diameter-sm);
+}
+
+.avatar[data-avatar-size="lg"] {
+  --avatar-diameter:    var(--avatar-diameter-lg);
+}
+
+.avatar[data-avatar-size="xl"] {
+  --avatar-diameter:    var(--avatar-diameter-xl);
+}
+
+.avatar[data-avatar-size="2xl"] {
+  --avatar-diameter:    var(--avatar-diameter-2xl);
+}
+
+.avatar[data-avatar-shape="square"] {
+  --avatar-radius:      var(--radius-md);
+}

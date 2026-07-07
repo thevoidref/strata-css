@@ -1,0 +1,20 @@
+/* 20-primitives/content/code.css */
+
+.code {
+  padding:                      var(--code-padding);
+
+  color:                        var(--code-fg);
+  background:                   var(--code-bg);
+
+  font-family:                  var(--code-family);
+  font-size:                    var(--code-size);
+  font-weight:                  var(--code-weight);
+  line-height:                  var(--code-line);
+  letter-spacing:               var(--code-tracking);
+  text-wrap:                    var(--code-wrap);
+
+  border:                       var(--code-border);
+  border-radius:                var(--code-radius);
+
+  box-shadow:                   var(--code-shadow);
+}

@@ -1,0 +1,41 @@
+/* 20-primitives/content/heading.css */
+
+.heading {
+  margin:               0;
+
+  font-family:          var(--heading-family);
+
+  color:                var(--heading-fg);
+
+  max-inline-size:      var(--heading-width);
+
+  font-size:            var(--heading-size);
+  font-weight:          var(--heading-weight);
+  line-height:          var(--heading-line);
+  letter-spacing:       var(--heading-tracking);
+}
+
+.heading--1 {
+  --heading-width:      14ch;
+  --heading-size:       var(--h1-size);
+  --heading-weight:     var(--h1-weight);
+  --heading-line:       var(--h1-line);
+  --heading-tracking:   var(--h1-tracking);
+}
+
+.heading--3 {
+  --heading-size:       var(--h3-size);
+  --heading-weight:     var(--h3-weight);
+  --heading-line:       var(--h3-line);
+  --heading-tracking:   var(--h3-tracking);
+  --heading-fg:         var(--h3-fg);
+}
+
+.heading--hero {
+  --heading-measure:    var(--hero-measure);
+}
+
+.heading--subheading {
+  --heading-measure:    var(--subheading-measure);
+}
+

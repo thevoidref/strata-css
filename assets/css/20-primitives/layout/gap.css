@@ -1,0 +1,64 @@
+/* 90-utilities/layout/gap.css */
+
+.cluster,
+.columns,
+.grid,
+.stack,
+.section {
+  gap:              var(--gap);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Responsive Gap */
+/* -------------------------------------------------------------------------- */
+
+[data-gap="none"] { gap: var(--gap-none); }
+[data-gap="xs"]   { gap: var(--gap-xs); }
+[data-gap="sm"]   { gap: var(--gap-sm); }
+[data-gap="md"]   { gap: var(--gap-md); }
+[data-gap="lg"]   { gap: var(--gap-lg); }
+[data-gap="xl"]   { gap: var(--gap-xl); }
+[data-gap="2xl"]  { gap: var(--gap-2xl); }
+[data-gap="3xl"]  { gap: var(--gap-3xl); }
+[data-gap="4xl"]  { gap: var(--gap-4xl); }
+[data-gap="5xl"]  { gap: var(--gap-5xl); }
+
+@container responsive (width < 50em) {
+  [data-gap-50="none"] { gap: var(--gap-none); }
+  [data-gap-50="xs"]   { gap: var(--gap-xs); }
+  [data-gap-50="sm"]   { gap: var(--gap-sm); }
+  [data-gap-50="md"]   { gap: var(--gap-md); }
+  [data-gap-50="lg"]   { gap: var(--gap-lg); }
+  [data-gap-50="xl"]   { gap: var(--gap-xl); }
+  [data-gap-50="2xl"]  { gap: var(--gap-2xl); }
+  [data-gap-50="3xl"]  { gap: var(--gap-3xl); }
+  [data-gap-50="4xl"]  { gap: var(--gap-4xl); }
+  [data-gap-50="5xl"]  { gap: var(--gap-5xl); }
+}
+
+@container responsive (width < 35em) {
+  [data-gap-35="none"] { gap: var(--gap-none); }
+  [data-gap-35="xs"]   { gap: var(--gap-xs); }
+  [data-gap-35="sm"]   { gap: var(--gap-sm); }
+  [data-gap-35="md"]   { gap: var(--gap-md); }
+  [data-gap-35="lg"]   { gap: var(--gap-lg); }
+  [data-gap-35="xl"]   { gap: var(--gap-xl); }
+  [data-gap-35="2xl"]  { gap: var(--gap-2xl); }
+  [data-gap-35="3xl"]  { gap: var(--gap-3xl); }
+  [data-gap-35="4xl"]  { gap: var(--gap-4xl); }
+  [data-gap-35="5xl"]  { gap: var(--gap-5xl); }
+}
+
+@container responsive (width < 20em) {
+  [data-gap-20="none"] { gap: var(--gap-none); }
+  [data-gap-20="xs"]   { gap: var(--gap-xs); }
+  [data-gap-20="sm"]   { gap: var(--gap-sm); }
+  [data-gap-20="md"]   { gap: var(--gap-md); }
+  [data-gap-20="lg"]   { gap: var(--gap-lg); }
+  [data-gap-20="xl"]   { gap: var(--gap-xl); }
+  [data-gap-20="2xl"]  { gap: var(--gap-2xl); }
+  [data-gap-20="3xl"]  { gap: var(--gap-3xl); }
+  [data-gap-20="4xl"]  { gap: var(--gap-4xl); }
+  [data-gap-20="5xl"]  { gap: var(--gap-5xl); }
+}

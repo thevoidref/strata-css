@@ -1,0 +1,6 @@
+/* 20-primitives/layout/column.css */
+
+.column[data-column-span="1"]  { grid-column: span 1; }
+.column[data-column-span="4"]  { grid-column: span 4; }
+.column[data-column-span="6"]  { grid-column: span 6; }
+.column[data-column-span="12"] { grid-column: span 12; }

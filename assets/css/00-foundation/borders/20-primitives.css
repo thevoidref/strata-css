@@ -1,0 +1,253 @@
+/* 00-foundation/borders/20-primitives.css */
+
+:root {
+
+    /* -------------------------------------------------------------------------- */
+    /* Global */
+    /* -------------------------------------------------------------------------- */
+
+    --radius-main:               var(--radius-md);
+
+
+    /* -------------------------------------------------------------------------- */
+    /* Wrapper */
+    /* -------------------------------------------------------------------------- */
+
+    /* Surface */
+
+        /* Surface Sunken */
+
+    --surface-sunken-border:        var(--border-sunken);
+
+        /* Surface Base */
+
+    --surface-base-border:          var(--border-base);
+
+        /* Surface Raised */
+
+    --surface-raised-border:        var(--border-raised);
+
+        /* Surface Floating */
+
+    --surface-floating-border:      var(--border-floating);
+
+        /* Surface Default */
+
+    --surface-border:               var(--surface-base-border);
+    --surface-border-none:          var(--border-none-2);
+
+
+    /* -------------------------------------------------------------------------- */
+    /* Button */
+    /* -------------------------------------------------------------------------- */
+
+    /* Button Solid */
+
+    --button-solid-border:
+        var(--border-solid-2)
+        var(--button-solid-border-color);
+
+    --button-solid-border-hover:
+        var(--border-solid-2)
+        var(--button-solid-border-color-hover);
+
+    /* Button Outline */
+
+    --button-outline-border:
+        var(--border-solid-2)
+        var(--button-outline-border-color);
+
+    --button-outline-border-hover:
+        var(--border-solid-2)
+        var(--button-outline-border-color-hover);
+
+    /* Button Ghost */
+
+    --button-ghost-border:
+        var(--border-solid-2)
+        var(--button-ghost-border-color);
+
+    --button-ghost-border-hover:
+        var(--border-solid-2)
+        var(--button-ghost-border-color-hover);
+
+    /* Button Default */
+
+    --button-radius:             var(--radius-main);
+    --button-border:             var(--button-solid-border);
+    --button-border-hover:       var(--button-solid-border-hover);
+
+    /* Icon Button */
+
+    --icon-button-radius:               var(--button-radius);
+
+    --icon-button-border:               var(--border-solid-2) var(--icon-button-border-color);
+    --icon-button-border-hover:         var(--border-solid-2) var(--icon-button-border-color-hover);
+
+    --icon-button-outline-border:       var(--border-solid-2) var(--icon-button-outline-border-color);
+    --icon-button-outline-border-hover: var(--border-solid-2) var(--icon-button-outline-border-color-hover);
+
+
+    /* -------------------------------------------------------------------------- */
+    /* Form */
+    /* -------------------------------------------------------------------------- */
+
+    /* Input */
+
+    --input-radius:           var(--radius-main);
+
+    --input-border:
+        var(--border-solid-2)
+        var(--input-border-color);
+
+    --input-border-hover:
+        var(--border-solid-2)
+        var(--input-border-color-hover);
+
+    --input-border-error:
+        var(--border-solid-2)
+        var(--input-border-color-error);
+
+    --input-outline:
+        var(--border-solid-2)
+        var(--input-outline-color);
+
+    --input-outline-offset:    0;
+
+    /* Select */
+
+    --select-radius:           var(--input-radius);
+    --select-border:           var(--input-border);
+
+    /* Checkbox - Radio - Switch */
+
+    --checkbox-radius:         var(--input-radius);
+    --checkbox-border:         var(--border-solid-2) var(--checkbox-border-color);
+
+    --radio-radius:            var(--radius-full);
+    --radio-border:            var(--checkbox-border);
+
+    --switch-radius:           var(--input-radius);
+    --switch-thumb-radius:     var(--switch-radius);
+    --switch-border:           var(--checkbox-border);
+
+
+    /* -------------------------------------------------------------------------- */
+    /* Content */
+    /* -------------------------------------------------------------------------- */
+
+    /* Blockquote */
+
+    --blockquote-border:         var(--border-solid-4) var(--action-primary);
+
+    /* Table */
+
+    --table-border:              var(--divider-border);
+
+    /* Code */
+
+    --code-radius:               var(--radius-main);
+    --code-border:
+        var(--border-solid-2)
+        var(--code-border-color);
+
+
+    /* -------------------------------------------------------------------------- */
+    /* Outline */
+    /* -------------------------------------------------------------------------- */
+
+    /* General */
+
+    --outline-none:             var(--border-solid-none) transparent;
+    --outline-debug:            var(--border-solid-2) var(--border-warning-color);
+
+    /* Focus */
+
+    --focus-outline:            var(--border-solid-4) var(--border-focus-color);
+    --focus-offset:             var(--outline-offset-4);
+
+    /* -------------------------------------------------------------------------- */
+    /* Visual */
+    /* -------------------------------------------------------------------------- */
+
+    /* Divider */
+
+        /* Divider Subtle */
+
+    --divider-subtle-border:    var(--border-suken);
+
+        /* Divider Strong */
+
+    --divider-strong-border:    var(--border-floating);
+
+        /* Divider Default */
+
+    --divider-default-border:   var(--border-base);
+    --divider-border:           var(--divider-default-border);
+
+    /* Skeleton */
+
+    --skeleton-radius:      var(--radius-main);
+    --skeleton-text-radius: var(--radius-sm);
+
+    /* Avatar */
+
+    --avatar-radius:        var(--radius-full);
+    --avatar-border:        var(--surface-border-none);
+
+    /* Image */
+
+    --image-radius:         var(--radius-main);
+    --image-border:         var(--surface-border-none);
+
+    /* Chip */
+
+    --chip-radius:          var(--radius-main);
+    --chip-border:          var(--border-none-2) transparent;
+
+    
+    /* -------------------------------------------------------------------------- */
+    /* Overlay */
+    /* -------------------------------------------------------------------------- */
+
+    /* Badge */
+
+        /* Badge Solid */
+
+    --badge-solid-border:       var(--border-none-2) transparent;
+
+        /* Badge Muted */
+
+    --badge-muted-border:       var(--border-solid-2) var(--border-sunken-color);
+
+        /* Badge Success */
+
+    --badge-success-border:     var(--border-solid-2) var(--border-success-color);
+
+        /* Badge Error */
+
+    --badge-error-border:       var(--border-solid-2) var(--border-error-color);
+
+        /* Badge Warning */
+
+    --badge-warning-border:     var(--border-solid-2) var(--border-warning-color);
+
+        /* Badge Info */
+
+    --badge-info-border:        var(--border-solid-2) var(--border-info-color);
+
+        /* Badge Default */
+
+    --badge-border:             var(--badge-solid-border);
+    --badge-radius:             var(--radius-full);
+
+    
+    /* -------------------------------------------------------------------------- */
+    /* Feedback */
+    /* -------------------------------------------------------------------------- */
+
+    /* Progress */
+    
+    --progress-border:          var(--border-solid-2) currentColor;
+    --progress-radius:          var(--radius-full);
+}

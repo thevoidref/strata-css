@@ -1,0 +1,203 @@
+/* 00-foundation/shadow/10-semantic.css */
+
+:root,
+[data-theme="dark"] {
+
+  /* -------------------------------------------------------------------------- */
+  /* Shadow Color */
+  /* -------------------------------------------------------------------------- */
+
+  --shadow-color-base:          var(--color-shadow-dark-channel);
+  --shadow-color-inverse:       var(--color-shadow-light-channel);
+
+  --shadow-color-green:         var(--color-green-300-channel);
+  --shadow-color-yellow:        var(--color-yellow-300-channel);
+  --shadow-color-blue:          var(--color-blue-300-channel);
+  --shadow-color-orange:        var(--color-orange-300-channel);
+  --shadow-color-red:           var(--color-red-300-channel);
+  --shadow-color-purple:        var(--color-purple-300-channel);
+  --shadow-color-aqua:          var(--color-aqua-300-channel);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Shadow Opacity */
+  /* -------------------------------------------------------------------------- */
+
+  --shadow-opacity-sm:          var(--opacity-30);
+  --shadow-opacity-md:          var(--opacity-40);
+  --shadow-opacity-lg:          var(--opacity-50);
+  --shadow-opacity-xl:          var(--opacity-60);
+  --shadow-opacity-2xl:         var(--opacity-70);
+
+  --shadow-opacity-glow-sm:     var(--opacity-15);
+  --shadow-opacity-glow-md:     var(--opacity-20);
+  --shadow-opacity-glow-lg:     var(--opacity-30);
+
+  --shadow-opacity-overlay:     var(--opacity-80);
+  --shadow-opacity-inner-light: var(--opacity-05);
+  --shadow-opacity-inner-dark:  var(--opacity-30);
+
+}
+
+[data-theme="light"] {
+
+  /* -------------------------------------------------------------------------- */
+  /* Shadow Color */
+  /* -------------------------------------------------------------------------- */
+
+  --shadow-color-base:          var(--color-shadow-warm-channel);
+  --shadow-color-inverse:       var(--color-shadow-light-channel);
+
+  --shadow-color-green:         var(--color-green-700-channel);
+  --shadow-color-yellow:        var(--color-yellow-700-channel);
+  --shadow-color-blue:          var(--color-blue-700-channel);
+  --shadow-color-orange:        var(--color-orange-700-channel);
+  --shadow-color-red:           var(--color-red-700-channel);
+  --shadow-color-purple:        var(--color-purple-700-channel);
+  --shadow-color-aqua:          var(--color-aqua-700-channel);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Shadow Opacity */
+  /* -------------------------------------------------------------------------- */
+
+  --shadow-opacity-sm:          var(--opacity-15);
+  --shadow-opacity-md:          var(--opacity-20);
+  --shadow-opacity-lg:          var(--opacity-20);
+  --shadow-opacity-xl:          var(--opacity-30);
+  --shadow-opacity-2xl:         var(--opacity-30);
+
+  --shadow-opacity-glow-sm:     var(--opacity-10);
+  --shadow-opacity-glow-md:     var(--opacity-15);
+  --shadow-opacity-glow-lg:     var(--opacity-20);
+
+  --shadow-opacity-overlay:     var(--opacity-30);
+  --shadow-opacity-inner-light: var(--opacity-50);
+  --shadow-opacity-inner-dark:  var(--opacity-15);
+
+}
+
+:root {
+
+  /* -------------------------------------------------------------------------- */
+  /* Shadows */
+  /* -------------------------------------------------------------------------- */
+
+  --shadow-none:                none;
+
+  /* Shadow Neutral */
+
+  --shadow-sm:
+    var(--shadow-geometry-sm)
+    rgb(var(--shadow-color-base) / var(--shadow-opacity-sm));
+
+  --shadow-md:
+    var(--shadow-geometry-md)
+    rgb(var(--shadow-color-base) / var(--shadow-opacity-md));
+
+  --shadow-lg:
+    var(--shadow-geometry-lg)
+    rgb(var(--shadow-color-base) / var(--shadow-opacity-lg));
+
+  --shadow-xl:
+    var(--shadow-geometry-xl)
+    rgb(var(--shadow-color-base) / var(--shadow-opacity-xl));
+
+  --shadow-2xl:
+    var(--shadow-geometry-2xl)
+    rgb(var(--shadow-color-base) / var(--shadow-opacity-2xl));
+
+  /* Shadow Inverse */
+
+  --shadow-inverse-sm:
+    var(--shadow-geometry-sm)
+    rgb(var(--shadow-color-inverse) / var(--shadow-opacity-sm));
+
+  --shadow-inverse-md:
+    var(--shadow-geometry-md)
+    rgb(var(--shadow-color-inverse) / var(--shadow-opacity-md));
+
+  --shadow-inverse-lg:
+    var(--shadow-geometry-lg)
+    rgb(var(--shadow-color-inverse) / var(--shadow-opacity-lg));
+
+  --shadow-inverse-xl:
+    var(--shadow-geometry-xl)
+    rgb(var(--shadow-color-inverse) / var(--shadow-opacity-xl));
+
+  --shadow-inverse-2xl:
+    var(--shadow-geometry-2xl)
+    rgb(var(--shadow-color-inverse) / var(--shadow-opacity-2xl));
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Inner Shadows */
+  /* -------------------------------------------------------------------------- */
+
+  --shadow-inner-sm:
+    var(--shadow-geometry-inner-sm)
+    rgb(var(--shadow-color-base) / var(--shadow-opacity-inner-dark));
+
+  --shadow-inner-md:
+    var(--shadow-geometry-inner-md)
+    rgb(var(--shadow-color-base) / var(--shadow-opacity-inner-dark));
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Glows */
+  /* -------------------------------------------------------------------------- */
+
+  --glow-none:                  none;
+
+  --glow-focus:
+    var(--shadow-geometry-glow-sm)
+    rgb(var(--shadow-color-blue) / var(--shadow-opacity-glow-sm));
+
+  --glow-accent:
+    var(--shadow-geometry-glow-lg)
+    rgb(var(--shadow-color-green) / var(--shadow-opacity-glow-md));
+
+
+  --shadow-glow-green-sm:
+    var(--shadow-geometry-glow-sm)
+    rgb(var(--shadow-color-green) / var(--shadow-opacity-glow-sm));
+
+  --shadow-glow-green-md:
+    var(--shadow-geometry-glow-md)
+    rgb(var(--shadow-color-green) / var(--shadow-opacity-glow-md));
+
+  --shadow-glow-green-lg:
+    var(--shadow-geometry-glow-lg)
+    rgb(var(--shadow-color-green) / var(--shadow-opacity-glow-lg));
+
+
+  --shadow-glow-yellow-sm:
+    var(--shadow-geometry-glow-sm)
+    rgb(var(--shadow-color-yellow) / var(--shadow-opacity-glow-sm));
+
+
+  --shadow-glow-blue-sm:
+    var(--shadow-geometry-glow-sm)
+    rgb(var(--shadow-color-blue) / var(--shadow-opacity-glow-sm));
+
+
+  --shadow-glow-orange-sm:
+    var(--shadow-geometry-glow-sm)
+    rgb(var(--shadow-color-orange) / var(--shadow-opacity-glow-sm));
+
+
+  --shadow-glow-red-sm:
+    var(--shadow-geometry-glow-sm)
+    rgb(var(--shadow-color-red) / var(--shadow-opacity-glow-sm));
+
+
+  --shadow-glow-purple-sm:
+    var(--shadow-geometry-glow-sm)
+    rgb(var(--shadow-color-purple) / var(--shadow-opacity-glow-sm));
+
+    
+  --shadow-glow-aqua-sm:
+    var(--shadow-geometry-glow-sm)
+    rgb(var(--shadow-color-aqua) / var(--shadow-opacity-glow-sm));
+
+}

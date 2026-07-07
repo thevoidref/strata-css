@@ -1,0 +1,42 @@
+/* 10-base/reset/page.css */
+
+*,
+*::before,
+*::after {
+  box-sizing:     border-box;
+}
+
+* {
+  margin:  0;
+  padding: 0;
+}
+
+html {
+  font-size:        16px;
+  scrollbar-gutter: stable;
+}
+
+body {
+  min-height:        100svh;
+
+  background-color:  var(--page-bg);
+  color:             var(--paragraph-fg);
+
+  font-family:       var(--paragraph-family);
+  font-size:         var(--paragraph-size);
+  font-weight:       var(--paragraph-weight);
+  line-height:       var(--paragraph-line-height);
+  letter-spacing:    var(--paragraph-letter-spacing);
+
+  -webkit-font-smoothing:   antialiased;
+  -moz-osx-font-smoothing:  grayscale;
+  text-rendering:           optimizeLegibility;
+  font-variant-ligatures:   common-ligatures;
+}
+
+#page {
+  min-height:       100svh;
+  overflow-x:       clip;
+  display:          flex;
+  flex-direction:   column;
+}

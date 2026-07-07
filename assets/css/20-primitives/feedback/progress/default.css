@@ -1,0 +1,50 @@
+/* 20-primitives/feedbacks/progress/default.css */
+
+.progress {
+  --progress-padding:     calc(var(--progress-height) * 0.18);
+  --progress-border:      calc(var(--progress-height) * 0.1) solid var(--progress-border-color);
+
+  display:                block;
+
+  inline-size:            var(--progress-width);
+  block-size:             var(--progress-height);
+
+  color:                  var(--progress-fg);
+  background:             var(--progress-bg);
+
+  padding:                var(--progress-padding);
+
+  border:                 var(--progress-border);
+  border-radius:          var(--progress-radius);
+
+  overflow:               hidden;
+
+  appearance:             none;
+}
+
+.progress::-webkit-progress-bar {
+  background:             var(--progress-fg);
+  border-radius:          var(--progress-radius);
+}
+
+.progress::-webkit-progress-value {
+  background:             var(--progress-fg);
+  border-radius:          var(--progress-radius);
+}
+
+.progress::-moz-progress-bar {
+  background:             var(--progress-fg);
+  border-radius:          var(--progress-radius);
+}
+
+.progress[data-progress-size="xs"] {
+  --progress-height:      var(--progress-height-xs);
+}
+
+.progress[data-progress-size="sm"] {
+  --progress-height:      var(--progress-height-sm);
+}
+
+.progress[data-progress-size="lg"] {
+  --progress-height:      var(--progress-height-lg);
+}

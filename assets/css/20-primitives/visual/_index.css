@@ -1,0 +1,11 @@
+/* 20-primitives/visual/_index.css */
+
+@import "./avatar.css";
+
+@import "./chip.css";
+
+@import "./divider.css";
+
+@import "./icon.css";
+
+@import "./image.css";

@@ -1,0 +1,49 @@
+/* 20-primitives/layout/columns.css */
+
+.columns {
+  --columns-count:          1;
+
+  display:                  grid;
+  grid-template-columns:    repeat(var(--columns-count), minmax(0, 1fr));
+}
+
+  /* -------------------------------------------------------------------------- */
+  /* Columns Counts */
+  /* -------------------------------------------------------------------------- */
+
+  .columns[data-columns="1"]      { --columns-count: 1; }
+  .columns[data-columns="2"]      { --columns-count: 2; }
+  .columns[data-columns="3"]      { --columns-count: 3; }
+  .columns[data-columns="4"]      { --columns-count: 4; }
+  .columns[data-columns="5"]      { --columns-count: 5; }
+  .columns[data-columns="6"]      { --columns-count: 6; }
+  .columns[data-columns="7"]      { --columns-count: 7; }
+  .columns[data-columns="8"]      { --columns-count: 8; }
+  .columns[data-columns="9"]      { --columns-count: 9; }
+  .columns[data-columns="10"]     { --columns-count: 10; }
+  .columns[data-columns="11"]     { --columns-count: 11; }
+  .columns[data-columns="12"]     { --columns-count: 12; }
+
+/* Medium container */
+@container responsive (width < 50em) {
+  .columns[data-columns-50="1"]   { --columns-count: 1; }
+  .columns[data-columns-50="2"]   { --columns-count: 2; }
+  .columns[data-columns-50="3"]   { --columns-count: 3; }
+  .columns[data-columns-50="4"]   { --columns-count: 4; }
+  .columns[data-columns-50="5"]   { --columns-count: 5; }
+}
+
+/* Small container */
+@container responsive (width < 35em) {
+  .columns[data-columns-35="1"]   { --columns-count: 1; }
+  .columns[data-columns-35="2"]   { --columns-count: 2; }
+  .columns[data-columns-35="3"]   { --columns-count: 3; }
+  .columns[data-columns-35="4"]   { --columns-count: 4; }
+}
+
+/* Xsmall container */
+@container responsive (width < 20em) {
+  .columns[data-columns-20="1"]   { --columns-count: 1; }
+  .columns[data-columns-20="2"]   { --columns-count: 2; }
+  .columns[data-columns-20="3"]   { --columns-count: 3; }
+}

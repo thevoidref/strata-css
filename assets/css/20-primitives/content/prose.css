@@ -1,0 +1,78 @@
+/* 20-primitives/content/prose.css */
+
+.prose {
+  color:                        var(--prose-fg);
+
+  font-family:                  var(--prose-family);
+  font-size:                    var(--prose-size);
+  font-weight:                  var(--prose-weight);
+  line-height:                  var(--prose-line);
+  letter-spacing:               var(--prose-tracking);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Flow */
+/* -------------------------------------------------------------------------- */
+
+.prose > * {
+  width:                        100%;
+  max-width:                    inherit;
+
+  margin:                       0;
+}
+
+.prose > * + * {
+  margin-top:                   var(--prose-flow);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Headings */
+/* -------------------------------------------------------------------------- */
+
+.prose :where(h1, .heading--1) {
+  margin-top:                   var(--prose-h1-margin-top);
+}
+
+.prose :where(h2, .heading--2) {
+  margin-top:                   var(--prose-h2-margin-top);
+}
+
+.prose :where(h3, .heading--3) {
+  margin-top:                   var(--prose-h3-margin-top);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Lists */
+/* -------------------------------------------------------------------------- */
+
+.prose :where(ul, ol) {
+  padding-inline-start:         var(--prose-list-indent);
+}
+
+.prose li + li {
+  margin-top:                   var(--prose-list-gap);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Tables */
+/* -------------------------------------------------------------------------- */
+
+.prose table {
+  width:                        100%;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Media */
+/* -------------------------------------------------------------------------- */
+
+.prose :where(img, video, canvas, svg) {
+  display:                      block;
+
+  max-width:                    100%;
+  height:                       auto;
+}

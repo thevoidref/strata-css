@@ -1,0 +1,102 @@
+/* 00-foundation/shadow/20-primitives.css */
+
+:root {
+
+  /* -------------------------------------------------------------------------- */
+  /* Wrapper */
+  /* -------------------------------------------------------------------------- */
+
+  /* Surface */
+  
+    /* Surface Sunken */
+
+  --surface-sunken-shadow:          var(--shadow-inner-md);
+
+    /* Surface Base */
+
+  --surface-base-shadow:            none;
+
+    /* Surface Raised */
+
+  --surface-raised-shadow:          var(--shadow-sm);
+
+    /* Surface Floating */
+
+  --surface-floating-shadow:        var(--shadow-md);
+
+    /* Surface Default */
+
+  --surface-shadow:                 var(--surface-base-shadow);
+
+  /* -------------------------------------------------------------------------- */
+  /* Visual */
+  /* -------------------------------------------------------------------------- */
+
+  /* Image */
+
+  --image-shadow:                   none;
+
+  /* Chip */
+
+  --chip-shadow:                    none;
+  --chip-shadow-hover:              var(--shadow-md);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Button */
+  /* -------------------------------------------------------------------------- */
+
+    /* Button Solid */
+
+  --button-solid-shadow:            var(--shadow-none);
+  --button-solid-shadow-hover:      var(--shadow-glow-green-lg);
+
+    /* Button Outline */
+
+  --button-outline-shadow:          var(--shadow-none);
+  --button-outline-shadow-hover:    var(--shadow-none);
+
+    /* Button Ghost */
+
+  --button-ghost-shadow:            var(--shadow-none);
+  --button-ghost-shadow-hover:      var(--shadow-none);
+
+    /* Button Default */
+
+  --button-shadow:                  var(--button-solid-shadow);
+  --button-shadow-hover:            var(--button-solid-shadow-hover);
+
+    /* Icon Button */
+
+  --icon-button-shadow:             var(--button-shadow);
+  --icon-button-shadow-hover:       var(--button-shadow-hover);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Form */
+  /* -------------------------------------------------------------------------- */
+
+    /* Input */
+
+  --input-shadow:                   var(--shadow-sm);
+
+    /* Select */
+
+  --select-shadow:                  var(--input-shadow);
+
+    /* Checkbox - Radio - Switch */
+
+  --checkbox-shadow:                var(--shadow-none);
+
+  --radio-shadow:                   var(--checkbox-shadow);
+
+  --switch-shadow:                  var(--checkbox-shadow);
+  --switch-thumb-shadow:            var(--shadow-sm);
+
+  /* -------------------------------------------------------------------------- */
+  /* Content */
+  /* -------------------------------------------------------------------------- */
+
+  --code-shadow:                    var(--shadow-sm);
+
+}

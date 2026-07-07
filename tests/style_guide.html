@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CH TeCH — Style Guide Gruvbox Épuré</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+    :root {
+      --bg-page: #1d2021;
+      --bg-surface: #282828;
+      --bg-card: #3c3836;
+      --bg-elevated: #504945;
+      --bg-muted: #7c6f64;
+
+      --text-strong: #fbf1c7;
+      --text-default: #ebdbb2;
+      --text-muted: #928374;
+      --text-subtle: #a89984;
+
+      --accent: #b8bb26;
+      --accent-muted: #bfc93b;
+      --special: #b16286;
+      --success: #689d6a;
+      --warning: #d65d0e;
+      --error: #cc241d;
+      --info: #458588;
+
+      --border-subtle: #3c3836;
+      --border-default: #504945;
+      --border-strong: #7c6f64;
+
+      --font-ui: "Inter", "Segoe UI", system-ui, sans-serif;
+      --font-text: "Inter", "Segoe UI", system-ui, sans-serif;
+      --font-heading: "Geist", "Inter", system-ui, sans-serif;
+      --font-mono: "JetBrains Mono", "Fira Code", "Consolas", monospace;
+
+      --space-1: .25rem;
+      --space-2: .5rem;
+      --space-3: .75rem;
+      --space-4: 1rem;
+      --space-5: 1.5rem;
+      --space-6: 2rem;
+      --space-7: 3rem;
+      --space-8: 4rem;
+
+      --radius-sm: .25rem;
+      --radius-md: .5rem;
+      --radius-lg: .75rem;
+
+      --shadow-soft: 0 1px 0 rgb(0 0 0 / .20), 0 8px 24px rgb(0 0 0 / .14);
+      --max: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg-page);
+      color: var(--text-default);
+      font-family: var(--font-text);
+      line-height: 1.55;
+    }
+
+    a { color: var(--info); text-underline-offset: .18em; }
+    a:hover { color: var(--accent); }
+
+    .sg-shell { display: grid; grid-template-columns: 260px 1fr; min-height: 100vh; }
+    .sg-sidebar {
+      position: sticky; top: 0; height: 100vh; overflow: auto;
+      padding: var(--space-6) var(--space-5);
+      border-right: 1px solid var(--border-subtle);
+      background: #181a1b;
+    }
+    .sg-main { padding: var(--space-7) var(--space-6); }
+    .sg-container { max-width: var(--max); margin-inline: auto; }
+
+    .sg-brand { margin-bottom: var(--space-6); }
+    .sg-mark { font-family: var(--font-heading); font-weight: 800; font-size: 1.25rem; color: var(--text-strong); }
+    .sg-subtitle { font-size: .875rem; color: var(--text-subtle); margin-top: .25rem; }
+    .sg-nav { display: grid; gap: .15rem; }
+    .sg-nav a { color: var(--text-muted); text-decoration: none; padding: .35rem .5rem; border-radius: var(--radius-sm); font-size: .925rem; }
+    .sg-nav a:hover { background: var(--bg-surface); color: var(--text-strong); }
+
+    .sg-hero { padding-bottom: var(--space-7); border-bottom: 1px solid var(--border-subtle); margin-bottom: var(--space-7); }
+    .eyebrow { font-family: var(--font-mono); text-transform: uppercase; letter-spacing: .08em; color: var(--text-subtle); font-size: .8rem; }
+    h1, h2, h3, h4 { font-family: var(--font-heading); color: var(--text-strong); line-height: 1.1; margin: 0; }
+    h1 { font-size: clamp(2.5rem, 6vw, 5rem); letter-spacing: -.055em; max-width: 10ch; }
+    h2 { font-size: clamp(1.75rem, 3vw, 2.6rem); letter-spacing: -.035em; margin-bottom: var(--space-4); }
+    h3 { font-size: 1.25rem; margin-bottom: var(--space-3); }
+    h4 { font-size: 1rem; margin-bottom: var(--space-2); }
+    .lead { font-size: 1.18rem; color: var(--text-muted); max-width: 70ch; }
+
+    .sg-section { margin-bottom: var(--space-8); scroll-margin-top: 2rem; }
+    .sg-section-head { margin-bottom: var(--space-5); max-width: 72ch; }
+    .sg-section-head p { color: var(--text-subtle); margin: 0; }
+    .sg-panel { background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: var(--space-5); box-shadow: var(--shadow-soft); }
+    .sg-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: var(--space-4); }
+    .col-3 { grid-column: span 3; } .col-4 { grid-column: span 4; } .col-6 { grid-column: span 6; } .col-8 { grid-column: span 8; } .col-12 { grid-column: span 12; }
+
+    .swatch { min-height: 116px; border-radius: var(--radius-md); border: 1px solid var(--border-default); padding: var(--space-3); display: flex; flex-direction: column; justify-content: end; }
+    .swatch code, .token code { font-family: var(--font-mono); font-size: .78rem; color: var(--text-strong); }
+    .token { display: flex; justify-content: space-between; gap: 1rem; padding: .7rem 0; border-bottom: 1px solid var(--border-subtle); }
+    .token:last-child { border-bottom: 0; }
+    .sample-box { background: var(--bg-card); border: 1px solid var(--border-default); border-radius: var(--radius-md); padding: var(--space-4); }
+    .surface-elevated { background: var(--bg-elevated); }
+
+    .badge { display: inline-flex; align-items: center; border-radius: var(--radius-sm); padding: .2rem .5rem; font-family: var(--font-mono); font-size: .75rem; font-weight: 700; text-transform: uppercase; background: var(--bg-elevated); color: var(--text-strong); }
+    .badge.accent { background: var(--accent-muted); color: #1d2021; }
+    .badge.success { background: var(--success); color: #1d2021; }
+    .badge.warning { background: var(--warning); color: #1d2021; }
+    .badge.error { background: var(--error); color: #1d2021; }
+
+    .btn { border: 1px solid transparent; border-radius: var(--radius-md); padding: .75rem 1rem; background: var(--accent); color: #1d2021; font: 700 1rem/1 var(--font-ui); cursor: pointer; }
+    .btn:hover { background: #c8cc2f; }
+    .btn.secondary { background: var(--bg-elevated); color: var(--text-strong); border-color: var(--border-default); }
+    .btn.ghost { background: transparent; color: var(--text-strong); border-color: var(--border-strong); }
+    .btn.danger { background: var(--error); }
+    .btn.small { padding: .5rem .75rem; font-size: .875rem; }
+    .btn.large { padding: 1rem 1.25rem; font-size: 1.125rem; }
+
+    .field { display: grid; gap: .4rem; }
+    label { font-weight: 700; color: var(--text-strong); }
+    input, select, textarea {
+      width: 100%; padding: .8rem .9rem; border-radius: var(--radius-md);
+      border: 1px solid var(--border-default); background: var(--bg-muted); color: var(--text-default);
+      font: inherit;
+    }
+    input:focus, select:focus, textarea:focus { outline: 2px solid var(--info); outline-offset: 2px; }
+    .help { color: var(--text-subtle); font-size: .875rem; }
+
+    .alert { border: 1px solid var(--border-default); border-left-width: .3rem; border-radius: var(--radius-md); padding: var(--space-4); background: var(--bg-card); }
+    .alert.info { border-left-color: var(--info); }
+    .alert.success { border-left-color: var(--success); }
+    .alert.warning { border-left-color: var(--warning); }
+    .alert.error { border-left-color: var(--error); }
+
+    table { width: 100%; border-collapse: collapse; overflow: hidden; border-radius: var(--radius-md); }
+    th, td { padding: .85rem; border-bottom: 1px solid var(--border-subtle); text-align: left; }
+    th { color: var(--text-strong); background: var(--bg-card); font-family: var(--font-mono); font-size: .78rem; text-transform: uppercase; }
+
+    .divider { border: 0; border-top: 1px solid var(--border-subtle); margin: var(--space-5) 0; }
+    .codeblock { background: #181a1b; border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: var(--space-4); overflow: auto; font-family: var(--font-mono); color: var(--text-muted); }
+    .quote { border-left: .25rem solid var(--accent-muted); padding-left: var(--space-4); color: var(--text-muted); font-size: 1.1rem; }
+
+    @media (max-width: 880px) {
+      .sg-shell { grid-template-columns: 1fr; }
+      .sg-sidebar { position: static; height: auto; }
+      .col-3, .col-4, .col-6, .col-8 { grid-column: span 12; }
+    }
+  </style>
+</head>
+<body>
+  <div class="sg-shell">
+    <aside class="sg-sidebar">
+      <div class="sg-brand">
+        <div class="sg-mark">CH TeCH</div>
+        <div class="sg-subtitle">Style guide — Gruvbox épuré</div>
+      </div>
+      <nav class="sg-nav" aria-label="Navigation du style guide">
+        <a href="#identity">Identité</a><a href="#colors">Couleurs</a><a href="#typography">Typographie</a><a href="#spacing">Espacement</a><a href="#surfaces">Surfaces</a><a href="#buttons">Boutons</a><a href="#forms">Formulaires</a><a href="#feedback">Feedback</a><a href="#navigation">Navigation</a><a href="#content">Contenu</a><a href="#accessibility">Accessibilité</a><a href="#tokens">Tokens CSS</a>
+      </nav>
+    </aside>
+
+    <main class="sg-main">
+      <div class="sg-container">
+        <header class="sg-hero" id="identity">
+          <div class="eyebrow">Assistance informatique à domicile · Cours particuliers</div>
+          <h1>Calme. Clair. Fiable.</h1>
+          <p class="lead">Une direction visuelle inspirée de Gruvbox : chaude, sobre, lisible, technique sans intimidation. L’objectif : confiance locale, pédagogie, précision.</p>
+          <div style="display:flex; gap:.75rem; flex-wrap:wrap; margin-top:1.5rem">
+            <span class="badge accent">SAP France</span><span class="badge">Domicile</span><span class="badge">Prépa examens</span><span class="badge success">Pédagogie</span>
+          </div>
+        </header>
+
+        <section class="sg-section" id="colors">
+          <div class="sg-section-head"><h2>Couleurs</h2><p>Palette chaude, désaturée, confortable en lecture longue. Pas de néon, pas de glow.</p></div>
+          <div class="sg-grid">
+            <div class="swatch col-3" style="background:var(--bg-page)"><code>--bg-page</code><small>#1d2021</small></div>
+            <div class="swatch col-3" style="background:var(--bg-surface)"><code>--bg-surface</code><small>#282828</small></div>
+            <div class="swatch col-3" style="background:var(--bg-card)"><code>--bg-card</code><small>#32302f</small></div>
+            <div class="swatch col-3" style="background:var(--bg-elevated)"><code>--bg-elevated</code><small>#3c3836</small></div>
+            <div class="swatch col-3" style="background:var(--text-strong); color:#1d2021"><code style="color:#1d2021">--text-strong</code><small>#fbf1c7</small></div>
+            <div class="swatch col-3" style="background:var(--accent); color:#1d2021"><code style="color:#1d2021">--accent</code><small>#b8bb26</small></div>
+            <div class="swatch col-3" style="background:var(--info); color:#1d2021"><code style="color:#1d2021">--info</code><small>#83a598</small></div>
+            <div class="swatch col-3" style="background:var(--warning); color:#1d2021"><code style="color:#1d2021">--warning</code><small>#fabd2f</small></div>
+          </div>
+        </section>
+
+        <section class="sg-section" id="typography">
+          <div class="sg-section-head"><h2>Typographie</h2><p>Inter pour l’interface et le texte, Geist pour les titres, JetBrains Mono seulement comme signature technique.</p></div>
+          <div class="sg-panel">
+            <div class="eyebrow">Eyebrow / metadata</div>
+            <h1 style="font-size:3.5rem; margin:.5rem 0">Titre principal</h1>
+            <h2>Section heading</h2>
+            <h3>Sous-section heading</h3>
+            <p class="lead">Texte d’introduction plus large pour expliquer clairement le bénéfice du service.</p>
+            <p>Paragraphe standard : assistance informatique, configuration, dépannage, cours particuliers, préparation examens et concours.</p>
+            <p><a href="#">Lien standard</a> · <code style="font-family:var(--font-mono)">JetBrains Mono pour code</code></p>
+          </div>
+        </section>
+
+        <section class="sg-section" id="spacing">
+          <div class="sg-section-head"><h2>Espacement</h2><p>Une échelle simple suffit : 4, 8, 12, 16, 24, 32, 48, 64.</p></div>
+          <div class="sg-panel">
+            <div class="token"><span>space-1</span><code>0.25rem / 4px</code></div>
+            <div class="token"><span>space-2</span><code>0.5rem / 8px</code></div>
+            <div class="token"><span>space-3</span><code>0.75rem / 12px</code></div>
+            <div class="token"><span>space-4</span><code>1rem / 16px</code></div>
+            <div class="token"><span>space-5</span><code>1.5rem / 24px</code></div>
+            <div class="token"><span>space-6</span><code>2rem / 32px</code></div>
+          </div>
+        </section>
+
+        <section class="sg-section" id="surfaces">
+          <div class="sg-section-head"><h2>Surfaces</h2><p>Élévation discrète : la hiérarchie vient surtout du contraste, des bordures et de l’espace.</p></div>
+          <div class="sg-grid">
+            <div class="sample-box col-4"><span class="badge">Surface</span><h3>Default</h3><p>Bloc calme pour contenu simple.</p></div>
+            <div class="sample-box surface-elevated col-4"><span class="badge">Card</span><h3>Elevated</h3><p>Carte de service ou module.</p></div>
+            <div class="sample-box col-4" style="border-color:var(--accent-muted)"><span class="badge accent">Focus</span><h3>Important</h3><p>Accent limité, jamais décoratif.</p></div>
+          </div>
+        </section>
+
+        <section class="sg-section" id="buttons">
+          <div class="sg-section-head"><h2>Boutons</h2><p>Actions lisibles, solides, non flashy. Un seul accent principal.</p></div>
+          <div class="sg-panel" style="display:flex; gap:.75rem; flex-wrap:wrap; align-items:center">
+            <button class="btn">Prendre rendez-vous</button><button class="btn secondary">Voir les services</button><button class="btn ghost">En savoir plus</button><button class="btn danger">Erreur</button><button class="btn small">Petit</button><button class="btn large">Grand</button>
+          </div>
+        </section>
+
+        <section class="sg-section" id="forms">
+          <div class="sg-section-head"><h2>Formulaires</h2><p>Pour demande d’intervention, inscription cours, qualification client.</p></div>
+          <div class="sg-grid sg-panel">
+            <div class="field col-6"><label for="name">Nom</label><input id="name" placeholder="Marie Dupont"><div class="help">Nom du client ou de l’élève.</div></div>
+            <div class="field col-6"><label for="service">Service</label><select id="service"><option>Assistance informatique</option><option>Cours particuliers</option><option>Préparation examen</option></select></div>
+            <div class="field col-12"><label for="message">Besoin</label><textarea id="message" rows="4" placeholder="Expliquez le problème ou l’objectif..."></textarea></div>
+          </div>
+        </section>
+
+        <section class="sg-section" id="feedback">
+          <div class="sg-section-head"><h2>Feedback</h2><p>Messages sobres, utiles, orientés résolution.</p></div>
+          <div class="sg-grid">
+            <div class="alert info col-6"><strong>Information</strong><br>Votre demande sera confirmée par email.</div>
+            <div class="alert success col-6"><strong>Succès</strong><br>Le rendez-vous est enregistré.</div>
+            <div class="alert warning col-6"><strong>Attention</strong><br>Des informations manquent pour établir un devis.</div>
+            <div class="alert error col-6"><strong>Erreur</strong><br>Impossible d’envoyer le formulaire.</div>
+          </div>
+        </section>
+
+        <section class="sg-section" id="navigation">
+          <div class="sg-section-head"><h2>Navigation</h2><p>Priorité : trouver rapidement le service et passer à l’action.</p></div>
+          <div class="sg-panel">
+            <div style="display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap; align-items:center">
+              <strong style="font-family:var(--font-heading); color:var(--text-strong)">CH TeCH</strong>
+              <nav style="display:flex; gap:1rem; flex-wrap:wrap"><a href="#">Services</a><a href="#">Cours</a><a href="#">Tarifs</a><a href="#">Contact</a></nav>
+              <button class="btn small">RDV</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="sg-section" id="content">
+          <div class="sg-section-head"><h2>Contenu éditorial</h2><p>Pour guides, articles, fiches pédagogiques et documentation.</p></div>
+          <div class="sg-grid">
+            <div class="sg-panel col-6"><h3>Tableau</h3><table><thead><tr><th>Service</th><th>Usage</th></tr></thead><tbody><tr><td>Dépannage</td><td>Urgent / domicile</td></tr><tr><td>Cours</td><td>Progression guidée</td></tr></tbody></table></div>
+            <div class="sg-panel col-6"><h3>Code / commandes</h3><pre class="codeblock">sudo apt update
+CTRL + C
+/home/user/documents</pre></div>
+            <div class="sg-panel col-12"><blockquote class="quote">L’interface doit inspirer confiance avant d’impressionner. La clarté est la marque du professionnalisme.</blockquote></div>
+          </div>
+        </section>
+
+        <section class="sg-section" id="accessibility">
+          <div class="sg-section-head"><h2>Accessibilité</h2><p>Essentiel pour SAP : lisibilité, contraste, taille de clic, langage simple.</p></div>
+          <div class="sg-panel">
+            <div class="token"><span>Contraste texte</span><code>AA minimum</code></div>
+            <div class="token"><span>Taille cible</span><code>44px minimum</code></div>
+            <div class="token"><span>Focus visible</span><code>outline 2px</code></div>
+            <div class="token"><span>Animation</span><code>subtile / désactivable</code></div>
+          </div>
+        </section>
+
+        <section class="sg-section" id="tokens">
+          <div class="sg-section-head"><h2>Tokens CSS</h2><p>Point de départ propre à fusionner dans ton framework.</p></div>
+          <pre class="codeblock">:root {
+  --font-family-ui: "Inter", system-ui, sans-serif;
+  --font-family-text: var(--font-family-ui);
+  --font-family-heading: "Geist", "Inter", system-ui, sans-serif;
+  --font-family-mono: "JetBrains Mono", monospace;
+
+  --bg-page: #1d2021;
+  --bg-surface: #282828;
+  --bg-card: #32302f;
+  --text-default: #ebdbb2;
+  --text-strong: #fbf1c7;
+  --accent: #b8bb26;
+}</pre>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

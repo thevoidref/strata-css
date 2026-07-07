@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Visual Primitives Preview</title>
+
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <style>
+
+    body {
+      background:
+        radial-gradient(circle at top left, rgb(184 187 38 / 0.08), transparent 32rem),
+        var(--page-bg);
+    }
+
+    .shell {
+      width: min(100% - calc(var(--site-margin) * 2), var(--container-wide-width));
+      margin-inline: auto;
+      padding-block: var(--section-padding-lg);
+    }
+
+    .panel {
+      padding: var(--spacing-48);
+
+      border: var(--border-base);
+      border-radius: var(--radius-lg);
+
+      background: var(--surface-bg);
+    }
+
+    .panel-header {
+      margin-bottom: var(--spacing-48);
+    }
+    
+    .preview-item {
+      display: grid;
+      gap: var(--spacing-12);
+      min-inline-size: 0;
+      inline-size: min(12rem, 100%);
+    }
+
+    .preview-box {
+      display: block;
+      max-inline-size: 100%;
+      block-size: 7rem;
+      outline: 1px solid rgb(255 255 255 / 0.06);
+    }
+
+    .preview-image-box {
+      display: block;
+      inline-size: min(100%, 12rem);
+      max-inline-size: 100%;
+      block-size: auto;
+    }
+
+    .divider-preview-cluster {
+      display: flex;
+      align-items: stretch;
+      gap: var(--component-spacing-16);
+      min-block-size: 4rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<main class="shell stack" data-gap="3xl">
+
+  <header class="stack">
+    <p class="eyebrow">Visuals</p>
+
+    <h1 class="heading heading--1">
+      Visual primitives preview
+    </h1>
+
+    <p class="paragraph paragraph--lead">
+      Preview every visual primitive, variant, shape and state.
+    </p>
+  </header>
+
+  <!-- Surface -->
+
+  <section class="panel">
+    <div class="panel-header">
+      <h2 class="heading">Surface</h2>
+    </div>
+
+    <div class="cluster">
+      <div class="preview-item">
+        <div class="surface preview-box" data-surface-level="sunken"></div>
+        <span class="label">Sunken</span>
+      </div>
+
+      <div class="preview-item">
+        <div class="surface preview-box"></div>
+        <span class="label">Base</span>
+      </div>
+
+      <div class="preview-item">
+        <div class="surface preview-box" data-surface-level="raised"></div>
+        <span class="label">Raised</span>
+      </div>
+
+      <div class="preview-item">
+        <div class="surface preview-box" data-surface-level="floating"></div>
+        <span class="label">Floating</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Avatar -->
+   
+  <section class="panel">
+    <div class="panel-header">
+      <h2 class="heading">Avatar</h2>
+    </div>
+
+    <div class="grid">
+      <div class="cluster" >
+        <span class="label">Sizes</span>
+        <span class="avatar" data-avatar-size="xs">XS</span>
+        <span class="avatar" data-avatar-size="sm">SM</span>
+        <span class="avatar">MD</span>
+        <span class="avatar" data-avatar-size="lg">LG</span>
+        <span class="avatar" data-avatar-size="xl">XL</span>
+        <span class="avatar" data-avatar-size="2xl">2X</span>
+      </div>
+
+      <div class="cluster">
+        <span class="label">Image</span>
+
+        <span class="avatar" data-avatar-size="lg">
+          <img src="https://picsum.photos/96?random=1" alt="Avatar preview">
+        </span>
+
+        <span class="avatar" data-avatar-shape="square" data-avatar-size="xl">
+          <img src="https://picsum.photos/96?random=2" alt="Square avatar preview">
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chip -->
+   
+  <section class="panel">
+    <div class="panel-header">
+      <h2 class="heading">Chip</h2>
+    </div>
+
+    <div class="grid">
+      <div class="cluster">
+        <span class="label">Tones</span>
+
+        <span class="chip">Default</span>
+        <span class="chip" data-chip-tone="green">Green</span>
+        <span class="chip" data-chip-tone="yellow">Yellow</span>
+        <span class="chip" data-chip-tone="blue">Blue</span>
+        <span class="chip" data-chip-tone="orange">Orange</span>
+        <span class="chip" data-chip-tone="red">Red</span>
+        <span class="chip" data-chip-tone="purple">Purple</span>
+        <span class="chip" data-chip-tone="aqua">Aqua</span>
+      </div>
+
+      <div class="cluster">
+        <span class="label">Hover</span>
+
+        <span class="chip" data-chip-hover="true">Hover me</span>
+        <span class="chip" data-chip-tone="green" data-chip-hover="true">Playful</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+   
+  <section class="panel">
+    <div class="panel-header">
+      <h2 class="heading">Divider</h2>
+    </div>
+
+    <div class="grid">
+      <div>
+        <p class="paragraph">Default divider</p>
+        <hr class="divider">
+      </div>
+
+      <div>
+        <p class="paragraph">Subtle divider</p>
+        <hr class="divider" data-divider-tone="subtle">
+      </div>
+
+      <div>
+        <p class="paragraph">Strong divider</p>
+        <hr class="divider" data-divider-tone="strong">
+      </div>
+
+      <div class="divider-preview-cluster">
+        <span>Left content</span>
+
+        <span
+          class="divider"
+          data-divider-orientation="vertical"
+          aria-hidden="true"
+        ></span>
+
+        <span>Right content</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Icon -->
+   
+  <section class="panel">
+    <div class="panel-header">
+      <h2 class="heading">Icon</h2>
+    </div>
+
+    <div class="grid">
+      <div class="cluster">
+        <span class="label">Sizes</span>
+
+        <span class="icon" data-icon-size="xs" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.8 5.5 21l2-7.5L2 9h7z"/>
+          </svg>
+        </span>
+
+        <span class="icon" data-icon-size="sm" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.8 5.5 21l2-7.5L2 9h7z"/>
+          </svg>
+        </span>
+
+        <span class="icon" data-icon-size="md" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.8 5.5 21l2-7.5L2 9h7z"/>
+          </svg>
+        </span>
+
+        <span class="icon" data-icon-size="lg" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.8 5.5 21l2-7.5L2 9h7z"/>
+          </svg>
+        </span>
+
+        <span class="icon" data-icon-size="xl" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.8 5.5 21l2-7.5L2 9h7z"/>
+          </svg>
+        </span>
+
+        <span class="icon" data-icon-size="2xl" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.8 5.5 21l2-7.5L2 9h7z"/>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image -->
+   
+  <section class="panel">
+    <div class="panel-header">
+      <h2 class="heading">Image</h2>
+    </div>
+
+    <div class="grid">
+      <div class="cluster">
+        <span class="label">Radius</span>
+
+          <img
+            class="image preview-image-box"
+            src="https://picsum.photos/320/220?random=3"
+            alt="Default image, default radius"
+          >
+          <img
+            class="image preview-image-box"
+            data-image-radius="none"
+            src="https://picsum.photos/320/220?random=3"
+            alt="No radius image"
+          >
+          <img
+            class="image preview-image-box"
+            data-image-radius="xl"
+            src="https://picsum.photos/320/220?random=3"
+            alt="xLarge radius image"
+          >
+
+      </div>
+
+      <div class="cluster">
+        <span class="label">Fit</span>
+
+        <figure class="image preview-image-box" data-image-fit="cover">
+          <img src="https://picsum.photos/500/300?random=6" alt="Cover image">
+        </figure>
+
+        <figure class="image preview-image-box" data-image-fit="contain">
+          <img src="https://picsum.photos/500/300?random=7" alt="Contain image">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+</body>
+</html>

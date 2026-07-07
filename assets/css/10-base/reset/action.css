@@ -1,0 +1,45 @@
+/* 10-base/reset/action.css */
+
+/* -------------------------------------------------------------------------- */
+/* Button */
+/* -------------------------------------------------------------------------- */
+
+button {
+	background: 	none;
+	padding: 			0;
+	border: 			0;
+	font: 				inherit;
+	color: 				inherit;
+  cursor: 			pointer;
+
+  user-select: 	none;
+  -webkit-tap-highlight-color: 
+								transparent;
+}
+
+button:disabled {
+  cursor: 			not-allowed;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Form */
+/* -------------------------------------------------------------------------- */
+
+input,
+button,
+textarea,
+select {
+  font:       inherit;
+  color:      inherit;
+}
+
+textarea {
+  resize:     vertical;
+}
+
+input,
+textarea,
+select {
+  min-width:  0;
+}

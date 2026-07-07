@@ -1,0 +1,15 @@
+/* 20-primitives/_index.css */
+
+@import "./action/_index.css";
+
+@import "./content/_index.css";
+
+@import "./feedback/_index.css";
+
+@import "./form/_index.css";
+
+@import "./layout/_index.css";
+
+@import "./visual/_index.css";
+
+@import "./wrapper/_index.css";

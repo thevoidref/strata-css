@@ -1,0 +1,98 @@
+/* 20-primitives/action/button.css */
+
+/* Default */
+.button {
+  display:          inline-flex;
+  justify-content:  center;
+  align-items:      center;
+
+  min-height:       var(--button-height);
+  
+  padding:          var(--button-padding);
+  gap:              var(--button-gap);
+
+  font-family:      var(--button-family);
+  font-size:        var(--button-size);
+  font-weight:      var(--button-weight);
+  line-height:      var(--button-line);
+  letter-spacing:   var(--button-tracking);
+  
+  text-align:       center;
+  text-decoration:  none;
+  white-space:      nowrap;
+
+  color:            var(--button-fg);
+  background:       var(--button-bg);
+
+  border:           var(--button-border);
+  border-radius:    var(--button-radius);
+
+  box-shadow:       var(--button-shadow);
+  
+  cursor:           pointer;
+  transition:       var(--button-transition);
+}
+
+.button:not(:disabled):not([aria-disabled="true"]):not(.is-disabled):hover {
+  color:            var(--button-fg-hover);
+  background:       var(--button-bg-hover);
+
+  border:           var(--button-border-hover);
+
+  box-shadow:       var(--button-shadow-hover);
+
+  transform:        var(--button-hover-transform);
+}
+
+/* Button Outline */
+.button--outline {
+  --button-fg:               var(--button-outline-fg);
+  --button-fg-hover:         var(--button-outline-fg-hover);
+
+  --button-bg:               var(--button-outline-bg);
+  --button-bg-hover:         var(--button-outline-bg-hover);
+
+  --button-border:           var(--button-outline-border);
+  --button-border-hover:     var(--button-outline-border-hover);
+
+  --button-shadow:           var(--button-outline-shadow);
+  --button-shadow-hover:     var(--button-outline-shadow-hover);
+}
+
+/* Button Ghost */
+.button--ghost {
+  --button-fg:               var(--button-ghost-fg);
+  --button-fg-hover:         var(--button-ghost-fg-hover);
+
+  --button-bg:               var(--button-ghost-bg);
+  --button-bg-hover:         var(--button-ghost-bg-hover);
+
+  --button-border:           var(--button-ghost-border);
+  --button-border-hover:     var(--button-ghost-border-hover);
+
+  --button-shadow:           var(--button-ghost-shadow);
+  --button-shadow-hover:     var(--button-ghost-shadow-hover);
+}
+
+/* Button Small */
+.button--small {
+  --button-height:           var(--button-height-sm);
+  --button-size:             var(--button-size-sm);
+}
+
+/* Button Large */
+.button--large {
+  --button-height:           var(--button-height-lg);
+  --button-size:             var(--button-size-lg);
+}
+
+/* Button Max */
+.button--max {
+  width:                    100%;
+  height:                   100%;
+
+  --button-size:            var(--button-max-size);
+  --button-weight:          var(--button-max-weight);
+  --button-line:            var(--button-max-line);
+  text-transform:           uppercase;
+}

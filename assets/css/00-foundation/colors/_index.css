@@ -1,0 +1,8 @@
+/* 00-foundation/colors/_index.css */
+
+@import "./00-palette.css";
+
+@import "./10-theme-dark.css";
+@import "./11-theme-light.css";
+
+@import "./20-primitives.css";

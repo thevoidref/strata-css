@@ -1,0 +1,14 @@
+/* 20-primitives/layout/panel.css */
+
+.panel {
+  padding: var(--panel-padding);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Spacing */
+/* -------------------------------------------------------------------------- */
+
+.panel[data-panel-padding="none"]   { --panel-padding: 0; }
+.panel[data-panel-padding="sm"]     { --panel-padding: var(--panel-padding-sm); }
+.panel[data-panel-padding="lg"]     { --panel-padding: var(--panel-padding-lg); }

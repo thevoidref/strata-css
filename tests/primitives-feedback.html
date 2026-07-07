@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Feedback Primitives Preview</title>
+
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <style>
+
+    body {
+      background:
+        radial-gradient(circle at top left, rgb(184 187 38 / 0.08), transparent 32rem),
+        var(--page-bg);
+    }
+
+    .shell {
+      width: min(100% - calc(var(--site-margin) * 2), var(--container-width-wide));
+      margin-inline: auto;
+      padding-block: var(--section-padding-lg);
+    }
+
+    .stack {
+      display: grid;
+      gap: var(--section-padding-md);
+    }
+
+    .cluster {
+      border-bottom: var(--divider-border);
+      padding-bottom: var(--spacing-24);
+    }
+
+    .cluset:last-child {
+      border-bottom: 0;
+    }
+
+    .panel {
+      padding: var(--spacing-48);
+
+      border: var(--border-base);
+      border-radius: var(--radius-lg);
+
+      background: var(--surface-bg);
+    }
+
+    .panel-header {
+      margin-bottom: var(--spacing-48);
+    }
+
+    .preview-item {
+      display: grid;
+      gap: var(--spacing-12);
+    }
+
+    .preview-label {
+      color: var(--text-muted);
+      font-size: var(--text-size-sm);
+    }
+
+    .preview-box {
+      inline-size: 12rem;
+      block-size: 7rem;
+      outline: 1px solid rgb(255 255 255 / 0.06);
+    }
+
+    .preview-image-box {
+      inline-size: 12rem;
+      block-size: 8rem;
+    }
+
+    .divider-preview-cluster {
+      display: flex;
+      align-items: stretch;
+      gap: var(--component-spacing-16);
+      min-block-size: 4rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<main class="shell stack">
+
+  <header class="stack">
+    <p class="eyebrow">Feedbacks</p>
+
+    <h1 class="heading heading--1">
+      Feedback primitives preview
+    </h1>
+
+    <p class="paragraph paragraph--lead">
+      Preview every feedback primitive, variant, shape and state.
+    </p>
+  </header>
+  
+  <!-- ----------------------------------------------------------------------- -->
+  <!-- Skeleton -->
+  <!-- ----------------------------------------------------------------------- -->
+
+  <section class="panel">
+    <div class="panel-header">
+      <h2 class="heading">Skeleton</h2>
+    </div>
+
+    <div class="grid">
+      <div class="cluster">
+        <span class="label">Block</span>
+
+        <span
+          class="skeleton"
+          aria-hidden="true"
+          style="--skeleton-width: 12rem; --skeleton-height: 7rem;"
+        ></span>
+
+        <span
+          class="skeleton"
+          data-skeleton-animated="true"
+          aria-hidden="true"
+          style="--skeleton-width: 18rem; --skeleton-height: 7rem;"
+        ></span>
+      </div>
+
+      <div class="cluster">
+        <span class="label">Circle</span>
+
+        <span
+          class="skeleton"
+          data-skeleton-shape="circle"
+          aria-hidden="true"
+          style="--skeleton-diameter: 3rem;"
+        ></span>
+
+        <span
+          class="skeleton"
+          data-skeleton-shape="circle"
+          aria-hidden="true"
+          style="--skeleton-diameter: 4rem;"
+        ></span>
+
+        <span
+          class="skeleton"
+          data-skeleton-shape="circle"
+          aria-hidden="true"
+          style="--skeleton-diameter: 5rem;"
+        ></span>
+      </div>
+
+      <div class="stack">
+        <span class="label">Text</span>
+
+        <span
+          class="skeleton"
+          data-skeleton-shape="text"
+          data-skeleton-animated="true"
+          aria-hidden="true"
+        ></span>
+
+        <span
+          class="skeleton"
+          data-skeleton-shape="text"
+          data-skeleton-animated="true"
+          aria-hidden="true"
+          style="--skeleton-text-width: 80%;"
+        ></span>
+
+        <span
+          class="skeleton"
+          data-skeleton-shape="text"
+          data-skeleton-animated="true"
+          aria-hidden="true"
+          style="--skeleton-text-width: 60%;"
+        ></span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ----------------------------------------------------------------------- -->
+  <!-- Spinner -->
+  <!-- ----------------------------------------------------------------------- -->
+
+  <section class="panel">
+    <div class="panel-header">
+      <h2 class="heading">Spinner</h2>
+    </div>
+
+    <div class="grid">
+      <div class="cluster">
+        <span class="label">Default</span>
+
+        <span
+          class="spinner"
+          aria-hidden="true"
+        ></span>
+      </div>
+
+      <div class="cluster">
+        <span class="label">Sizes</span>
+
+        <span
+          class="spinner"
+          data-spinner-size="xs"
+          aria-hidden="true"
+        ></span>
+
+        <span
+          class="spinner"
+          data-spinner-size="sm"
+          aria-hidden="true"
+        ></span>
+
+        <span
+          class="spinner"
+          aria-hidden="true"
+        ></span>
+
+        <span
+          class="spinner"
+          data-spinner-size="lg"
+          aria-hidden="true"
+        ></span>
+
+        <span
+          class="spinner"
+          data-spinner-size="xl"
+          aria-hidden="true"
+        ></span>
+      </div>
+
+      <div class="cluster"
+        aria-busy="true"
+      >
+        <span class="label">With text</span>
+
+        <span
+          class="spinner"
+          data-spinner-size="sm"
+          aria-hidden="true"
+        ></span>
+
+        <span class="paragraph">
+          Loading projects…
+        </span>
+      </div>
+
+      <div class="cluster">
+        <span class="label">Inherited color</span>
+
+        <span
+          class="paragraph"
+          style="color: var(--text-muted);"
+        >
+          <span
+            class="spinner"
+            data-spinner-size="sm"
+            aria-hidden="true"
+          ></span>
+
+          Muted text
+        </span>
+
+        <span
+          class="paragraph"
+          style="color: var(--color-green);"
+        >
+          <span
+            class="spinner"
+            data-spinner-size="sm"
+            aria-hidden="true"
+          ></span>
+
+          Accent text
+        </span>
+      </div>
+
+      <div class="cluster"
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span class="label">Loading region</span>
+        <span
+          class="spinner"
+          data-spinner-size="lg"
+          aria-hidden="true"
+        ></span>
+
+        <p class="paragraph">
+          Fetching dashboard data…
+        </p>
+      </div>
+
+      <div class="cluster"
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span class="label">Variants</span>
+        <span
+          class="spinner spinner__modern-flat"
+          data-spinner-size="lg"
+          aria-hidden="true"
+        ></span>
+        <span
+          class="spinner spinner__modern-round"
+          data-spinner-size="lg"
+          aria-hidden="true"
+        ></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ----------------------------------------------------------------------- -->
+  <!-- Progress -->
+  <!-- ----------------------------------------------------------------------- -->
+
+  <section class="panel">
+    <div class="panel-header">
+      <h2 class="heading">Progress</h2>
+    </div>
+
+    <div class="grid">
+      <div class="preview-item">
+        <span class="preview-label">Default</span>
+
+        <progress
+          class="progress"
+          value="45"
+          max="100"
+        >
+          45%
+        </progress>
+      </div>
+
+      <div class="grid">
+        <span class="preview-label">Sizes</span>
+
+        <div class="preview-item">
+          <span class="label">XS</span>
+
+          <progress
+            class="progress"
+            data-progress-size="xs"
+            value="65"
+            max="100"
+          >
+            65%
+          </progress>
+        </div>
+
+        <div class="preview-item">
+          <span class="label">SM</span>
+
+          <progress
+            class="progress"
+            data-progress-size="sm"
+            value="65"
+            max="100"
+          >
+            65%
+          </progress>
+        </div>
+
+        <div class="preview-item">
+          <span class="label">Default</span>
+
+          <progress
+            class="progress"
+            value="65"
+            max="100"
+          >
+            65%
+          </progress>
+        </div>
+
+        <div class="preview-item">
+          <span class="label">LG</span>
+
+          <progress
+            class="progress"
+            data-progress-size="lg"
+            value="65"
+            max="100"
+          >
+            65%
+          </progress>
+        </div>
+      </div>
+
+      <div class="grid">
+        <span class="preview-label">Values</span>
+
+        <div class="preview-item">
+          <span class="label">0%</span>
+
+          <progress
+            class="progress"
+            value="0"
+            max="100"
+          >
+            0%
+          </progress>
+        </div>
+
+        <div class="preview-item">
+          <span class="label">25%</span>
+
+          <progress
+            class="progress"
+            value="25"
+            max="100"
+          >
+            25%
+          </progress>
+        </div>
+
+        <div class="preview-item">
+          <span class="label">50%</span>
+
+          <progress
+            class="progress"
+            value="50"
+            max="100"
+          >
+            50%
+          </progress>
+        </div>
+
+        <div class="preview-item">
+          <span class="label">75%</span>
+
+          <progress
+            class="progress"
+            value="75"
+            max="100"
+          >
+            75%
+          </progress>
+        </div>
+
+        <div class="preview-item">
+          <span class="label">100%</span>
+
+          <progress
+            class="progress"
+            value="100"
+            max="100"
+          >
+            100%
+          </progress>
+        </div>
+      </div>
+
+      <div class="preview-item">
+        <span class="preview-label">Custom width</span>
+
+        <progress
+          class="progress"
+          value="60"
+          max="100"
+          style="--progress-width: 20rem;"
+        >
+          60%
+        </progress>
+      </div>
+
+      <div
+        class="preview-item"
+        style="color: var(--color-green);"
+      >
+        <span class="preview-label">Inherited color</span>
+
+        <progress
+          class="progress"
+          value="70"
+          max="100"
+        >
+          70%
+        </progress>
+      </div>
+
+      <div class="preview-item">
+        <span class="preview-label">Indeterminate</span>
+
+        <progress class="progress">
+          Loading…
+        </progress>
+      </div>
+
+      <div
+        class="grid"
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <div class="cluster">
+          <span class="label">Uploading files</span>
+
+          <span class="paragraph">
+            68%
+          </span>
+        </div>
+
+        <progress
+          class="progress"
+          value="68"
+          max="100"
+          aria-label="Uploading files"
+        >
+          68%
+        </progress>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+</body>
+</html>

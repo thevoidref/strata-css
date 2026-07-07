@@ -1,0 +1,42 @@
+/* 20-primitives/content/paragraph.css */
+
+.paragraph {
+  margin:                       0;
+
+  max-inline-size:              var(--paragraph-width);
+
+  color:                        var(--paragraph-fg);
+
+  font-family:                  var(--paragraph-family);
+  font-size:                    var(--paragraph-size);
+  font-weight:                  var(--paragraph-weight);
+  line-height:                  var(--paragraph-line);
+  letter-spacing:               var(--paragraph-tracking);
+  text-wrap:                    var(--paragraph-wrap);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Variants */
+/* -------------------------------------------------------------------------- */
+
+.paragraph--lead {
+  --paragraph-fg:               var(--lead-fg);
+
+  --paragraph-size:             var(--lead-size);
+  --paragraph-line:             var(--lead-line);
+  --paragraph-width:            var(--lead-width);
+}
+
+.paragraph--muted {
+  --paragraph-fg:               var(--muted-fg);
+}
+
+.paragraph--subtitle {
+  --paragraph-width:            var(--subtitle-width);
+  --paragraph-fg:               var(--subtitle-fg);
+}
+
+.paragraph--technical {
+  --paragraph-width:            var(--technical-width);
+}

@@ -1,0 +1,69 @@
+/* 20-primitives/layout/container.css */
+
+.container {
+  --container-width:         var(--container-default-width);
+
+  container-type:           inline-size;
+  container-name:           responsive;
+
+  inline-size:              min(
+                              calc(100% - (var(--site-margin) * 2)),
+                              var(--container-width)
+                            );
+
+  margin-inline:            auto;
+
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Width */
+/* -------------------------------------------------------------------------- */
+
+.container[data-container-width="narrow"]     { --container-width:  var(--container-narrow-width); }
+.container[data-container-width="expanded"]   { --container-width:  var(--container-expanded-width); }
+.container[data-container-width="wide"]       { --container-width:  var(--container-wide-width); }
+.container[data-container-width="full"]       { inline-size:        calc(100% - (var(--site-margin) * 2)); }
+
+.container[data-container-width="bleed"] {
+  inline-size:              100%;
+  overflow-x:               clip;
+}
+
+/*
+CONTAINER ROLES
+
+narrow
+  Focused interactions and dense reading.
+  Examples:
+  - dialogs
+  - onboarding
+  - legal acknowledgements
+
+standard
+  Primary reading container.
+  Examples:
+  - articles
+  - testimonials
+  - forms
+
+expanded
+  Comparison and structured content.
+  Examples:
+  - pricing
+  - dashboards
+  - product grids
+
+wide
+  Productivity and data-heavy interfaces.
+  Examples:
+  - tables
+  - boards
+  - charts
+
+full
+  Edge-to-edge layouts while preserving grid alignment.
+
+bleed
+  Full viewport experiences with no horizontal padding.
+*/

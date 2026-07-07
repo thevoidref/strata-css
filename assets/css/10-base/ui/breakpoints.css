@@ -1,0 +1,43 @@
+/* 10-base/ui/breakpoints.css */
+
+/* -------------------------------------------------------------------------- */
+/* Breakpoints */
+/* -------------------------------------------------------------------------- */
+
+@media (min-width: 48rem) { /* 768px - Tablet */
+  :root {
+    --container-scale:    1.1;
+
+    --site-margin:        var(--spacing-32);
+    --gutter:             var(--spacing-24);
+    --gap:                var(--spacing-16);
+  }
+}
+
+
+@media (min-width: 90rem) { /* 1440px - Large Laptop */
+  :root {
+    --layout-scale:       1.1;
+    --container-scale:    1.1;
+
+    --site-margin:        calc(var(--spacing-48) * var(--layout-scale));
+    --gutter:             calc(var(--spacing-32) * var(--layout-scale));
+    --gap:                var(--gap-lg);
+  }
+}
+
+
+@media (min-width: 120rem) { /* 1920px - Large Desktop */
+  :root {
+    --layout-scale:       1.2;
+    --container-scale:    1.2;
+  }
+}
+
+
+@media (min-width: 160rem) { /* 2560px - xLarge Desktop */
+  :root {
+    --layout-scale:       1.35;
+    --container-scale:    1.35;
+  }
+}

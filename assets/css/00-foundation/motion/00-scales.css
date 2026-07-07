@@ -1,0 +1,107 @@
+/* 00-foundation/motion/00-scales.css */
+
+:root {
+
+  /* -------------------------------------------------------------------------- */
+  /* Durations */
+  /* -------------------------------------------------------------------------- */
+
+  --duration-instant:              0ms;
+  --duration-fast:                 120ms;
+  --duration-normal:               180ms;
+  --duration-slow:                 280ms;
+  --duration-slower:               400ms;
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Easings */
+  /* -------------------------------------------------------------------------- */
+
+  --ease-linear:                   linear;
+
+  --ease-standard:                 cubic-bezier(0.2, 0, 0, 1);
+  --ease-in:                       cubic-bezier(0.4, 0, 1, 1);
+  --ease-out:                      cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out:                   cubic-bezier(0.4, 0, 0.2, 1);
+
+  --ease-emphasized:               cubic-bezier(0.2, 0, 0, 1);
+  --ease-emphasized-in:            cubic-bezier(0.05, 0.7, 0.1, 1);
+  --ease-emphasized-out:           cubic-bezier(0.3, 0, 0.8, 0.15);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Translation */
+  /* -------------------------------------------------------------------------- */
+
+  --motion-translate-none:         0;
+  --motion-translate-xs:           2px;
+  --motion-translate-sm:           4px;
+  --motion-translate-md:           8px;
+  --motion-translate-lg:           16px;
+  --motion-translate-xl:           24px;
+  --motion-translate-2xl:          32px;
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Scale */
+  /* -------------------------------------------------------------------------- */
+
+  --motion-scale-none:             1;
+  --motion-scale-pressed:          0.98;
+  --motion-scale-subtle:           1.02;
+  --motion-scale-pop:              1.04;
+  --motion-scale-emphasis:         1.08;
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Rotation */
+  /* -------------------------------------------------------------------------- */
+
+  --motion-rotate-none:            0deg;
+  --motion-rotate-xs:              2deg;
+  --motion-rotate-sm:              4deg;
+  --motion-rotate-md:              8deg;
+  --motion-rotate-lg:              12deg;
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Blur */
+  /* -------------------------------------------------------------------------- */
+
+  --motion-blur-none:              0;
+  --motion-blur-sm:                4px;
+  --motion-blur-md:                8px;
+  --motion-blur-lg:                16px;
+
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast:               var(--duration-instant);
+    --duration-normal:             var(--duration-instant);
+    --duration-slow:               var(--duration-instant);
+    --duration-slower:             var(--duration-instant);
+
+    --motion-translate-xs:         0;
+    --motion-translate-sm:         0;
+    --motion-translate-md:         0;
+    --motion-translate-lg:         0;
+    --motion-translate-xl:         0;
+    --motion-translate-2xl:        0;
+
+    --motion-scale-pressed:        1;
+    --motion-scale-subtle:         1;
+    --motion-scale-pop:            1;
+    --motion-scale-emphasis:       1;
+
+    --motion-rotate-xs:            0deg;
+    --motion-rotate-sm:            0deg;
+    --motion-rotate-md:            0deg;
+    --motion-rotate-lg:            0deg;
+
+    --motion-blur-sm:              0;
+    --motion-blur-md:              0;
+    --motion-blur-lg:              0;
+  }
+}

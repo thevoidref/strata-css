@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Forms Primitives Preview — Gruvbox Business UI</title>
+
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background:
+        radial-gradient(circle at top left, rgb(184 187 38 / 0.08), transparent 32rem),
+        var(--page-bg);
+    }
+
+    .shell {
+      width: min(100% - calc(var(--site-margin) * 2), var(--container-wide-width));
+      margin-inline: auto;
+      padding-block: var(--section-padding-lg);
+    }
+
+    .hero {
+      padding-bottom: var(--section-padding-md);
+      margin-bottom: var(--section-padding-md);
+      border-bottom: var(--divider-border);
+    }
+
+    .hero-stack {
+      display: grid;
+      gap: var(--component-spacing-24);
+      max-width: var(--measure-72);
+    }
+
+    .panel {
+      grid-column: span 12;
+      padding: var(--spacing-48);
+      background: var(--surface-bg);
+      border: var(--border-base);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--panel-shadow, none);
+    }
+
+    @media (min-width: 52rem) {
+      .panel--half {
+        grid-column: span 6;
+      }
+    }
+
+    .panel-header {
+      display: grid;
+      gap: var(--component-spacing-8);
+      margin-bottom: var(--component-spacing-24);
+      padding-bottom: var(--component-spacing-16);
+      border-bottom: var(--divider-border);
+    }
+
+    .form-row {
+      display: grid;
+      gap: var(--component-spacing-12);
+    }
+
+    .inline-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: var(--component-spacing-16);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="shell">
+    <header class="hero">
+      <div class="hero-stack">
+        <p class="eyebrow">Forms</p>
+        <h1 class="heading heading--1">Calm, dense, reliable form primitives.</h1>
+        <p class="paragraph paragraph--lead">
+          Preview field rhythm, text controls, native select behavior, checkboxes, radios,
+          switches, validation, disabled states, and inline composition.
+        </p>
+      </div>
+    </header>
+
+    <section class="grid">
+
+      <article class="panel">
+        <div class="panel-header">
+          <p class="eyebrow">Text controls</p>
+          <h2 class="heading heading--2">Input, textarea, select</h2>
+          <p class="caption">Shared control architecture with specialized renderer facts only where needed.</p>
+        </div>
+
+        <form class="stack">
+          <div class="field">
+            <div class="field__header">
+              <label class="label" for="name">Name <span class="field__required">*</span></label>
+              <p class="caption">Use a clear business-friendly label.</p>
+            </div>
+            <div class="field__body">
+              <input class="input" id="name" name="name" placeholder="Andre Huot" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="field__header">
+              <label class="label" for="email">Email</label>
+              <p class="caption">Use a clear business-friendly email.</p>
+            </div>
+            <div class="field__body">
+              <input class="input" id="email" name="email" type="email" placeholder="andre@example.com">
+            </div>
+            <div class="field__footer">
+              <p class="caption">Used for project updates and delivery notes.</p>
+              <p class="caption">An other footer caption.</p>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="field__header">
+              <label class="label" for="message">Project brief</label>
+            </div>
+            <div class="field__body">
+              <textarea class="input textarea" id="message" name="message" placeholder="Describe the business problem..."></textarea>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="field__header">
+              <label class="label" for="budget">Budget range</label>
+            </div>
+            <div class="field__body">
+              <select class="select" id="budget" name="budget" required>
+                <option value="">Select a range</option>
+                <option value="small">€500–€1,500</option>
+                <option value="medium">€1,500–€5,000</option>
+                <option value="large">€5,000+</option>
+              </select>
+            </div>
+          </div>
+        </form>
+      </article>
+
+      <article class="panel panel--half">
+        <div class="panel-header">
+          <p class="eyebrow">Validation</p>
+          <h2 class="heading heading--3">Invalid and error rhythm</h2>
+        </div>
+
+        <div class="stack">
+          <div class="field">
+            <div class="field__header">
+              <label class="label" for="invalid-email">Email</label>
+            </div>
+            <div class="field__body">
+              <input class="input" id="invalid-email" type="email" value="wrong-email" required>
+            </div>
+            <div class="field__footer">
+              <p class="caption field__error">Enter a valid email address.</p>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="field__header">
+              <label class="label" for="disabled-input">Disabled input</label>
+            </div>
+            <div class="field__body">
+              <input class="input" id="disabled-input" value="Unavailable" disabled>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="panel panel--half">
+        <div class="panel-header">
+          <p class="eyebrow">Inline field</p>
+          <h2 class="heading heading--3">Label/control alignment</h2>
+        </div>
+
+        <div class="field field--inline">
+          <div class="field__header">
+            <label class="label" for="company">Company</label>
+          </div>
+          <div class="field__body">
+            <input class="input" id="company" placeholder="CH Tech">
+          </div>
+        </div>
+      </article>
+
+      <article class="panel panel--half">
+        <div class="panel-header">
+          <p class="eyebrow">Choices</p>
+          <h2 class="heading heading--3">Checkboxes</h2>
+        </div>
+
+        <div class="stack">
+          <label class="checkbox">
+            <input class="checkbox__input" type="checkbox">
+            <span class="checkbox__label">Send monthly summary</span>
+          </label>
+
+          <label class="checkbox">
+            <input class="checkbox__input" type="checkbox" checked>
+            <span class="checkbox__label">Enable automation alerts</span>
+          </label>
+
+          <label class="checkbox" aria-disabled="true">
+            <input class="checkbox__input" type="checkbox" disabled>
+            <span class="checkbox__label">Disabled option</span>
+          </label>
+        </div>
+      </article>
+
+      <article class="panel panel--half">
+        <div class="panel-header">
+          <p class="eyebrow">Choices</p>
+          <h2 class="heading heading--3">Radios</h2>
+        </div>
+
+        <div class="stack">
+          <label class="radio">
+            <input class="radio__input" type="radio" name="priority" checked>
+            <span class="radio__label">Revenue-critical</span>
+          </label>
+
+          <label class="radio">
+            <input class="radio__input" type="radio" name="priority">
+            <span class="radio__label">Operational improvement</span>
+          </label>
+
+          <label class="radio" aria-disabled="true">
+            <input class="radio__input" type="radio" name="priority" disabled>
+            <span class="radio__label">Deferred</span>
+          </label>
+        </div>
+      </article>
+
+      <article class="panel">
+        <div class="panel-header">
+          <p class="eyebrow">Toggles</p>
+          <h2 class="heading heading--3">Switches</h2>
+        </div>
+
+        <div class="stack">
+          <label class="switch">
+            <input class="switch__input" type="checkbox">
+            <span class="switch__label">Enable client notifications</span>
+          </label>
+
+          <label class="switch">
+            <input class="switch__input" type="checkbox" checked>
+            <span class="switch__label">Use restrained business mode</span>
+          </label>
+
+          <label class="switch" aria-disabled="true">
+            <input class="switch__input" type="checkbox" disabled>
+            <span class="switch__label">Disabled switch</span>
+          </label>
+        </div>
+      </article>
+
+    </section>
+  </main>
+</body>
+</html>

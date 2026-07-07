@@ -1,0 +1,32 @@
+/* 00-foundation/shadow/00-scales.css */
+
+:root {
+
+  /* -------------------------------------------------------------------------- */
+  /* Shadow Geometry */
+  /* -------------------------------------------------------------------------- */
+
+  --shadow-geometry-sm:         0 1px 3px;
+  --shadow-geometry-md:         0 4px 12px;
+  --shadow-geometry-lg:         0 8px 24px;
+  --shadow-geometry-xl:         0 12px 36px;
+  --shadow-geometry-2xl:        0 16px 48px;
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Inner Shadow Geometry */
+  /* -------------------------------------------------------------------------- */
+
+  --shadow-geometry-inner-sm:   inset 0 1px 3px;
+  --shadow-geometry-inner-md:   inset 0 2px 6px;
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Glow Geometry */
+  /* -------------------------------------------------------------------------- */
+
+  --shadow-geometry-glow-sm:    0 0 0 4px;
+  --shadow-geometry-glow-md:    0 0 16px;
+  --shadow-geometry-glow-lg:    0 0 24px;
+
+}

@@ -1,0 +1,12 @@
+/* 99-devtools/debug.css */
+
+.debug * {
+  outline: var(--outline-debug);
+}
+
+.debug [data-columns],
+.debug [data-stack],
+.debug [data-cluster],
+.debug [data-split] {
+  outline: 4px solid rgb(0 128 255 / 0.35);
+}

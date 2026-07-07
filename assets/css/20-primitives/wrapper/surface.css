@@ -1,0 +1,61 @@
+/* 20-primitives/visual/surface.css */
+
+.surface {
+  --surface-radius:     var(--radius-main);
+
+  background:           var(--surface-bg);
+
+  border:               var(--surface-border);
+  border-radius:        var(--surface-radius);
+  
+  box-shadow:           var(--surface-shadow);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Level */
+/* -------------------------------------------------------------------------- */
+
+.surface[data-surface-level="sunken"] {
+  --surface-bg:         var(--surface-sunken-bg);
+  --surface-border:     var(--surface-sunken-border);
+  --surface-shadow:     var(--surface-sunken-shadow);
+}
+
+.surface[data-surface-level="raised"] {
+  --surface-bg:         var(--surface-raised-bg);
+  --surface-border:     var(--surface-raised-border);
+  --surface-shadow:     var(--surface-raised-shadow);
+}
+
+.surface[data-surface-level="floating"] {
+  --surface-bg:         var(--surface-floating-bg);
+  --surface-border:     var(--surface-floating-border);
+  --surface-shadow:     var(--surface-floating-shadow);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Border */
+/* -------------------------------------------------------------------------- */
+
+.surface[data-surface-border="none"] {
+  --surface-border:     var(--surface-border-none);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Radius */
+/* -------------------------------------------------------------------------- */
+
+.surface[data-surface-radius="none"] {
+  --surface-radius:     var(--radius-none);
+}
+
+.surface[data-surface-radius="sm"] {
+  --surface-radius:     var(--radius-sm);
+}
+
+.surface[data-surface-radius="lg"] {
+  --surface-radius:     var(--radius-lg);
+}

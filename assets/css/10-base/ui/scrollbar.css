@@ -1,0 +1,30 @@
+/* 10-base/ui/scrollbar.css */
+
+::-webkit-scrollbar {
+  width:                  0.4rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color:       var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius:          var(--button-radius);
+  background-color:       var(--scrollbar-thumb);
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background-color:       var(--scrollbar-thumb-hover);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color:       var(--scrollbar-thumb-active);
+}
+
+
+/* Standard (Firefox & Modern Chrome/Edge) */
+* {
+  scrollbar-width:        auto;
+  scrollbar-color:        var(--scrollbar-thumb) var(--scrollbar-track);
+}

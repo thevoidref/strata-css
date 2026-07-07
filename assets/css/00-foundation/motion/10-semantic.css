@@ -1,0 +1,76 @@
+/* 00-foundation/motion/10-semantic.css */
+
+:root {
+
+  /* -------------------------------------------------------------------------- */
+  /* Transition Timings */
+  /* -------------------------------------------------------------------------- */
+
+  --transition-fast:            var(--duration-fast) var(--ease-standard);
+  --transition-normal:          var(--duration-normal) var(--ease-standard);
+  --transition-slow:            var(--duration-slow) var(--ease-standard);
+
+  --transition-enter:           var(--duration-normal) var(--ease-out);
+  --transition-enter-fast:      var(--duration-fast) var(--ease-out);
+
+  --transition-exit:            var(--duration-fast) var(--ease-in);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Transition Recipes */
+  /* -------------------------------------------------------------------------- */
+
+  --transition-color:
+    color                 var(--transition-fast),
+    text-decoration-color var(--transition-fast),
+    border-color          var(--transition-fast);
+  
+  --transition-motion:
+    box-shadow            var(--transition-normal),
+    opacity               var(--transition-normal),
+    transform             var(--transition-normal);
+
+  --transition-surface:
+    background-color      var(--transition-fast),
+    border-color          var(--transition-fast);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Interaction Motion */
+  /* -------------------------------------------------------------------------- */
+
+  --motion-hover-y:                calc(var(--motion-translate-xs) * -1);
+  --motion-press-y:                var(--motion-translate-xs);
+  --motion-press-scale:            var(--motion-scale-pressed);
+
+  --motion-focus-scale:            var(--motion-scale-none);
+
+  --motion-card-hover-y:           calc(var(--motion-translate-sm) * -1);
+  --motion-card-hover-scale:       var(--motion-scale-subtle);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Overlay / Disclosure Motion */
+  /* -------------------------------------------------------------------------- */
+
+  --motion-popover-enter-y:        var(--motion-translate-sm);
+  --motion-tooltip-enter-y:        var(--motion-translate-xs);
+  --motion-modal-enter-y:          var(--motion-translate-lg);
+  --motion-drawer-enter-x:         var(--motion-translate-2xl);
+
+  --motion-disclosure-enter-y:     var(--motion-translate-sm);
+  --motion-reveal-enter-y:         var(--motion-translate-md);
+
+  
+  /* -------------------------------------------------------------------------- */
+  /* Common Recipes */
+  /* -------------------------------------------------------------------------- */
+
+  --transition-interactive:
+    var(--transition-color),
+    var(--transition-motion);
+
+  --transition-disclosure:
+    var(--transition-motion);
+
+}

@@ -1,0 +1,11 @@
+/* 20-primitives/content/_index.css */
+
+@import "./blockquote.css";
+@import "./caption.css";
+@import "./code.css";
+@import "./eyebrow.css";
+@import "./heading.css";
+@import "./label.css";
+@import "./paragraph.css";
+@import "./prose.css";
+@import "./table.css";

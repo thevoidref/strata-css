@@ -1,0 +1,15 @@
+/* 20-primitives/content/caption.css */
+
+.caption {
+  margin:                       0;
+
+  color:                        var(--caption-fg);
+
+  font-family:                  var(--caption-family);
+  font-size:                    var(--caption-size);
+  font-weight:                  var(--caption-weight);
+  line-height:                  var(--caption-line);
+  letter-spacing:               var(--caption-tracking);
+  text-wrap:                    var(--caption-wrap);
+}
+

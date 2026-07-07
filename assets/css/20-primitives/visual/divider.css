@@ -1,0 +1,28 @@
+/* 20-primitives/visual/divider.css */
+
+.divider {
+  --divider-border:     var(--divider-default-border);
+
+  margin:               0;
+
+  border:               0;
+  border-block-start:   var(--divider-border);
+}
+
+.divider[data-divider-orientation="vertical"] {
+  inline-size:          0;
+  block-size:           auto;
+
+  align-self:           stretch;
+
+  border-block-start:   0;
+  border-inline-start:  var(--divider-border);
+}
+
+.divider[data-divider-tone="subtle"] {
+  --divider-border:     var(--divider-subtle-border);
+}
+
+.divider[data-divider-tone="strong"] {
+  --divider-border:     var(--divider-strong-border);
+}

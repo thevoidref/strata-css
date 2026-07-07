@@ -1,0 +1,148 @@
+/* 00-foundation/spacing/20-primitives.css */
+
+:root {
+
+  /* -------------------------------------------------------------------------- */
+  /* Global */
+  /* -------------------------------------------------------------------------- */
+
+  --site-margin:                var(--spacing-24);
+  --gutter:                     var(--spacing-16);
+
+  /* -------------------------------------------------------------------------- */
+  /* Wrapper */
+  /* -------------------------------------------------------------------------- */
+
+  /* Section */
+
+  --section-padding-sm:         var(--vertical-padding-sm);
+  --section-padding-md:         var(--vertical-padding-md);
+  --section-padding-lg:         var(--vertical-padding-lg);
+  --section-padding-xl:         var(--vertical-padding-xl);
+
+  --section-padding:            var(--section-padding-md);
+
+  /* Panel */
+
+  --panel-padding-sm:           var(--gap-lg);    /* 16 */
+  --panel-padding-md:           var(--gap-2xl);   /* 32 */
+  --panel-padding-lg:           var(--gap-3xl);   /* 48 */
+
+  --panel-padding:              var(--panel-padding-md);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Button */
+  /* -------------------------------------------------------------------------- */
+
+  /* Button Default */
+
+  --button-padding:              var(--control-padding-md);
+  --button-padding-sm:           var(--control-padding-sm);
+  --button-padding-lg:           var(--control-padding-lg);
+  --button-gap:                  var(--component-spacing-8);
+
+  /* Icon Button */
+
+  --icon-buton-padding:          var(--component-spacing-8);
+  --icon-buton-gap:              var(--spacing-0);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Content */
+  /* -------------------------------------------------------------------------- */
+
+  --heading-margin-top:          0;
+  --heading-margin-bottom:       0;
+
+  --paragraph-margin-top:        0;
+  --paragraph-margin-bottom:     0;
+
+  --list-gap:                    var(--component-spacing-8);
+  --blockquote-padding:          var(--component-spacing-24);
+
+  /* Prose */
+
+  --prose-flow:                  var(--spacing-32);
+  --prose-h1-margin-top:         var(--section-padding-md);
+  --prose-h2-margin-top:         var(--section-padding-sm);
+  --prose-h3-margin-top:         var(--spacing-64);
+  --prose-list-indent:           var(--spacing-32);
+  --prose-list-gap:              var(--component-spacing-8);
+  
+  /* Table */
+
+  --table-cell-padding:          var(--component-spacing-12) var(--component-spacing-16);
+  --table-caption-margin:        var(--component-spacing-8);
+  
+  /* Code */
+
+  --code-padding:                var(--spacing-1) var(--spacing-8);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Navigation */
+  /* -------------------------------------------------------------------------- */
+
+  --nav-gap:                     var(--component-spacing-24);
+  --nav-item-padding:            var(--control-padding-sm);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Form */
+  /* -------------------------------------------------------------------------- */
+
+  --form-gap:                    var(--component-spacing-24);
+
+  /* Field */
+
+  --field-gap:                   var(--component-spacing-8);
+  --field-header-gap:            var(--component-spacing-10);
+  --field-body-gap:              var(--component-spacing-6);
+  --field-footer-gap:            var(--component-spacing-4);
+  --field-inline-gap:            var(--component-spacing-16);
+  --field-inline-header-offset:  var(--component-spacing-8);
+
+  /* Input */
+
+  --input-padding:               var(--control-padding-md);
+  --input-gap:                   var(--component-spacing-8);
+
+  /* Select */
+
+  --select-padding:              var(--input-padding);
+
+  /* Textarea */
+
+  --textarea-padding:            var(--input-padding);
+
+  /* Checkbox - Radio - Switch */
+
+  --checkbox-gap:                var(--input-gap);
+  --radio-gap:                   var(--checkbox-gap);
+  --switch-gap:                  var(--input-gap);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Visual */
+  /* -------------------------------------------------------------------------- */
+
+  /* Badge */
+
+  --badge-padding:               0 var(--component-spacing-8);
+  --badge-gap:                   var(--component-spacing-4);
+
+  /* Chip */
+
+  --chip-padding:                var(--badge-padding);
+  --chip-gap:                    var(--badge-gap);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Feedback */
+  /* -------------------------------------------------------------------------- */
+
+  /* Progress */
+
+  --progress-padding:           0.1rem;
+}

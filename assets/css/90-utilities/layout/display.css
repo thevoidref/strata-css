@@ -1,0 +1,140 @@
+/* 90-utilities/layout/display.css */
+
+/* Base display utilities */
+
+.u-display-none {
+  display: none;
+}
+
+.u-display-block {
+  display: block;
+}
+
+.u-display-inline {
+  display: inline;
+}
+
+.u-display-inline-block {
+  display: inline-block;
+}
+
+.u-display-flex {
+  display: flex;
+}
+
+.u-display-inline-flex {
+  display: inline-flex;
+}
+
+.u-display-grid {
+  display: grid;
+}
+
+.u-display-contents {
+  display: contents;
+}
+
+/* Medium container */
+@container responsive (width < 50em) {
+  .u-display-none-50 {
+    display: none;
+  }
+
+  .u-display-block-50 {
+    display: block;
+  }
+
+  .u-display-inline-50 {
+    display: inline;
+  }
+
+  .u-display-inline-block-50 {
+    display: inline-block;
+  }
+
+  .u-display-flex-50 {
+    display: flex;
+  }
+
+  .u-display-inline-flex-50 {
+    display: inline-flex;
+  }
+
+  .u-display-grid-50 {
+    display: grid;
+  }
+
+  .u-display-contents-50 {
+    display: contents;
+  }
+}
+
+/* Small container */
+@container responsive (width < 35em) {
+  .u-display-none-35 {
+    display: none;
+  }
+
+  .u-display-block-35 {
+    display: block;
+  }
+
+  .u-display-inline-35 {
+    display: inline;
+  }
+
+  .u-display-inline-block-35 {
+    display: inline-block;
+  }
+
+  .u-display-flex-35 {
+    display: flex;
+  }
+
+  .u-display-inline-flex-35 {
+    display: inline-flex;
+  }
+
+  .u-display-grid-35 {
+    display: grid;
+  }
+
+  .u-display-contents-35 {
+    display: contents;
+  }
+}
+
+/* Extra-small container */
+@container responsive (width < 20em) {
+  .u-display-none-20 {
+    display: none;
+  }
+
+  .u-display-block-20 {
+    display: block;
+  }
+
+  .u-display-inline-20 {
+    display: inline;
+  }
+
+  .u-display-inline-block-20 {
+    display: inline-block;
+  }
+
+  .u-display-flex-20 {
+    display: flex;
+  }
+
+  .u-display-inline-flex-20 {
+    display: inline-flex;
+  }
+
+  .u-display-grid-20 {
+    display: grid;
+  }
+
+  .u-display-contents-20 {
+    display: contents;
+  }
+}

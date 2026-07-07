@@ -1,0 +1,45 @@
+/* 20-primitives/forms/select.css */
+
+.select {
+  width:              var(--select-width);
+  min-height:         var(--select-height);
+
+  padding:            var(--select-padding);
+
+  color:              var(--select-fg);
+  background-color:   var(--select-bg);
+
+  border-radius:      var(--select-radius);
+  border:             var(--select-border);
+
+  box-shadow:         var(--select-shadow);
+
+  line-height:        var(--select-line);
+
+  transition:         var(--select-transition);
+
+  appearance:         none;
+  cursor:             pointer;
+}
+
+.select:has(option[value=""]:checked) {
+  color:              var(--select-placeholder-fg);
+}
+
+.select option {
+  color:              var(--select-option-fg);
+  background-color:   var(--select-option-bg);
+}
+
+.select:hover {
+  border-color:       var(--select-border-color-hover);
+  background-color:   var(--select-bg-hover);
+}
+
+.select:focus {
+  border-color:       var(--select-border-color-focus);
+}
+
+.select:invalid {
+  border-color:       var(--select-border-color-error);
+}

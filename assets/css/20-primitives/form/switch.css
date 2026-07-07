@@ -1,0 +1,80 @@
+/* 20-primitives/forms/switch.css */
+
+.switch {
+  display:      inline-flex;
+  align-items:  center;
+  gap:          var(--switch-gap);
+
+  color:        var(--switch-label-fg);
+  cursor:       pointer;
+}
+
+.switch__input {
+  appearance:    none;
+
+  position:      relative;
+
+  width:         var(--switch-width);
+  height:        var(--switch-height);
+
+  flex:          0 0 auto;
+
+  background:    var(--switch-bg);
+  outline:       var(--switch-border);
+  border-radius: var(--switch-radius);
+  box-shadow:    var(--switch-shadow);
+
+  cursor:        pointer;
+  transition:    var(--switch-transition);
+}
+
+.switch__input::before {
+  content:       "";
+
+  position:      absolute;
+  inset-block:   50%;
+  inset-inline-start: var(--switch-thumb-offset);
+
+  width:         var(--switch-thumb-width);
+  aspect-ratio:  1;
+
+  background:    var(--switch-thumb-bg);
+  border-radius: var(--switch-thumb-radius);
+  box-shadow:    var(--switch-thumb-shadow);
+
+  transform:     translateY(-50%);
+  transition:    var(--switch-thumb-transition);
+}
+
+.switch__input:not(:disabled):not([aria-disabled="true"]):not(.is-disabled):hover {
+  background:    var(--switch-bg-hover);
+  outline-color: var(--switch-border-color-hover);
+}
+
+.switch__input:not(:disabled):not([aria-disabled="true"]):not(.is-disabled):hover::before {
+  background:    var(--switch-thumb-bg-hover);
+  outline-color: var(--switch-border-color-hover);
+}
+
+.switch__input:checked {
+  background:    var(--switch-bg-checked);
+  outline-color: var(--switch-border-color-checked);
+}
+
+.switch__input:checked::before {
+  transform:     translate(var(--switch-thumb-translate), -50%);
+  background:    var(--switch-thumb-bg-checked);
+}
+
+.switch__input:not(:disabled):not([aria-disabled="true"]):not(.is-disabled):checked:hover {
+  background:    var(--switch-bg-checked-hover);
+  outline-color: var(--switch-border-color-checked-hover);
+}
+
+.switch__input:not(:disabled):not([aria-disabled="true"]):not(.is-disabled):checked:hover::before {
+  background:    var(--switch-thumb-bg-checked-hover);
+}
+
+.switch__label {
+  line-height:   var(--switch-label-line);
+}

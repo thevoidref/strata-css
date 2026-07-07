@@ -1,0 +1,51 @@
+/* 20-primitives/visual/icon.css */
+
+.icon {
+  display:              inline-block;
+  flex-shrink:          0;
+
+  inline-size:          var(--icon-diameter);
+  block-size:           var(--icon-diameter);
+
+  color:                currentColor;
+
+  vertical-align:       middle;
+
+  overflow:             visible;
+}
+
+.icon > svg {
+  display:              block;
+
+  inline-size:          100%;
+  block-size:           100%;
+
+  pointer-events:       none;
+  overflow:             inherit;
+
+  transform-origin:     center;
+}
+
+.icon[data-icon-size="xs"] {
+  --icon-diameter:      var(--icon-diameter-xs);
+}
+
+.icon[data-icon-size="sm"] {
+  --icon-diameter:      var(--icon-diameter-sm);
+}
+
+.icon[data-icon-size="md"] {
+  --icon-diameter:      var(--icon-diameter-md);
+}
+
+.icon[data-icon-size="lg"] {
+  --icon-diameter:      var(--icon-diameter-lg);
+}
+
+.icon[data-icon-size="xl"] {
+  --icon-diameter:      var(--icon-diameter-xl);
+}
+
+.icon[data-icon-size="2xl"] {
+  --icon-diameter:      var(--icon-diameter-2xl);
+}

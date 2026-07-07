@@ -1,0 +1,45 @@
+/* 90-utilities/layout/alignment.css */
+
+/* -------------------------------------------------------------------------- */
+/* Main Axis */
+/* -------------------------------------------------------------------------- */
+
+:is(.stack, .cluster, .grid, .columns)[data-justify="start"] {
+  justify-content:          start;
+}
+
+:is(.stack, .cluster, .grid, .columns)[data-justify="center"] {
+  justify-content:          center;
+}
+
+:is(.stack, .cluster, .grid, .columns)[data-justify="end"] {
+  justify-content:          end;
+}
+
+:is(.stack, .cluster, .grid, .columns)[data-justify="between"] {
+  justify-content:          space-between;
+}
+
+:is(.stack, .cluster, .grid, .columns)[data-justify="around"] {
+  justify-content:          space-around;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Secondary Axis */
+/* -------------------------------------------------------------------------- */
+
+:is(.stack, .cluster, .grid, .columns)[data-align="start"] {
+  align-items:              start;
+}
+
+:is(.stack, .cluster, .grid, .columns)[data-align="center"] {
+  align-items:              center;
+}
+
+:is(.stack, .cluster, .grid, .columns)[data-align="end"] {
+  align-items:              end;
+}
+
+:is(.stack, .cluster, .grid, .columns)[data-align="stretch"] {
+  align-items:              stretch;
+}

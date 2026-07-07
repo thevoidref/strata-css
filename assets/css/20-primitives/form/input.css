@@ -1,0 +1,39 @@
+/* 20-primitives/forms/input.css */
+
+.input {
+  width:         var(--input-width);
+  min-height:    var(--input-height);
+
+  padding:       var(--input-padding);
+
+  color:         var(--input-fg);
+  background:    var(--input-bg);
+
+  border-radius: var(--input-radius);
+  border:        var(--input-border);
+  
+  box-shadow:    var(--input-shadow);
+
+  font:          var(--input-font);
+  line-height:   var(--input-line);
+
+  transition:    var(--input-transition);
+}
+
+.input::placeholder {
+  color:         var(--input-placeholder-fg);
+  opacity:       var(--input-placeholder-opacity);
+}
+
+.input:invalid:not(:placeholder-shown) {
+  border-color:  var(--input-border-color-error);
+}
+
+.input:not(:disabled):not([aria-disabled="true"]):not(.is-disabled):hover {
+  border-color:  var(--input-border-color-hover);
+  background:    var(--input-bg-hover);
+}
+
+.input:focus-visible {
+  border-color:  var(--input-border-color-focus);
+}

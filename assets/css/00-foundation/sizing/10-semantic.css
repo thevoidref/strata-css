@@ -1,0 +1,14 @@
+/* 00-foundation/sizing/10-semantic.css */
+
+:root {
+
+  /* -------------------------------------------------------------------------- */
+  /* Text Measure */
+  /* -------------------------------------------------------------------------- */
+
+  --measure-xs:                 var(--measure-10);
+  --measure-sm:                 var(--measure-24);
+  --measure-md:                 var(--measure-40);
+  --measure-lg:                 var(--measure-56);
+  --measure-xl:                 var(--measure-72);
+}

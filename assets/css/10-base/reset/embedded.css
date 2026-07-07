@@ -1,0 +1,7 @@
+/* 10-base/reset/embedded.css */
+
+iframe,
+embed,
+object {
+  max-width: 100%;
+}

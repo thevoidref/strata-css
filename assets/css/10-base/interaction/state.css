@@ -1,0 +1,27 @@
+/* 10-base/interaction/state.css */
+
+:root {
+  --state-on:   0;
+  --state-off:  1;
+}
+
+/* Disabled / inactive */
+.is-inactive,
+[aria-disabled="true"],
+[data-disabled="true"] {
+  opacity:        var(--opacity-disabled);
+  pointer-events: none;
+  cursor:         not-allowed;
+}
+
+/* State Channel */
+.is-active,
+[data-state~="active"],
+[data-state~="checked"]:is(:checked, :has(:checked)),
+[data-state~="pressed"]:is([aria-pressed="true"], :has([aria-pressed="true"])),
+[data-state~="expanded"]:is([aria-expanded="true"], :has([aria-expanded="true"])),
+[data-state~="selected"]:is([aria-selected="true"], :has([aria-selected="true"])),
+[data-state~="current"]:is([aria-current], :has([aria-current])) {
+  --state-on:  1;
+  --state-off: 0;
+}

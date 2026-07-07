@@ -1,0 +1,72 @@
+/* 20-primitives/visual/chip.css */
+
+.chip {
+  display:              inline-flex;
+  align-items:          center;
+  justify-content:      center;
+
+  min-inline-size:      var(--chip-min-size);
+  min-block-size:       var(--chip-min-size);
+
+  gap:                  var(--chip-gap);
+  padding:              var(--chip-padding);
+
+  color:                var(--chip-fg);
+  background:           var(--chip-bg);
+
+  border:               var(--chip-border);
+  border-radius:        var(--chip-radius);
+
+  box-shadow:           var(--chip-shadow);
+
+  font-family:          var(--chip-family);
+  font-size:            var(--chip-size);
+  font-weight:          var(--chip-weight);
+  line-height:          var(--chip-line);
+  letter-spacing:       var(--chip-tracking);
+  text-transform:       var(--chip-transform);
+
+  white-space:          nowrap;
+
+  transition:           var(--chip-transition);
+}
+
+.chip[data-chip-hover="true"]:hover {
+  transform:            var(--chip-hover-transform);
+  --chip-shadow:        var(--chip-shadow-hover);
+}
+
+.chip[data-chip-tone="green"] {
+  --chip-fg:            var(--chip-green-fg);
+  --chip-bg:            var(--chip-green-bg);
+}
+
+.chip[data-chip-tone="yellow"] {
+  --chip-fg:            var(--chip-yellow-fg);
+  --chip-bg:            var(--chip-yellow-bg);
+}
+
+.chip[data-chip-tone="blue"] {
+  --chip-fg:            var(--chip-blue-fg);
+  --chip-bg:            var(--chip-blue-bg);
+}
+
+.chip[data-chip-tone="orange"] {
+  --chip-fg:            var(--chip-orange-fg);
+  --chip-bg:            var(--chip-orange-bg);
+}
+
+.chip[data-chip-tone="red"] {
+  --chip-fg:            var(--chip-red-fg);
+  --chip-bg:            var(--chip-red-bg);
+}
+
+.chip[data-chip-tone="purple"] {
+  --chip-fg:            var(--chip-purple-fg);
+  --chip-bg:            var(--chip-purple-bg);
+}
+
+.chip[data-chip-tone="aqua"] {
+  --chip-fg:            var(--chip-aqua-fg);
+  --chip-bg:            var(--chip-aqua-bg);
+}

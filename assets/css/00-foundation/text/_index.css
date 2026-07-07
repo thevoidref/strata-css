@@ -1,0 +1,15 @@
+/* 00-foundation/text/_index.css */
+
+@import url(
+  'https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800;900&display=swap'
+);
+@import url(
+  'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap'
+);
+@import url(
+  'https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&display=swap'
+);
+
+@import "./00-scales.css";
+@import "./10-semantic.css";
+@import "./20-primitives.css";

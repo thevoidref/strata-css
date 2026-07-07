@@ -1,0 +1,72 @@
+/* 00-foundation/text/00-scales.css */
+
+:root {
+
+  /* -------------------------------------------------------------------------- */
+  /* Font Families */
+  /* -------------------------------------------------------------------------- */
+
+  /* UI, navigation, controls */
+  --ui-family:                 "Inter", sans-serif;
+
+  /* Body copy */
+  --text-family:               var(--ui-family);
+
+  /* Headings */
+  --heading-family:            "Geist", var(--ui-family);
+
+  /* Code */
+  --mono-family:               "JetBrains Mono", "Fira Code", monospace;
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Type Scale */
+  /* -------------------------------------------------------------------------- */
+
+  --size-3xl:                  clamp(2.5rem, 6vw, 5rem);
+  --size-2xl:                  clamp(1.75rem, 3vw, 2.6rem);
+  --size-xl:                   1.25rem;
+  --size-lg:                   1.175rem;
+  --size-control:              1.125rem;
+  --size-md:                   1rem;
+  --size-sm:                   0.875rem;
+  --size-xs:                   0.75rem;
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Font Weight */
+  /* -------------------------------------------------------------------------- */
+
+  --weight-thin:               200;
+  --weight-light:              300;
+  --weight-regular:            400;
+  --weight-medium:             500;
+  --weight-semibold:           600;
+  --weight-bold:               700;
+  --weight-semiblack:          800;
+  --weight-black:              900;
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Line Height */
+  /* -------------------------------------------------------------------------- */
+
+  --line-none:                 1;
+  --line-tight:                1.25;
+  --line-normal:               1.5;
+  --line-relaxed:              1.6;
+  --line-loose:                2;
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Letter Spacing */
+  /* -------------------------------------------------------------------------- */
+
+  --tracking-tighter:          -0.05em;
+  --tracking-tight:            -0.02em;
+  --tracking-normal:           0;
+  --tracking-wide:             0.02em;
+  --tracking-wider:            0.05em;
+  --tracking-widest:           0.1em;
+
+}

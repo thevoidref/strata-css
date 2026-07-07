@@ -1,0 +1,44 @@
+/* 20-primitives/forms/field.css */
+
+.field {
+  display:        grid;
+  gap:            var(--field-gap);
+}
+
+.field__header {
+  display:        grid;
+  gap:            var(--field-header-gap);
+}
+
+.field__body {
+  display:        grid;
+  gap:            var(--field-body-gap);
+}
+
+.field__footer {
+  display:        grid;
+  gap:            var(--field-footer-gap);
+}
+
+.field__required {
+  color:          var(--field-required-fg);
+}
+
+.field__optional {
+  color:          var(--field-optional-fg);
+  font-size:      var(--field-optional-size);
+}
+
+.field__error {
+  color:          var(--field-error-fg);
+}
+
+.field--inline {
+  grid-template-columns: var(--field-inline-label-width) minmax(0, 1fr);
+  align-items:           start;
+  column-gap:            var(--field-inline-gap);
+}
+
+.field--inline .field__header {
+  padding-block-start:    var(--field-inline-header-offset);
+}

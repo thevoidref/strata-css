@@ -1,0 +1,15 @@
+/* 90-utilities/margin-trim.css */
+
+:is(.u-margin-trim,.u-content-wrapper,[class*="u-container"],[class*="u-layout-column"]) > 
+:not(:not(.u-cover-absolute,.u-ignore-trim) ~ :not(.u-cover-absolute,.u-ignore-trim)),
+:is(.u-margin-trim,.u-content-wrapper,[class*="u-container"],[class*="u-layout-column"]) > 
+:not(:not(.u-cover-absolute,.u-ignore-trim) ~ :not(.u-cover-absolute,.u-ignore-trim)).u-display-contents > :first-child {
+	margin-top: 0;
+}
+
+:is(.u-margin-trim,.u-content-wrapper,[class*="u-container"],[class*="u-layout-column"]) > 
+:not(:has(~ :not(.u-cover-absolute,.u-ignore-trim))),
+:is(.u-margin-trim,.u-content-wrapper,[class*="u-container"],[class*="u-layout-column"]) > 
+:not(:has(~ :not(.u-cover-absolute,.u-ignore-trim))).u-display-contents > :last-child {
+	margin-bottom: 0;
+}

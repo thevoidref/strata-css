@@ -1,0 +1,19 @@
+/* 10-base/reset/media.css */
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+img,
+video {
+  height: auto;
+}
+
+img::selection {
+	background: transparent;
+}

@@ -1,0 +1,6 @@
+/* 90-utilities/hide.css */
+
+.u-hide-if-empty:empty,
+[class*="u-layout-column"]:empty {
+	display: none !important;
+}

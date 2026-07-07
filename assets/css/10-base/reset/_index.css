@@ -1,0 +1,11 @@
+/* 10-base/reset/_index.css */
+
+@import "./action.css";
+
+@import "./content.css";
+
+@import "./embedded.css";
+
+@import "./media.css";
+
+@import "./page.css";

@@ -1,0 +1,50 @@
+/* 95-accessibility/outline.css */
+
+/* Form controls */
+:where(
+  input,
+  textarea,
+  select,
+  .input,
+  .textarea,
+  .select
+):focus-visible {
+  outline:        var(--input-outline);
+  outline-offset: var(--input-outline-offset);
+}
+
+/* Global fallback */
+:where(
+  a,
+  button,
+  summary,
+  .radio__input,
+  .checkbox__input,
+  .switch__input,
+  .link,
+  [tabindex]:not([tabindex="-1"])
+):focus-visible {
+  outline:        var(--focus-outline);
+  outline-offset: var(--focus-offset);
+  border-radius:  var(--radius-main);
+}
+
+/* Form overrides */
+
+:where(
+  .radio__input
+):focus-visible {
+  border-radius:      var(--radio-radius);
+}
+
+:where(
+  .switch__input
+):focus-visible::before {
+  background-color:   var(--border-focus-color);
+}
+
+:where(
+  .switch__input
+):checked:focus-visible {
+  outline:            var(--focus-outline);
+}

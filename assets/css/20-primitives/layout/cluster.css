@@ -1,0 +1,10 @@
+/* 20-primitives/layout/cluster.css */
+
+.cluster {
+  display:                  flex;
+  
+  flex-wrap:                wrap;
+  align-items:              center;
+
+  gap:                      var(--gap);
+}

@@ -1,0 +1,16 @@
+/* 20-primitives/content/label.css */
+
+.label {
+  margin:                       0;
+
+  min-inline-size:              min(var(--label-width), 100%);
+
+  color:                        var(--label-fg);
+
+  font-family:                  var(--label-family);
+  font-size:                    var(--label-size);
+  font-weight:                  var(--label-weight);
+  line-height:                  var(--label-line);
+  letter-spacing:               var(--label-tracking);
+  text-wrap:                    var(--label-wrap);
+}

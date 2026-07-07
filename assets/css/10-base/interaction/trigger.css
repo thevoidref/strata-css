@@ -1,0 +1,76 @@
+/* 10-base/interaction/trigger.css */
+
+:root {
+  --active-on:  0;
+  --active-off: 1;
+
+  --peer-on:    0;
+  --peer-off:   1;
+
+  --away-on:    0;
+  --away-off:   1;
+}
+
+/* Reset interaction channels locally */
+[data-state],
+[data-trigger],
+[data-interaction] {
+  --state-on:   0;
+  --state-off:  1;
+
+  --active-on:  0;
+  --active-off: 1;
+
+  --peer-on:    0;
+  --peer-off:   1;
+
+  --away-on:    0;
+  --away-off:   1;
+}
+
+/* Active Channel */
+[data-trigger~="hover"]:hover,
+[data-trigger~="focus"]:is(:focus-visible, :has(:focus-visible)),
+[data-trigger~="active"]:active,
+[data-trigger~="focus-within"]:focus-within {
+  --active-on:  1;
+  --active-off: 0;
+}
+
+/* Touch fallback */
+@media (hover: none) {
+  [data-trigger~="mobile-active"] {
+    --active-on:  1;
+    --active-off: 0;
+  }
+}
+
+/* Peer Channel */
+@media (hover: hover) {
+  [data-interaction-group]:has([data-trigger~="hover"]:hover)
+    [data-trigger~="peer"]:not(:hover) {
+    --peer-on:  1;
+    --peer-off: 0;
+  }
+}
+
+[data-interaction-group]:has([data-trigger~="focus"]:is(:focus-visible, :has(:focus-visible)))
+  [data-trigger~="peer"]:not(:focus-visible, :has(:focus-visible)) {
+  --peer-on:  1;
+  --peer-off: 0;
+}
+
+/* Away Channel */
+@media (hover: hover) {
+  [data-interaction-group]:has([data-trigger~="away-source"]:hover)
+    [data-trigger~="away-target"]:not(:hover) {
+    --away-on:  1;
+    --away-off: 0;
+  }
+}
+
+[data-interaction-group]:has([data-trigger~="away-source"]:is(:focus-visible, :has(:focus-visible)))
+  [data-trigger~="away-target"]:not(:focus-visible, :has(:focus-visible)) {
+  --away-on:  1;
+  --away-off: 0;
+}

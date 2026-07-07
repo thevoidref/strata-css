@@ -1,0 +1,174 @@
+/* 00-foundation/sizing/20-primitives.css */
+
+:root {
+
+  /* -------------------------------------------------------------------------- */
+  /* Layout */
+  /* -------------------------------------------------------------------------- */
+
+  /* Section */
+
+  --section-hero-minheight:         var(--hero-minheight);
+  
+  /* Container */
+
+  --container-narrow-width:         var(--container-width-narrow);
+  --container-default-width:        var(--container-width-default);
+  --container-expanded-width:       var(--container-width-expanded);
+  --container-wide-width:           var(--container-width-wide);
+
+  --container-width:                var(--container-default-width);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Button */
+  /* -------------------------------------------------------------------------- */
+
+  /* Default Button */
+
+  --button-height:                  var(--control-height-md);
+  --button-height-sm:               var(--control-height-sm);
+  --button-height-lg:               var(--control-height-lg);
+
+  /* Icon Button */
+
+  --icon-button-width:              var(--control-height-md);
+  --icon-button-width-sm:           var(--control-height-sm);
+  --icon-button-width-lg:           var(--control-height-lg);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Form */
+  /* -------------------------------------------------------------------------- */
+
+  /* Field */
+
+  --field-inline-label-width:       var(--measure-xs);
+
+  /* Input */
+
+  --input-width:                    100%;
+  --input-height:                   var(--control-height-md);
+  --input-height-sm:                var(--control-height-sm);
+  --input-height-lg:                var(--control-height-lg);
+
+  /* Textarea */
+
+  --textarea-height:                8rem;
+  --textarea-resize:                vertical;
+
+  /* Select */
+
+  --select-width:                   var(--input-width);
+  --select-height:                  var(--input-height);
+
+  /* Checkbox */
+
+  --checkbox-width:                 1rem;
+  --checkbox-mark-width:            0.625rem;
+
+  --checkbox-indeterminate-width:   0.5rem;
+  --checkbox-indeterminate-height:  0.125rem;
+
+  /* Radio */
+
+  --radio-width:                     var(--checkbox-width);
+  --radio-mark-width:                0.375rem;
+
+  /* Switch */
+
+  --switch-width:                   3rem;
+  --switch-height:                  1.25rem;
+
+  --switch-thumb-width:             1rem;
+  --switch-thumb-offset:            0.125rem;
+  --switch-thumb-translate:         1.75rem;     /* Must equal: switch width - thumb width - offset * 3 */
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Content */
+  /* -------------------------------------------------------------------------- */
+
+  /* Typography */
+
+  --heading-width:                  none;
+  --hero-width:                     var(--measure-xs);
+  --subheading-width:               var(--measure-sm);
+  --paragraph-width:                100%;
+  --subtitle-width:                 var(--measure-md);
+  --lead-width:                     var(--measure-lg);
+  --technical-width:                var(--measure-xl);
+
+  /* Code */
+
+  --code-inline-max-width:          100%;
+  --table-min-width:                100%;
+
+  /* Label */
+
+  --label-width:                    var(--measure-xs);
+
+  /* -------------------------------------------------------------------------- */
+  /* Visual */
+  /* -------------------------------------------------------------------------- */
+
+  /* Avatar */
+
+  --avatar-diameter-xs:                 1.5rem;
+  --avatar-diameter-sm:                 2rem;
+  --avatar-diameter-md:                 2.5rem;
+  --avatar-diameter-lg:                 3rem;
+  --avatar-diameter-xl:                 4rem;
+  --avatar-diameter-2xl:                5rem;
+  --avatar-diameter:                    var(--avatar-diameter-md);
+
+  /* Icon */
+
+  --icon-diameter-xs:                   0.75em;
+  --icon-diameter-sm:                   1em;
+  --icon-diameter-md:                   1.25em;
+  --icon-diameter-lg:                   1.5em;
+  --icon-diameter-xl:                   2em;
+  --icon-diameter-2xl:                  2.5em;
+  --icon-diameter:                      var(--icon-diameter-md);
+
+  /* Badge */
+
+  --badge-min-size:                     1.25rem;
+
+  /* Chip */
+
+  --chip-min-size:                      var(--badge-min-size);
+
+  /* Skeleton */
+
+  --skeleton-width:                     100%;
+  --skeleton-height:                    1rem;
+  --skeleton-diameter:                  2.5rem;
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Feedback */
+  /* -------------------------------------------------------------------------- */
+  
+  /* Spinner */
+
+  --spinner-scale-xs:                   0.5;
+  --spinner-scale-sm:                   0.75;
+  --spinner-scale-md:                   1;
+  --spinner-scale-lg:                   1.5;
+  --spinner-scale-xl:                   2;
+
+  --spinner-scale:                      var(--spinner-scale-md);
+
+  /* Progress */
+
+  --progress-height-xs:                 0.33rem;
+  --progress-height-sm:                 0.5rem;
+  --progress-height-md:                 0.7rem;
+  --progress-height-lg:                 0.9rem;
+
+  --progress-height:                    var(--progress-height-md);
+
+  --progress-width:                     100%;
+}

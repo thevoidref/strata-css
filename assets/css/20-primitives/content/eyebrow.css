@@ -1,0 +1,15 @@
+/* 20-primitives/content/eyebrow.css */
+
+.eyebrow {
+  margin:                       0;
+
+  color:                        var(--eyebrow-fg);
+
+  font-family:                  var(--eyebrow-family);
+  font-size:                    var(--eyebrow-size);
+  font-weight:                  var(--eyebrow-weight);
+  line-height:                  var(--eyebrow-line);
+  letter-spacing:               var(--eyebrow-tracking);
+  text-wrap:                    var(--eyebrow-wrap);
+  text-transform:               var(--eyebrow-transform);
+}

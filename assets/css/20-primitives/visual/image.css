@@ -1,0 +1,58 @@
+/* 20-primitives/visual/image.css */
+
+.image {
+  display:             block;
+
+  max-inline-size:     100%;
+
+  border:              var(--image-border);
+  border-radius:       var(--image-radius);
+
+  box-shadow:          var(--image-shadow);
+
+  overflow:            hidden;
+}
+
+.image > img,
+img.image {
+  display:             block;
+
+  max-inline-size:     100%;
+  block-size:          auto;
+}
+
+.image[data-image-fit="cover"] > img,
+img.image[data-image-fit="cover"] {
+  inline-size:         100%;
+  block-size:          100%;
+
+  object-fit:          cover;
+}
+
+.image[data-image-fit="contain"] > img,
+img.image[data-image-fit="contain"] {
+  inline-size:         100%;
+  block-size:          100%;
+
+  object-fit:          contain;
+}
+
+.image[data-image-radius="none"] {
+  --image-radius:      var(--radius-none);
+}
+
+.image[data-image-radius="sm"] {
+  --image-radius:      var(--radius-sm);
+}
+
+.image[data-image-radius="lg"] {
+  --image-radius:      var(--radius-lg);
+}
+
+.image[data-image-radius="xl"] {
+  --image-radius:      var(--radius-xl);
+}
+
+.image[data-image-radius="full"] {
+  --image-radius:      var(--radius-full);
+}

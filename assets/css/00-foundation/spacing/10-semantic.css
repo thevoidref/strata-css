@@ -1,0 +1,70 @@
+/* 00-foundation/spacing/10-semantic.css */
+
+:root {
+  
+  /* -------------------------------------------------------------------------- */
+  /* Component Spacing */
+  /* -------------------------------------------------------------------------- */
+
+  --component-spacing-2:      calc(var(--spacing-2) * var(--component-scale));
+  --component-spacing-4:      calc(var(--spacing-4) * var(--component-scale));
+  --component-spacing-6:      calc(var(--spacing-6) * var(--component-scale));
+  --component-spacing-8:      calc(var(--spacing-8) * var(--component-scale));
+  --component-spacing-10:     calc(var(--spacing-10) * var(--component-scale));
+  --component-spacing-12:     calc(var(--spacing-12) * var(--component-scale));
+  --component-spacing-16:     calc(var(--spacing-16) * var(--component-scale));
+  --component-spacing-20:     calc(var(--spacing-20) * var(--component-scale));
+  --component-spacing-24:     calc(var(--spacing-24) * var(--component-scale));
+
+  
+  /* -------------------------------------------------------------------------- */
+  /* Control Padding */
+  /* -------------------------------------------------------------------------- */
+
+  --control-padding-xs:       var(--component-spacing-4) var(--component-spacing-8);
+  --control-padding-sm:       var(--component-spacing-6) var(--component-spacing-12);
+  --control-padding-md:       var(--component-spacing-8) var(--component-spacing-16);
+  --control-padding-lg:       var(--component-spacing-10) var(--component-spacing-20);
+  --control-padding-xl:       var(--component-spacing-12) var(--component-spacing-24);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Vertical Padding */
+  /* -------------------------------------------------------------------------- */
+
+  --vertical-padding-sm:      clamp(
+    var(--spacing-24), 
+    calc(var(--spacing-32) * var(--layout-scale)), 
+    var(--spacing-48));
+
+  --vertical-padding-md:      clamp(
+    var(--spacing-32), 
+    calc(var(--spacing-48) * var(--layout-scale)), 
+    var(--spacing-64));
+
+  --vertical-padding-lg:      clamp(
+    var(--spacing-48), 
+    calc(var(--spacing-64) * var(--layout-scale)), 
+    var(--spacing-96));
+
+  --vertical-padding-xl:      clamp(
+    var(--spacing-64), 
+    calc(var(--spacing-80) * var(--layout-scale)), 
+    var(--spacing-128));
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Gap */
+  /* -------------------------------------------------------------------------- */
+
+  --gap-none:                 calc(var(--spacing-0) * var(--layout-scale));
+  --gap-xs:                   calc(var(--spacing-4) * var(--layout-scale));
+  --gap-sm:                   calc(var(--spacing-8) * var(--layout-scale));
+  --gap-md:                   calc(var(--spacing-12) * var(--layout-scale));
+  --gap-lg:                   calc(var(--spacing-16) * var(--layout-scale));
+  --gap-xl:                   calc(var(--spacing-24) * var(--layout-scale));
+  --gap-2xl:                  calc(var(--spacing-32) * var(--layout-scale));
+  --gap-3xl:                  calc(var(--spacing-48) * var(--layout-scale));
+  --gap-4xl:                  calc(var(--spacing-64) * var(--layout-scale));
+  --gap-5xl:                  calc(var(--spacing-80) * var(--layout-scale));
+}

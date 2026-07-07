@@ -1,0 +1,10 @@
+/* 20-primitives/content/blockquote.css */
+
+.blockquote {
+  margin:                       0;
+  padding-inline:               var(--blockquote-padding);
+
+  color:                        var(--blockquote-fg);
+
+  border-inline-start:          var(--blockquote-border);
+}

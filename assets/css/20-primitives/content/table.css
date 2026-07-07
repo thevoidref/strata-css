@@ -1,0 +1,42 @@
+/* 20-primitives/content/table.css */
+
+.table {
+  width:                        100%;
+  border-collapse:              collapse;
+  border-spacing:               0;
+
+  color:                        var(--table-fg);
+
+  font-family:                  var(--table-family);
+  font-size:                    var(--table-size);
+  font-weight:                  var(--table-weight);
+  line-height:                  var(--table-line);
+  letter-spacing:               var(--table-tracking);
+}
+
+.table th,
+.table td {
+  padding:                      var(--table-cell-padding);
+
+  border-bottom:                var(--table-divider);
+
+  text-align:                   left;
+  vertical-align:               top;
+}
+
+.table th {
+  color:                        var(--table-heading-fg);
+  font-weight:                  var(--table-heading-weight);
+}
+
+.table caption {
+  margin-bottom:                var(--table-caption-margin);
+
+  color:                        var(--table-caption-fg);
+
+  font-family:                  var(--table-caption-family);
+  font-size:                    var(--table-caption-size);
+  font-weight:                  var(--table-caption-weight);
+  line-height:                  var(--table-caption-line);
+  letter-spacing:               var(--table-caption-tracking);
+}
