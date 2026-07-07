@@ -2,6 +2,10 @@
 
 .surface {
   --surface-radius:     var(--radius-main);
+  
+  --surface-bg:         var(--surface-base-bg);
+  --surface-border:     var(--surface-base-border);
+  --surface-shadow:     var(--surface-base-shadow);
 
   background:           var(--surface-bg);
 

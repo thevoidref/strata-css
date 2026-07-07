@@ -1,6 +1,8 @@
 /* 20-primitives/layout/section.css */
 
 .section {
+  --section-padding: var(--section-padding-md)
+
   display:                  flex;
   flex-direction:           column;
 

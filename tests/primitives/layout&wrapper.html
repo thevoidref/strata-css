@@ -6,7 +6,7 @@
 
   <title>Layout & Wrapper Primitives Preview</title>
 
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/style.css">
 
   <style>
     body {
@@ -22,9 +22,6 @@
 
     .column {
       min-block-size: 5rem;
-      border: var(--border-subtle);
-      border-radius: var(--radius-md);
-      background: rgb(235 219 178 / 0.04);
     }
 
     .column--tall {
@@ -50,7 +47,7 @@
         <div class="stack demo-note" data-gap="xl">
           <p class="eyebrow">Layout & wrappers</p>
 
-          <h1 class="heading heading--1">
+          <h1 class="heading" data-heading-level="1">
             Structural primitives preview
           </h1>
 
@@ -75,11 +72,11 @@
 
 
     <!-- Containers -->
-    <section class="section surface" data-section-padding="lg" data-surface-level="sunken">
+    <section class="section surface" data-section-padding="lg">
       <div class="container" data-container-width="wide">
         <div class="stack demo-note" data-gap="sm">
           <p class="eyebrow">Container</p>
-          <h2 class="heading heading--2">Horizontal ruling</h2>
+          <h2 class="heading">Horizontal ruling</h2>
           <p class="caption">
             Each row below is a container with a different width rule.
           </p>
@@ -89,25 +86,25 @@
 
         <div class="stack debug-outline" data-gap="lg">
           <div class="container" data-container-width="narrow">
-            <div class="surface panel">
+            <div class="surface panel" data-surface-level="raised">
               <p class="meta">container narrow</p>
             </div>
           </div>
 
           <div class="container">
-            <div class="surface panel">
+            <div class="surface panel" data-surface-level="raised">
               <p class="meta">container default</p>
             </div>
           </div>
 
           <div class="container" data-container-width="expanded">
-            <div class="surface panel">
+            <div class="surface panel" data-surface-level="raised">
               <p class="meta">container expanded</p>
             </div>
           </div>
 
           <div class="container" data-container-width="wide">
-            <div class="surface panel">
+            <div class="surface panel" data-surface-level="raised">
               <p class="meta">container wide</p>
             </div>
           </div>
@@ -117,27 +114,27 @@
 
 
     <!-- Surface + panel -->
-    <section class="section" data-section-padding="lg">
+    <section class="section surface" data-section-padding="lg">
       <div class="container" data-container-width="wide">
         <div class="stack" data-gap="2xl">
           <div class="stack demo-note" data-gap="sm">
             <p class="eyebrow">Surface + panel</p>
-            <h2 class="heading heading--2">Visual skin and internal spacing</h2>
+            <h2 class="heading">Visual skin and internal spacing</h2>
           </div>
 
           <div class="grid" data-grid-column="md" data-gap="lg">
             <article class="surface panel" data-panel-padding="sm" data-surface-level="sunken">
               <div class="stack" data-gap="sm">
                 <p class="eyebrow">Sunken</p>
-                <h3 class="heading heading--3">Small panel</h3>
+                <h3 class="heading" data-heading-level="3">Small panel</h3>
                 <p class="caption">Compact inset region.</p>
               </div>
             </article>
 
-            <article class="surface panel">
+            <article class="surface panel" >
               <div class="stack" data-gap="sm">
                 <p class="eyebrow">Default</p>
-                <h3 class="heading heading--3">Medium panel</h3>
+                <h3 class="heading" data-heading-level="3">Medium panel</h3>
                 <p class="caption">Standard wrapper composition.</p>
               </div>
             </article>
@@ -145,7 +142,15 @@
             <article class="surface panel" data-panel-padding="lg" data-surface-level="raised">
               <div class="stack" data-gap="sm">
                 <p class="eyebrow">Raised</p>
-                <h3 class="heading heading--3">Large panel</h3>
+                <h3 class="heading" data-heading-level="3">Large panel</h3>
+                <p class="caption">Prominent visual grouping.</p>
+              </div>
+            </article>
+
+            <article class="surface panel" data-panel-padding="md" data-surface-level="floating">
+              <div class="stack" data-gap="sm">
+                <p class="eyebrow">Floating</p>
+                <h3 class="heading" data-heading-level="3">Floating panel</h3>
                 <p class="caption">Prominent visual grouping.</p>
               </div>
             </article>
@@ -156,60 +161,66 @@
 
 
     <!-- Stack + cluster -->
-    <section class="section surface" data-section-padding="lg" data-surface-level="default">
+    <section class="section surface" data-section-padding="lg">
       <div class="container" data-container-width="wide">
-        <div class="columns" data-gap="lg">
-          <article class="surface panel" data-column-span="6">
-            <div class="stack" data-gap="xl">
-              <div class="stack" data-gap="sm">
-                <p class="eyebrow">Stack</p>
-                <h2 class="heading heading--3">Vertical composition</h2>
-              </div>
+        <div class="stack" data-gap="xl">
+          <div class="stack demo-note" data-gap="sm">
+            <p class="eyebrow">Stack + Cluster</p>
+            <h2 class="heading">Vertical & Horizontal Composition</h2>
+          </div>
+          <div class="columns" data-gap="lg" data-columns="12">
+            <article class="column surface panel" data-column-span="6" data-surface-level="raised">
+              <div class="stack" data-gap="xl">
+                <div class="stack" data-gap="sm">
+                  <p class="eyebrow">Stack</p>
+                  <h2 class="heading" data-heading-level="3">Vertical composition</h2>
+                </div>
 
-              <div class="stack debug-outline" data-gap="md">
-                <div class="column"></div>
-                <div class="column"></div>
-                <div class="column column--tall"></div>
+                <div class="stack debug-outline" data-gap="md">
+                  <div class="column"></div>
+                  <div class="column"></div>
+                  <div class="column column--tall"></div>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
 
-          <article class="surface panel" data-column-span="6">
-            <div class="stack" data-gap="xl">
-              <div class="stack" data-gap="sm">
-                <p class="eyebrow">Cluster</p>
-                <h2 class="heading heading--3">Inline wrapping composition</h2>
-              </div>
+            <article class="column surface panel" data-column-span="6" data-surface-level="raised">
+              <div class="stack" data-gap="xl">
+                <div class="stack" data-gap="sm">
+                  <p class="eyebrow">Cluster</p>
+                  <h2 class="heading" data-heading-level="3">Inline wrapping composition</h2>
+                </div>
 
-              <div class="cluster debug-outline" data-gap="md">
-                <span class="chip">Alpha</span>
-                <span class="chip">Beta</span>
-                <span class="chip">Gamma</span>
-                <span class="chip">Delta</span>
-                <span class="chip">Longer cluster item</span>
-                <span class="chip">Omega</span>
+                <div class="cluster debug-outline" data-gap="md">
+                  <span class="chip">Alpha</span>
+                  <span class="chip">Beta</span>
+                  <span class="chip">Gamma</span>
+                  <span class="chip">Delta</span>
+                  <span class="chip">Longer cluster item</span>
+                  <span class="chip">Omega</span>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
+          </div>
         </div>
       </div>
     </section>
 
 
     <!-- Grid + columns -->
-    <section class="section" data-section-padding="lg">
+    <section class="section surface" data-section-padding="lg">
       <div class="container" data-container-width="wide">
         <div class="stack" data-gap="2xl">
           <div class="stack demo-note" data-gap="sm">
             <p class="eyebrow">Grid vs columns</p>
-            <h2 class="heading heading--2">Intrinsic grid and explicit 12-column layout</h2>
+            <h2 class="heading">Intrinsic grid and explicit 12-column layout</h2>
           </div>
 
-          <article class="surface panel">
+          <article class="surface panel" data-surface-level="raised">
             <div class="stack" data-gap="xl">
               <div class="stack" data-gap="sm">
                 <p class="eyebrow">Grid</p>
-                <h3 class="heading heading--3">Auto-fit responsive cells</h3>
+                <h3 class="heading" data-heading-level="3">Auto-fit responsive cells</h3>
               </div>
 
               <div class="grid debug-outline" data-grid-column="sm" data-gap="md">
@@ -221,11 +232,11 @@
             </div>
           </article>
 
-          <article class="surface panel">
+          <article class="surface panel" data-surface-level="raised">
             <div class="stack" data-gap="xl">
               <div class="stack" data-gap="sm">
                 <p class="eyebrow">Columns</p>
-                <h3 class="heading heading--3">Explicit spans over 12 tracks</h3>
+                <h3 class="heading" data-heading-level="3">Explicit spans over 12 tracks</h3>
               </div>
 
               <div class="columns debug-outline" data-columns="12" data-gap="md">
@@ -244,13 +255,13 @@
 
 
     <!-- Responsive gap -->
-    <section class="section surface" data-section-padding="lg" data-surface-level="sunken">
+    <section class="section surface" data-section-padding="lg">
       <div class="container" data-container-width="wide">
-        <article class="surface panel">
+        <article class="surface panel" data-surface-level="raised">
           <div class="stack" data-gap="2xl" data-gap-50="xl" data-gap-35="md" data-gap-20="sm">
             <div class="stack demo-note" data-gap="sm">
               <p class="eyebrow">Responsive gap</p>
-              <h2 class="heading heading--2">Container-aware spacing</h2>
+              <h2 class="heading">Container-aware spacing</h2>
               <p class="caption">
                 This stack uses data-gap, then narrows through data-gap-50,
                 data-gap-35, and data-gap-20.

@@ -30,12 +30,7 @@
     /* Surface Floating */
 
   --surface-floating-bg:          var(--bg-floating);
-
-    /* Surface Default */
-
-  --surface-bg:                   var(--surface-base-bg);
-  --surface-bg-hover:             var(--surface-hover);
-  --surface-bg-selected:          var(--surface-selected);
+  
 
   /* -------------------------------------------------------------------------- */
   /* Visual */

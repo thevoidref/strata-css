@@ -15,26 +15,28 @@
 
     /* Surface */
 
-        /* Surface Sunken */
+        /* Surface Level */
 
-    --surface-sunken-border:        var(--border-sunken);
+            /* Surface Sunken */
 
-        /* Surface Base */
+        --surface-sunken-border:        var(--border-sunken);
 
-    --surface-base-border:          var(--border-base);
+            /* Surface Base */
 
-        /* Surface Raised */
+        --surface-base-border:          var(--border-base);
 
-    --surface-raised-border:        var(--border-raised);
+            /* Surface Raised */
 
-        /* Surface Floating */
+        --surface-raised-border:        var(--border-raised);
 
-    --surface-floating-border:      var(--border-floating);
+            /* Surface Floating */
 
-        /* Surface Default */
+        --surface-floating-border:      var(--border-floating);
 
-    --surface-border:               var(--surface-base-border);
-    --surface-border-none:          var(--border-none-2);
+    
+        /* Surface Border */
+        
+        --surface-border-none:          var(--border-none-2);
 
 
     /* -------------------------------------------------------------------------- */

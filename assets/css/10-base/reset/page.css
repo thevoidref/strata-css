@@ -3,30 +3,30 @@
 *,
 *::before,
 *::after {
-  box-sizing:     border-box;
+  box-sizing:         border-box;
 }
 
 * {
-  margin:  0;
-  padding: 0;
+  margin:             0;
+  padding:            0;
 }
 
 html {
-  font-size:        16px;
-  scrollbar-gutter: stable;
+  scrollbar-gutter:   stable;
+  font-size:          16px;
 }
 
 body {
-  min-height:        100svh;
+  min-height:         100svh;
 
-  background-color:  var(--page-bg);
-  color:             var(--paragraph-fg);
+  background-color:   var(--page-bg);
+  color:              var(--paragraph-fg);
 
-  font-family:       var(--paragraph-family);
-  font-size:         var(--paragraph-size);
-  font-weight:       var(--paragraph-weight);
-  line-height:       var(--paragraph-line-height);
-  letter-spacing:    var(--paragraph-letter-spacing);
+  font-family:        var(--paragraph-family);
+  font-size:          var(--paragraph-size);
+  font-weight:        var(--paragraph-weight);
+  line-height:        var(--paragraph-line-height);
+  letter-spacing:     var(--paragraph-letter-spacing);
 
   -webkit-font-smoothing:   antialiased;
   -moz-osx-font-smoothing:  grayscale;
@@ -34,9 +34,10 @@ body {
   font-variant-ligatures:   common-ligatures;
 }
 
-#page {
-  min-height:       100svh;
-  overflow-x:       clip;
-  display:          flex;
-  flex-direction:   column;
+.shell {
+  min-height:         100svh;
+  overflow-x:         clip;
+  display:            flex;
+  flex-direction:     column;
+  padding-block:      var(--section-padding-xl);
 }

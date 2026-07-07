@@ -1,22 +1,22 @@
 /* 20-primitives/action/link.css */
 
 .link {
-  font:                         inherit;
-  cursor:                       pointer;
+  font:                             inherit;
+  cursor:                           pointer;
 
-  color:                        var(--link-fg);
+  color:                            var(--link-fg);
 
-  text-decoration-line:         var(--link-decoration);
-  text-decoration-color:        var(--link-decoration-color);
-  text-decoration-thickness:    var(--link-decoration-thickness);
-  text-underline-offset:        var(--link-decoration-offset);
+  text-decoration-line:             var(--link-decoration);
+  text-decoration-color:            var(--link-decoration-color);
+  text-decoration-thickness:        var(--link-decoration-thickness);
+  text-underline-offset:            var(--link-decoration-offset);
 
-  transition:                   var(--link-transition);
+  transition:                       var(--link-transition);
 }
 
 .link:hover {
-  color:                        var(--link-fg-hover);
-  text-decoration-color:        var(--link-decoration-color-hover);
+  color:                            var(--link-fg-hover);
+  text-decoration-color:            var(--link-decoration-color-hover);
 }
 
 
@@ -24,15 +24,17 @@
 /* Variants */
 /* -------------------------------------------------------------------------- */
 
-.link--muted {
+.link[data-link-type="muted"] {
   --link-fg:                        var(--link-muted-fg);
   --link-fg-hover:                  var(--link-muted-fg-hover);
 
   --link-decoration-color:          var(--link-muted-decoration-color);
   --link-decoration-color-hover:    var(--link-muted-decoration-color-hover);
+
+  --link-decoration:                var(--link-muted-decoration);
 }
 
-.link--subtle {
+.link[data-link-type="subtle"] {
   font-size:                        var(--link-subtle-size);
 
   --link-fg:                        var(--link-subtle-fg);
@@ -40,4 +42,6 @@
 
   --link-decoration-color:          var(--link-subtle-decoration-color);
   --link-decoration-color-hover:    var(--link-subtle-decoration-color-hover);
+
+  --link-decoration:                var(--link-subtle-decoration);
 }

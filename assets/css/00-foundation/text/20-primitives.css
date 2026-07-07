@@ -163,11 +163,14 @@
 
   /* Link */
 
-  --link-decoration:            underline;
+  --link-decoration:            none;
   --link-decoration-thickness:  0.15em;
   --link-decoration-offset:     0.2em;
   
   --link-subtle-size:           var(--size-sm);
+  --link-subtle-decoration:     none;
+
+  --link-muted-decoration:      underline;
 
 
   /* -------------------------------------------------------------------------- */

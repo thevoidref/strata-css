@@ -15,7 +15,11 @@
   letter-spacing:       var(--heading-tracking);
 }
 
-.heading--1 {
+/* -------------------------------------------------------------------------- */
+/* Variants */
+/* -------------------------------------------------------------------------- */
+
+.heading[data-heading-level="1"] {
   --heading-width:      14ch;
   --heading-size:       var(--h1-size);
   --heading-weight:     var(--h1-weight);
@@ -23,19 +27,11 @@
   --heading-tracking:   var(--h1-tracking);
 }
 
-.heading--3 {
+.heading[data-heading-level="3"] {
   --heading-size:       var(--h3-size);
   --heading-weight:     var(--h3-weight);
   --heading-line:       var(--h3-line);
   --heading-tracking:   var(--h3-tracking);
   --heading-fg:         var(--h3-fg);
+  --heading-width:      var(--subheading-width);
 }
-
-.heading--hero {
-  --heading-measure:    var(--hero-measure);
-}
-
-.heading--subheading {
-  --heading-measure:    var(--subheading-measure);
-}
-

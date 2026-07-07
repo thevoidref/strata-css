@@ -15,12 +15,11 @@
   text-wrap:                    var(--paragraph-wrap);
 }
 
-
 /* -------------------------------------------------------------------------- */
 /* Variants */
 /* -------------------------------------------------------------------------- */
 
-.paragraph--lead {
+.paragraph[data-paragraph-type="lead"] {
   --paragraph-fg:               var(--lead-fg);
 
   --paragraph-size:             var(--lead-size);
@@ -28,15 +27,15 @@
   --paragraph-width:            var(--lead-width);
 }
 
-.paragraph--muted {
+.paragraph[data-paragraph-type="muted"] {
   --paragraph-fg:               var(--muted-fg);
 }
 
-.paragraph--subtitle {
+.paragraph[data-paragraph-type="subtitle"] {
   --paragraph-width:            var(--subtitle-width);
   --paragraph-fg:               var(--subtitle-fg);
 }
 
-.paragraph--technical {
+.paragraph[data-paragraph-type="technical"] {
   --paragraph-width:            var(--technical-width);
 }
