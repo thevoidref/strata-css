@@ -156,9 +156,10 @@
   --button-tracking:            var(--tracking-normal);
   --button-decoration:          none;
   --button-wrap:                nowrap;
+  --button-transform:           capitalize;
 
-  --button-size-sm:             var(--size-sm);
-  --button-size-lg:             var(--size-control);
+  --button-sm-size:             var(--size-sm);
+  --button-lg-size:             var(--size-control);
 
 
   /* Link */

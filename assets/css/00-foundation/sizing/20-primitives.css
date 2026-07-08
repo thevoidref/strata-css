@@ -26,15 +26,19 @@
 
   /* Default Button */
 
-  --button-height:                  var(--control-height-md);
-  --button-height-sm:               var(--control-height-sm);
-  --button-height-lg:               var(--control-height-lg);
+  --button-sm-height:               var(--control-height-sm);
+  --button-md-height:               var(--control-height-md);
+  --button-lg-height:               var(--control-height-lg);
+
+  --button-height:                  var(--button-md-height);
 
   /* Icon Button */
 
-  --icon-button-width:              var(--control-height-md);
-  --icon-button-width-sm:           var(--control-height-sm);
-  --icon-button-width-lg:           var(--control-height-lg);
+  --icon-button-sm-height:           var(--button-sm-height);
+  --icon-button-md-height:           var(--button-md-height);
+  --icon-button-lg-height:           var(--button-lg-height);
+
+  --icon-button-height:              var(--icon-button-md-height);
 
 
   /* -------------------------------------------------------------------------- */

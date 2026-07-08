@@ -10,6 +10,6 @@
 
   border-inline-start:          var(--blockquote-border);
 
-  line-height: var(--line-relaxed);
+  line-height:                  var(--line-relaxed);
   
 }

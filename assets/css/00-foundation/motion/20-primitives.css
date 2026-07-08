@@ -15,7 +15,7 @@
     /* Default Button */
 
   --button-transition:          var(--transition-interactive);
-  --button-hover-transform:     translateY(var(--motion-hover-y));
+  --button-transform-hover:     translateY(var(--motion-hover-y));
 
     /* Icon Buttons */
 

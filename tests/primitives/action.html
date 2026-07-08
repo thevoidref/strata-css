@@ -99,11 +99,11 @@
               Button
             </button>
 
-            <button class="button button--small">
+            <button class="button" data-button-size="small">
               Button Small
             </button>
 
-            <button class="button button--large">
+            <button class="button" data-button-size="large">
               Button Large
             </button>
 
@@ -116,19 +116,19 @@
           <div class="cluster">
             <span class="label">Outline</span>
 
-            <button class="button button--outline">
+            <button class="button" data-button-type="outline">
               Button
             </button>
 
-            <button class="button button--outline button--small">
+            <button class="button" data-button-type="outline" data-button-size="small">
               Button Small
             </button>
 
-            <button class="button button--outline button--large">
+            <button class="button" data-button-type="outline" data-button-size="large">
               Button Large
             </button>
 
-            <button class="button button--outline" disabled>
+            <button class="button" data-button-type="outline" disabled>
               Disabled
             </button>
           </div>
@@ -137,19 +137,19 @@
           <div class="cluster">
             <span class="label">Ghost</span>
 
-            <button class="button button--ghost">
+            <button class="button" data-button-type="ghost">
               Button
             </button>
 
-            <button class="button button--ghost button--small">
+            <button class="button" data-button-type="ghost" data-button-size="small">
               Button Small
             </button>
 
-            <button class="button button--ghost button--large">
+            <button class="button" data-button-type="ghost" data-button-size="large">
               Button Large
             </button>
 
-            <button class="button button--ghost" disabled>
+            <button class="button" data-button-type="ghost" disabled>
               Disabled
             </button>
           </div>
@@ -158,7 +158,7 @@
           <div class="stack" >
             <span class="label">Max</span>
 
-            <button class="button button--max">
+            <button class="button" data-button-size="max">
               Button Max
             </button>
           </div>
@@ -183,34 +183,41 @@
           <div class="cluster">
             <span class="label">Solid</span>
 
-            <button class="icon-button" aria-label="Search">🔍</button>
-            <button class="icon-button" aria-label="Close">✕</button>
-            <button class="icon-button" disabled aria-label="Disabled">★</button>
+            <button class="button" data-button-shape="icon" aria-label="Search">🔍</button>
+            <button class="button" data-button-shape="icon" aria-label="Close">✕</button>
+            <button class="button" data-button-shape="icon" disabled aria-label="Disabled">★</button>
           </div>
 
           <div class="cluster">
             <span class="label">Outline</span>
 
-            <button class="icon-button icon-button--outline" aria-label="Search">🔍</button>
-            <button class="icon-button icon-button--outline" aria-label="Edit">✎</button>
+            <button class="button" data-button-shape="icon"
+            data-button-type="outline" aria-label="Search">🔍</button>
+            <button class="button" data-button-shape="icon"
+            data-button-type="outline" aria-label="Edit">✎</button>
           </div>
 
           <div class="cluster">
             <span class="label">Ghost</span>
 
-            <button class="icon-button icon-button--ghost" aria-label="Menu">☰</button>
-            <button class="icon-button icon-button--ghost" aria-label="Refresh">↻</button>
+            <button class="button" data-button-shape="icon"
+            data-button-type="ghost" aria-label="Menu">☰</button>
+            <button class="button" data-button-shape="icon"
+            data-button-type="ghost" aria-label="Refresh">↻</button>
           </div>
 
           <div class="cluster">
             <span class="label">Sizes</span>
 
-            <button class="icon-button icon-button--sm" aria-label="Small favorite">★</button>
-            <button class="icon-button" aria-label="Medium favorite">★</button>
-            <button class="icon-button icon-button--lg" aria-label="Large favorite">★</button>
+            <button class="button" data-button-shape="icon" 
+            data-button-size="small" aria-label="Small favorite">★</button>
+            <button class="button" data-button-shape="icon" aria-label="Medium favorite">★</button>
+            <button class="button" data-button-shape="icon"
+            data-button-size="large" aria-label="Large
+            favorite">★</button>
           </div>
 
-        </div>
+        </div> 
       </div>
     </div>
   </section>
