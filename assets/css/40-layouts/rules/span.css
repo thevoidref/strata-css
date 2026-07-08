@@ -1,0 +1,48 @@
+/* 40-layouts/rules/span.css */
+
+@container responsive (width < 50em) {
+  .span[data-span-50="1"]  { grid-column: span 1; }
+  .span[data-span-50="2"]  { grid-column: span 2; }
+  .span[data-span-50="3"]  { grid-column: span 3; }
+  .span[data-span-50="4"]  { grid-column: span 4; }
+  .span[data-span-50="5"]  { grid-column: span 5; }
+  .span[data-span-50="6"]  { grid-column: span 6; }
+  .span[data-span-50="7"]  { grid-column: span 7; }
+  .span[data-span-50="8"]  { grid-column: span 8; }
+  .span[data-span-50="9"]  { grid-column: span 9; }
+  .span[data-span-50="10"] { grid-column: span 10; }
+  .span[data-span-50="11"] { grid-column: span 11; }
+  .span[data-span-50="12"] { grid-column: span 12; }
+}
+
+
+@container responsive (width < 35em) {
+  .span[data-span-35="1"]  { grid-column: span 1; }
+  .span[data-span-35="2"]  { grid-column: span 2; }
+  .span[data-span-35="3"]  { grid-column: span 3; }
+  .span[data-span-35="4"]  { grid-column: span 4; }
+  .span[data-span-35="5"]  { grid-column: span 5; }
+  .span[data-span-35="6"]  { grid-column: span 6; }
+  .span[data-span-35="7"]  { grid-column: span 7; }
+  .span[data-span-35="8"]  { grid-column: span 8; }
+  .span[data-span-35="9"]  { grid-column: span 9; }
+  .span[data-span-35="10"] { grid-column: span 10; }
+  .span[data-span-35="11"] { grid-column: span 11; }
+  .span[data-span-35="12"] { grid-column: span 12; }
+}
+
+
+@container responsive (width < 20em) {
+  .span[data-span-20="1"]  { grid-column: span 1; }
+  .span[data-span-20="2"]  { grid-column: span 2; }
+  .span[data-span-20="3"]  { grid-column: span 3; }
+  .span[data-span-20="4"]  { grid-column: span 4; }
+  .span[data-span-20="5"]  { grid-column: span 5; }
+  .span[data-span-20="6"]  { grid-column: span 6; }
+  .span[data-span-20="7"]  { grid-column: span 7; }
+  .span[data-span-20="8"]  { grid-column: span 8; }
+  .span[data-span-20="9"]  { grid-column: span 9; }
+  .span[data-span-20="10"] { grid-column: span 10; }
+  .span[data-span-20="11"] { grid-column: span 11; }
+  .span[data-span-20="12"] { grid-column: span 12; }
+}

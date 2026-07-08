@@ -1,0 +1,17 @@
+/* 40-layouts/region.css */
+
+.region {
+  --region-padding:         var(--region-padding-md)
+  
+  padding-block:            var(--region-padding);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Height */
+/* -------------------------------------------------------------------------- */
+
+.region[data-region-padding="sm"]     { --region-padding: var(--region-padding-sm); }
+.region[data-region-padding="lg"]     { --region-padding: var(--region-padding-lg); }
+.region[data-region-padding="xl"]     { --region-padding: var(--region-padding-xl); }
+.region[data-region-padding="none"]   { --region-padding: 0; }

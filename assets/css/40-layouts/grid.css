@@ -1,0 +1,34 @@
+/* 40-layouts/grid.css */
+
+.grid {
+  display: grid;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Auto Columns */
+/* -------------------------------------------------------------------------- */
+
+.grid[data-grid-column] {
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(var(--column-min, 16rem), 100%), 1fr)
+  );
+}
+
+.grid[data-grid-column="sm"] { --column-min: 12rem; }
+.grid[data-grid-column="md"] { --column-min: 16rem; }
+.grid[data-grid-column="lg"] { --column-min: 20rem; }
+
+
+/* -------------------------------------------------------------------------- */
+/* Auto Rows */
+/* -------------------------------------------------------------------------- */
+
+.grid[data-grid-row] {
+  grid-auto-rows: var(--row-size, auto);
+}
+
+.grid[data-grid-row="sm"] { --row-size: 8rem; }
+.grid[data-grid-row="md"] { --row-size: 12rem; }
+.grid[data-grid-row="lg"] { --row-size: 16rem; }
+.grid[data-grid-row="xl"] { --row-size: 20rem; }

@@ -1,7 +1,9 @@
-/* 20-primitives/layout/panel.css */
+/* 30-wrappers/panel.css */
 
 .panel {
-  padding: var(--panel-padding);
+  --panel-padding:          var(--panel-padding-md);
+  
+  padding:                  var(--panel-padding);
 }
 
 

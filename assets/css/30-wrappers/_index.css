@@ -1,9 +1,7 @@
-/* 20-primitives/wrapper/_index.css */
-
-@import "./column.css";
+/* 30-wrappers/_index.css */
 
 @import "./container.css";
-
 @import "./panel.css";
-
+@import "./region.css";
+@import "./shell.css";
 @import "./surface.css";

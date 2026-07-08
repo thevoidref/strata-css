@@ -6,6 +6,6 @@
 
 @import "./embedded.css";
 
-@import "./media.css";
+@import "./global.css";
 
-@import "./page.css";
+@import "./media.css";

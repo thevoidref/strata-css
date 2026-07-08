@@ -1,28 +1,4 @@
-/* 90-utilities/layout/gap.css */
-
-.cluster,
-.columns,
-.grid,
-.stack,
-.section {
-  gap:              var(--gap);
-}
-
-
-/* -------------------------------------------------------------------------- */
-/* Responsive Gap */
-/* -------------------------------------------------------------------------- */
-
-[data-gap="none"] { gap: var(--gap-none); }
-[data-gap="xs"]   { gap: var(--gap-xs); }
-[data-gap="sm"]   { gap: var(--gap-sm); }
-[data-gap="md"]   { gap: var(--gap-md); }
-[data-gap="lg"]   { gap: var(--gap-lg); }
-[data-gap="xl"]   { gap: var(--gap-xl); }
-[data-gap="2xl"]  { gap: var(--gap-2xl); }
-[data-gap="3xl"]  { gap: var(--gap-3xl); }
-[data-gap="4xl"]  { gap: var(--gap-4xl); }
-[data-gap="5xl"]  { gap: var(--gap-5xl); }
+/* 40-layouts/rules/gap.css */
 
 @container responsive (width < 50em) {
   [data-gap-50="none"] { gap: var(--gap-none); }

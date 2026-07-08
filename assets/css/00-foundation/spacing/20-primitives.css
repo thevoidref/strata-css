@@ -13,22 +13,18 @@
   /* Wrapper */
   /* -------------------------------------------------------------------------- */
 
-  /* Section */
+  /* Region */
 
-  --section-padding-sm:         var(--vertical-padding-sm);
-  --section-padding-md:         var(--vertical-padding-md);
-  --section-padding-lg:         var(--vertical-padding-lg);
-  --section-padding-xl:         var(--vertical-padding-xl);
-
-  --section-padding:            var(--section-padding-md);
+  --region-padding-sm:          var(--vertical-padding-sm);
+  --region-padding-md:          var(--vertical-padding-md);
+  --region-padding-lg:          var(--vertical-padding-lg);
+  --region-padding-xl:          var(--vertical-padding-xl);
 
   /* Panel */
 
   --panel-padding-sm:           var(--gap-lg);    /* 16 */
   --panel-padding-md:           var(--gap-2xl);   /* 32 */
   --panel-padding-lg:           var(--gap-3xl);   /* 48 */
-
-  --panel-padding:              var(--panel-padding-md);
 
 
   /* -------------------------------------------------------------------------- */
@@ -64,8 +60,8 @@
   /* Prose */
 
   --prose-flow:                  var(--spacing-32);
-  --prose-h1-margin-top:         var(--section-padding-md);
-  --prose-h2-margin-top:         var(--section-padding-sm);
+  --prose-h1-margin-top:         var(--region-padding-md);
+  --prose-h2-margin-top:         var(--region-padding-sm);
   --prose-h3-margin-top:         var(--spacing-64);
   --prose-list-indent:           var(--spacing-32);
   --prose-list-gap:              var(--component-spacing-8);

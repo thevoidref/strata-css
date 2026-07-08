@@ -33,11 +33,3 @@ body {
   text-rendering:           optimizeLegibility;
   font-variant-ligatures:   common-ligatures;
 }
-
-.shell {
-  min-height:         100svh;
-  overflow-x:         clip;
-  display:            flex;
-  flex-direction:     column;
-  padding-block:      var(--section-padding-xl);
-}

@@ -1,0 +1,30 @@
+/* 40-layouts/rules/columns.css */
+
+@container responsive (width < 50em) {
+  .columns[data-columns-50="1"]   { --columns-count: 1; }
+  .columns[data-columns-50="2"]   { --columns-count: 2; }
+  .columns[data-columns-50="3"]   { --columns-count: 3; }
+  .columns[data-columns-50="4"]   { --columns-count: 4; }
+  .columns[data-columns-50="5"]   { --columns-count: 5; }
+  .columns[data-columns-50="6"]   { --columns-count: 6; }
+  .columns[data-columns-50="7"]   { --columns-count: 7; }
+  .columns[data-columns-50="8"]   { --columns-count: 8; }
+}
+
+
+@container responsive (width < 35em) {
+  .columns[data-columns-35="1"]   { --columns-count: 1; }
+  .columns[data-columns-35="2"]   { --columns-count: 2; }
+  .columns[data-columns-35="3"]   { --columns-count: 3; }
+  .columns[data-columns-35="4"]   { --columns-count: 4; }
+  .columns[data-columns-35="5"]   { --columns-count: 5; }
+  .columns[data-columns-35="6"]   { --columns-count: 6; }
+}
+
+
+@container responsive (width < 20em) {
+  .columns[data-columns-20="1"]   { --columns-count: 1; }
+  .columns[data-columns-20="2"]   { --columns-count: 2; }
+  .columns[data-columns-20="3"]   { --columns-count: 3; }
+  .columns[data-columns-20="4"]   { --columns-count: 4; }
+}

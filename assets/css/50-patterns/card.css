@@ -1,0 +1,107 @@
+/* 50-patterns/card.css */
+
+.card {
+  --card-padding:   var(--panel-padding-md);
+
+  --card-radius:    var(--surface-radius);
+  --card-bg:        var(--surface-base-bg);
+  --card-border:    var(--surface-base-border);
+  --card-shadow:    var(--surface-base-shadow);
+
+  display:          flex;
+  flex-direction:   column;
+  gap:              var(--gap);
+
+  padding:          var(--card-padding);
+
+  background:       var(--card-bg);
+  border:           var(--card-border);
+  border-radius:    var(--card-radius);
+  box-shadow:       var(--card-shadow);
+
+  min-inline-size: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Attributes */
+/* -------------------------------------------------------------------------- */
+
+.card[data-card-padding="none"] { --card-padding: 0; }
+.card[data-card-padding="sm"]   { --card-padding: var(--panel-padding-sm); }
+.card[data-card-padding="lg"]   { --card-padding: var(--panel-padding-lg); }
+
+.card[data-card-radius="none"] { --card-radius: var(--radius-none); }
+.card[data-card-radius="sm"]   { --card-radius: var(--radius-sm); }
+.card[data-card-radius="lg"]   { --card-radius: var(--radius-lg); }
+
+.card[data-card-level="sunken"] {
+  --card-bg:     var(--surface-sunken-bg);
+  --card-border: var(--surface-sunken-border);
+  --card-shadow: var(--surface-sunken-shadow);
+}
+
+.card[data-card-level="raised"] {
+  --card-bg:     var(--surface-raised-bg);
+  --card-border: var(--surface-raised-border);
+  --card-shadow: var(--surface-raised-shadow);
+}
+
+.card[data-card-level="floating"] {
+  --card-bg:     var(--surface-floating-bg);
+  --card-border: var(--surface-floating-border);
+  --card-shadow: var(--surface-floating-shadow);
+}
+
+/* -------------------------------------------------------------------------- */
+/* Parts */
+/* -------------------------------------------------------------------------- */
+
+.card-header,
+.card-body,
+.card-footer,
+.card-actions {
+  min-inline-size:            0;
+}
+
+.card-media {
+  display:                    block;
+
+  inline-size:                100%;
+  max-inline-size:            100%;
+}
+
+.card-footer {
+  margin-block-start:         auto;
+}
+
+.card-actions {
+  display:                    flex;
+  flex-wrap:                  wrap;
+
+  gap:                        var(--gap);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Type */
+/* -------------------------------------------------------------------------- */
+
+.card[data-card-type="content"] {
+  --panel-padding:            var(--panel-padding-lg);
+  --gap:                      var(--gap-md);
+}
+
+.card[data-card-type="feature"] {
+  --panel-padding:            var(--panel-padding-lg);
+  --gap:                      var(--gap-sm);
+}
+
+.card[data-card-type="action"] {
+  --panel-padding:            var(--panel-padding-lg);
+  --gap:                      var(--gap-md);
+}
+
+.card[data-card-type="metric"] {
+  --panel-padding:            var(--panel-padding-sm);
+  --gap:                      var(--gap-xs);
+}
