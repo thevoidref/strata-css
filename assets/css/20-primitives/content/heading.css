@@ -1,8 +1,6 @@
 /* 20-primitives/content/heading.css */
 
 .heading {
-  margin:               0;
-
   font-family:          var(--heading-family);
 
   color:                var(--heading-fg);

@@ -1,6 +1,23 @@
 /* 40-layouts/stack.css */
 
 .stack {
+  --stack-item-border:      var(--border-base);
+  --stack-item-border-gap:  var(--gap-sm);
   display:                  flex;
   flex-direction:           column;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Border */
+/* -------------------------------------------------------------------------- */
+
+:where(.stack[data-border-bottom] > *) {
+  border-block-end:         var(--stack-item-border);
+  padding-block-end:        var(--stack-item-border-gap);
+}
+
+:where(.stack[data-border-bottom] > :last-child) {
+  border-block-end:         none;
+  padding-block-end:        0;
 }

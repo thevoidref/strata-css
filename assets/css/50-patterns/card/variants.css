@@ -1,0 +1,77 @@
+/* 50-patterns/card/variants.css */
+
+/* -------------------------------------------------------------------------- */
+/* Media variants */
+/* -------------------------------------------------------------------------- */
+
+.card[data-card-media="cover"] .card-media {
+  aspect-ratio:             var(--card-media-ratio, 16 / 9);
+  overflow:                 clip;
+}
+
+.card[data-card-media="cover"] .card-media > img,
+.card[data-card-media="cover"] img.card-media,
+.card[data-card-media="cover"] picture.card-media > img {
+  inline-size:              100%;
+  block-size:               100%;
+
+  object-fit:               cover;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Layout variants */
+/* -------------------------------------------------------------------------- */
+
+
+.card[data-card-layout="horizontal"] {
+  display:                  grid;
+  grid-template-columns:    minmax(0, var(--card-media-column, 1fr))
+                            minmax(0, var(--card-content-column, 2fr));
+  align-items:              stretch;
+}
+
+.card[data-card-layout="horizontal"] > .card-media {
+  block-size:               100%;
+}
+
+.card[data-card-layout="horizontal"] > .card-media > img,
+.card[data-card-layout="horizontal"] > img.card-media,
+.card[data-card-layout="horizontal"] > picture.card-media > img {
+  inline-size:              100%;
+  block-size:               100%;
+
+  object-fit:               cover;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Interactive variants */
+/* -------------------------------------------------------------------------- */
+
+.card[data-card-interactive] {
+  isolation:                isolate;
+}
+
+.card[data-card-interactive] .card-link::after {
+  content:                  "";
+
+  position:                 absolute;
+  inset:                    0;
+
+  z-index:                  1;
+}
+
+.card[data-card-interactive] :where(
+  button,
+  input,
+  select,
+  textarea,
+  summary,
+  [role="button"],
+  [role="link"],
+  .button
+) {
+  position:                 relative;
+  z-index:                  2;
+}

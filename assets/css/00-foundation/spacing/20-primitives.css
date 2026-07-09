@@ -60,9 +60,9 @@
   /* Prose */
 
   --prose-flow:                  var(--spacing-32);
-  --prose-h1-margin-top:         var(--region-padding-md);
-  --prose-h2-margin-top:         var(--region-padding-sm);
-  --prose-h3-margin-top:         var(--spacing-64);
+  --prose-h1-margin-top:         var(--spacing-64);
+  --prose-h2-margin-top:         var(--spacing-48);
+  --prose-h3-margin-top:         var(--spacing-40);
   --prose-list-indent:           var(--spacing-32);
   --prose-list-gap:              var(--component-spacing-8);
   

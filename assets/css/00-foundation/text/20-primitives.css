@@ -65,7 +65,7 @@
   --caption-family:             var(--text-family);
   --caption-size:               var(--size-xs);
   --caption-weight:             var(--weight-regular);
-  --caption-line:               var(--line-normal);
+  --caption-line:               var(--line-relaxed);
   --caption-tracking:           var(--tracking-normal);
   --caption-wrap:               pretty;
   --caption-align:              center;
@@ -108,12 +108,13 @@
 
   /* Meta */
 
-  --meta-family:                var(--ui-family);
-  --meta-size:                  var(--size-xs);
+  --meta-family:                var(--text-family);
+  --meta-size:                  var(--size-md);
   --meta-weight:                var(--weight-regular);
   --meta-line:                  var(--line-normal);
   --meta-tracking:              var(--tracking-normal);
   --meta-wrap:                  nowrap;
+  --meta-transform:             uppercase;
 
   /* Table */
 

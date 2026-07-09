@@ -1,0 +1,8 @@
+/* 50-patterns/card/default.css */
+
+.card {
+  position:                 relative;
+  overflow:                 clip;
+  
+  min-inline-size:          0;
+}

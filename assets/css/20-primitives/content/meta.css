@@ -1,0 +1,15 @@
+/* 20-primitives/content/meta.css */
+
+.meta {
+  padding:                      var(--meta-padding);
+
+  color:                        var(--meta-fg);
+  background:                   var(--meta-bg);
+
+  font-family:                  var(--meta-family);
+  font-size:                    var(--meta-size);
+  font-weight:                  var(--meta-weight);
+  line-height:                  var(--meta-line);
+  letter-spacing:               var(--meta-tracking);
+  text-transform:               var(--meta-transform);
+}

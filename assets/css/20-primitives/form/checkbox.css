@@ -1,70 +1,70 @@
 /* 20-primitives/forms/checkbox.css */
 
 .checkbox {
-  display:      inline-flex;
-  align-items:  center;
-  gap:          var(--checkbox-gap);
+  display:            inline-flex;
+  align-items:        center;
+  gap:                var(--checkbox-gap);
 
-  color:        var(--checkbox-label-fg);
-  cursor:       pointer;
+  color:              var(--checkbox-label-fg);
+  cursor:             pointer;
 }
 
 .checkbox__input {
-  appearance:      none;
+  appearance:         none;
 
-  display:         grid;
-  place-content:   center;
+  display:            grid;
+  place-content:      center;
 
-  width:           var(--checkbox-width);
-  aspect-ratio:    1;
+  width:              var(--checkbox-width);
+  aspect-ratio:       1;
 
-  flex:            0 0 auto;
+  flex:               0 0 auto;
 
-  color:           var(--checkbox-mark-fg);
-  background:      var(--checkbox-bg);
-  border:          var(--checkbox-border);
-  border-radius:   var(--checkbox-radius);
-  box-shadow:      var(--checkbox-shadow);
+  color:              var(--checkbox-mark-fg);
+  background:         var(--checkbox-bg);
+  border:             var(--checkbox-border);
+  border-radius:      var(--checkbox-radius);
+  box-shadow:         var(--checkbox-shadow);
 
-  cursor:          pointer;
-  transition:      var(--checkbox-transition);
+  cursor:             pointer;
+  transition:         var(--checkbox-transition);
 }
 
 .checkbox__input::before {
-  content:          "";
-  width:            var(--checkbox-mark-width);
-  aspect-ratio:     1;
+  content:            "";
+  width:              var(--checkbox-mark-width);
+  aspect-ratio:       1;
 
-  background:       currentColor;
+  background:         currentColor;
   
-  transform:        scale(0);
-  transition:       var(--checkbox-mark-transition);
+  transform:          scale(0);
+  transition:         var(--checkbox-mark-transition);
 
-  clip-path:        polygon(14% 44%, 0 62%, 40% 100%, 100% 18%, 82% 0, 36% 66%);
+  clip-path:          polygon(14% 44%, 0 62%, 40% 100%, 100% 18%, 82% 0, 36% 66%);
 }
 
 .checkbox__input:not(:disabled):not([aria-disabled="true"]):not(.is-disabled):hover {
-  border-color:     var(--checkbox-border-color-hover);
-  background:       var(--checkbox-bg-hover);
+  border-color:       var(--checkbox-border-color-hover);
+  background:         var(--checkbox-bg-hover);
 }
 
 .checkbox__input:checked {
-  color:            var(--checkbox-mark-fg-checked);
-  background:       var(--checkbox-bg-checked);
-  border-color:     var(--checkbox-border-color-checked);
+  color:              var(--checkbox-mark-fg-checked);
+  background:         var(--checkbox-bg-checked);
+  border-color:       var(--checkbox-border-color-checked);
 }
 
 .checkbox__input:checked::before {
-  transform:        scale(1);
+  transform:          scale(1);
 }
 
 .checkbox__input:indeterminate::before {
-  width:            var(--checkbox-indeterminate-width);
-  height:           var(--checkbox-indeterminate-height);
-  clip-path:        none;
-  transform:        scale(1);
+  width:              var(--checkbox-indeterminate-width);
+  height:             var(--checkbox-indeterminate-height);
+  clip-path:          none;
+  transform:          scale(1);
 }
 
 .checkbox__label {
-  line-height:      var(--checkbox-label-line);
+  line-height:        var(--checkbox-label-line);
 }

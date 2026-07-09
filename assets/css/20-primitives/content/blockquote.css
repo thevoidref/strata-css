@@ -1,7 +1,6 @@
 /* 20-primitives/content/blockquote.css */
 
 .blockquote {
-  margin:                       0;
   padding-inline:               var(--blockquote-padding);
 
   inline-size:                  min(100%, var(--blockquote-width));
@@ -11,5 +10,4 @@
   border-inline-start:          var(--blockquote-border);
 
   line-height:                  var(--line-relaxed);
-  
 }

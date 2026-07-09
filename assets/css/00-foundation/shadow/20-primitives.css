@@ -35,7 +35,7 @@
 
   /* Chip */
 
-  --chip-shadow:                    none;
+  --chip-shadow:                    var(--shadow-sm);
   --chip-shadow-hover:              var(--shadow-md);
 
 

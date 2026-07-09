@@ -4,7 +4,11 @@
   display:                grid;
   grid-template-rows:     auto 1fr auto;
 
+  gap:                    var(--gap);
+
   min-block-size:         100svh;
 
   overflow-x:             clip;
+
+  padding-block:          var(--region-padding-xl);
 }

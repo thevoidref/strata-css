@@ -13,6 +13,7 @@
   [data-gap-50="5xl"]  { gap: var(--gap-5xl); }
 }
 
+
 @container responsive (width < 35em) {
   [data-gap-35="none"] { gap: var(--gap-none); }
   [data-gap-35="xs"]   { gap: var(--gap-xs); }
@@ -25,6 +26,7 @@
   [data-gap-35="4xl"]  { gap: var(--gap-4xl); }
   [data-gap-35="5xl"]  { gap: var(--gap-5xl); }
 }
+
 
 @container responsive (width < 20em) {
   [data-gap-20="none"] { gap: var(--gap-none); }

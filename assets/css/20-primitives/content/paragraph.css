@@ -1,9 +1,7 @@
 /* 20-primitives/content/paragraph.css */
 
 .paragraph {
-  margin:                       0;
-
-  inline-size:                  min(100%, var(--paragraph-width));
+  max-inline-size:              min(100%, var(--paragraph-width));
 
   color:                        var(--paragraph-fg);
 

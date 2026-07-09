@@ -39,7 +39,8 @@
   background:                 var(--button-bg-hover);
 
   border:                     var(--button-border-hover);
-
+}
+.button[data-button-interactive]:not(:disabled):not([aria-disabled="true"]):not(.is-disabled):hover {
   box-shadow:                 var(--button-shadow-hover);
 
   transform:                  var(--button-transform-hover);

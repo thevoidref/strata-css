@@ -1,0 +1,714 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Card Pattern Preview</title>
+
+  <link rel="stylesheet" href="../../assets/css/style.css">
+
+  <style>
+    body {
+      background:
+        radial-gradient(
+          circle at top left,
+          rgb(184 187 38 / 0.08),
+          transparent 32rem
+        ),
+        var(--page-bg);
+    }
+
+    .preview-intro {
+      max-inline-size: var(--lead-measure);
+    }
+
+    .card-demo-media {
+      aspect-ratio: 16 / 9;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgb(184 187 38 / 0.18),
+          rgb(131 165 152 / 0.08)
+        );
+    }
+
+    .metric-value {
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1;
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <main class="stack" data-gap="5xl">
+
+
+    <!-- ================================================================ -->
+    <!-- Introduction                                                     -->
+    <!-- ================================================================ -->
+
+    <section class="region" data-region-padding="xl">
+      <div class="container" data-container-width="wide">
+
+        <header class="stack preview-intro" data-gap="lg">
+
+          <div class="stack" data-gap="sm">
+            <p class="eyebrow">Pattern preview</p>
+
+            <h1 class="heading" data-heading-level="1">
+              Card
+            </h1>
+
+            <p class="paragraph" data-paragraph-type="lead">
+              A reusable content object with optional anatomy and explicit
+              composition of panel, surface, and layout capabilities.
+            </p>
+          </div>
+
+          <div class="cluster" data-gap="sm">
+            <span class="chip">Card</span>
+            <span class="chip">Panel</span>
+            <span class="chip">Surface</span>
+            <span class="chip">Stack</span>
+            <span class="chip">Cluster</span>
+          </div>
+
+        </header>
+
+      </div>
+    </section>
+
+
+    <!-- ================================================================ -->
+    <!-- Basic anatomy                                                    -->
+    <!-- ================================================================ -->
+
+    <section class="section surface" data-section-padding="lg">
+      <div class="container" data-container-width="wide">
+
+        <div class="stack" data-gap="2xl">
+
+          <header class="stack preview-intro" data-gap="sm">
+            <p class="eyebrow">Anatomy</p>
+
+            <h2 class="heading">
+              Basic card structures
+            </h2>
+
+            <p class="paragraph">
+              The card defines anatomy and relationships. Panel, surface,
+              stack, and cluster remain explicit capabilities.
+            </p>
+          </header>
+
+
+          <div class="grid" data-grid-column="md" data-gap="lg">
+
+
+            <!-- Minimal card -->
+
+            <article class="card panel surface stack" data-gap="md">
+
+              <header class="card-header stack" data-gap="xs">
+                <p class="eyebrow">Minimal</p>
+
+                <h3 class="card-title heading" data-heading-level="3">
+                  Simple content card
+                </h3>
+              </header>
+
+              <div class="card-body">
+                <p class="paragraph">
+                  A card does not need every named part. This example only
+                  uses a header and body.
+                </p>
+              </div>
+
+            </article>
+
+
+            <!-- Card with footer -->
+
+            <article
+              class="card panel surface stack"
+              data-surface-level="raised"
+              data-gap="md"
+            >
+
+              <header class="card-header stack" data-gap="xs">
+                <p class="eyebrow">Product</p>
+
+                <h3 class="card-title heading" data-heading-level="3">
+                  Workflow automation
+                </h3>
+              </header>
+
+              <div class="card-body stack" data-gap="sm">
+                <p class="paragraph">
+                  Connect incoming requests, qualification rules, scheduling,
+                  and follow-up into one operational flow.
+                </p>
+
+                <div class="cluster" data-gap="xs">
+                  <span class="chip">Automation</span>
+                  <span class="chip">CRM</span>
+                  <span class="chip">Scheduling</span>
+                </div>
+              </div>
+
+              <footer class="card-footer">
+                <a class="button" href="#">
+                  View system
+                </a>
+              </footer>
+
+            </article>
+
+
+            <!-- Card with actions -->
+
+            <article
+              class="card panel surface stack"
+              data-surface-level="floating"
+              data-gap="md"
+            >
+
+              <header class="card-header stack" data-gap="xs">
+                <p class="eyebrow">Project</p>
+
+                <h3 class="card-title heading" data-heading-level="3">
+                  Client acquisition system
+                </h3>
+              </header>
+
+              <div class="card-body">
+                <p class="paragraph">
+                  A reusable acquisition pipeline from first contact through
+                  qualification, proposal, and conversion.
+                </p>
+              </div>
+
+              <footer class="card-footer">
+                <div class="card-actions">
+                  <a class="button" href="#">
+                    Open project
+                  </a>
+
+                  <button
+                    class="button"
+                    data-button-type="ghost"
+                    type="button"
+                  >
+                    Archive
+                  </button>
+                </div>
+              </footer>
+
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================================================================ -->
+    <!-- Surface composition                                              -->
+    <!-- ================================================================ -->
+
+    <section class="section" data-section-padding="lg">
+      <div class="container" data-container-width="wide">
+
+        <div class="stack" data-gap="2xl">
+
+          <header class="stack preview-intro" data-gap="sm">
+            <p class="eyebrow">Composition</p>
+
+            <h2 class="heading">
+              Surface levels belong to surface
+            </h2>
+
+            <p class="paragraph">
+              These cards share the same anatomy. Their visual hierarchy comes
+              from the surface wrapper API rather than card-specific variants.
+            </p>
+          </header>
+
+
+          <div class="grid" data-grid-column="sm" data-gap="lg">
+
+
+            <article
+              class="card panel surface stack"
+              data-surface-level="sunken"
+              data-panel-padding="sm"
+              data-gap="sm"
+            >
+              <header class="card-header">
+                <p class="eyebrow">Sunken</p>
+              </header>
+
+              <div class="card-body stack" data-gap="xs">
+                <h3 class="card-title heading" data-heading-level="3">
+                  Supporting information
+                </h3>
+
+                <p class="caption">
+                  Compact, subordinate content.
+                </p>
+              </div>
+            </article>
+
+
+            <article
+              class="card panel surface stack"
+              data-gap="sm"
+            >
+              <header class="card-header">
+                <p class="eyebrow">Base</p>
+              </header>
+
+              <div class="card-body stack" data-gap="xs">
+                <h3 class="card-title heading" data-heading-level="3">
+                  Standard content
+                </h3>
+
+                <p class="caption">
+                  Default visual hierarchy.
+                </p>
+              </div>
+            </article>
+
+
+            <article
+              class="card panel surface stack"
+              data-surface-level="raised"
+              data-panel-padding="lg"
+              data-gap="sm"
+            >
+              <header class="card-header">
+                <p class="eyebrow">Raised</p>
+              </header>
+
+              <div class="card-body stack" data-gap="xs">
+                <h3 class="card-title heading" data-heading-level="3">
+                  Prominent content
+                </h3>
+
+                <p class="caption">
+                  Increased visual emphasis.
+                </p>
+              </div>
+            </article>
+
+
+            <article
+              class="card panel surface stack"
+              data-surface-level="floating"
+              data-panel-padding="lg"
+              data-gap="sm"
+            >
+              <header class="card-header">
+                <p class="eyebrow">Floating</p>
+              </header>
+
+              <div class="card-body stack" data-gap="xs">
+                <h3 class="card-title heading" data-heading-level="3">
+                  Highest emphasis
+                </h3>
+
+                <p class="caption">
+                  Strong separation from surrounding content.
+                </p>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================================================================ -->
+    <!-- Media cards                                                      -->
+    <!-- ================================================================ -->
+
+    <section class="section surface" data-section-padding="lg">
+      <div class="container" data-container-width="wide">
+
+        <div class="stack" data-gap="2xl">
+
+          <header class="stack preview-intro" data-gap="sm">
+            <p class="eyebrow">Media</p>
+
+            <h2 class="heading">
+              Cards with visual content
+            </h2>
+
+            <p class="paragraph">
+              Media is optional anatomy. The placeholder blocks make sizing
+              and overflow behavior visible without external image assets.
+            </p>
+          </header>
+
+
+          <div class="grid" data-grid-column="md" data-gap="lg">
+
+
+            <article
+              class="card surface stack"
+              data-surface-level="raised"
+              data-gap="none"
+            >
+
+              <div
+                class="card-media card-demo-media"
+                role="img"
+                aria-label="Abstract project preview"
+              ></div>
+
+              <div class="panel stack" data-gap="md">
+
+                <header class="card-header stack" data-gap="xs">
+                  <p class="eyebrow">Case study</p>
+
+                  <h3 class="card-title heading" data-heading-level="3">
+                    Reservation workflow
+                  </h3>
+                </header>
+
+                <div class="card-body">
+                  <p class="paragraph">
+                    Consolidating fragmented reservation channels into one
+                    qualification and scheduling pipeline.
+                  </p>
+                </div>
+
+                <footer class="card-footer">
+                  <a class="button" href="#">
+                    Read case study
+                  </a>
+                </footer>
+
+              </div>
+
+            </article>
+
+
+            <article
+              class="card surface stack"
+              data-surface-level="raised"
+              data-gap="none"
+            >
+
+              <div
+                class="card-media card-demo-media"
+                role="img"
+                aria-label="Abstract automation preview"
+              ></div>
+
+              <div
+                class="panel stack"
+                data-panel-padding="lg"
+                data-gap="md"
+              >
+
+                <header class="card-header stack" data-gap="xs">
+                  <p class="eyebrow">System</p>
+
+                  <h3 class="card-title heading" data-heading-level="3">
+                    Lead qualification
+                  </h3>
+                </header>
+
+                <div class="card-body">
+                  <p class="paragraph">
+                    Capture, normalize, enrich, score, and route incoming
+                    opportunities through explicit business rules.
+                  </p>
+                </div>
+
+                <footer class="card-footer">
+                  <div class="card-actions">
+                    <a class="button" href="#">
+                      Explore
+                    </a>
+
+                    <a
+                      class="button"
+                      data-button-type="outline"
+                      href="#"
+                    >
+                      Documentation
+                    </a>
+                  </div>
+                </footer>
+
+              </div>
+
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================================================================ -->
+    <!-- Specialized anatomy                                              -->
+    <!-- ================================================================ -->
+
+    <section class="section" data-section-padding="lg">
+      <div class="container" data-container-width="wide">
+
+        <div class="stack" data-gap="2xl">
+
+          <header class="stack preview-intro" data-gap="sm">
+            <p class="eyebrow">Stress test</p>
+
+            <h2 class="heading">
+              Different content anatomies
+            </h2>
+
+            <p class="paragraph">
+              These examples test whether card anatomy remains useful without
+              turning every content category into a card type.
+            </p>
+          </header>
+
+
+          <div class="grid" data-grid-column="sm" data-gap="lg">
+
+
+            <!-- Metric -->
+
+            <article
+              class="card panel surface stack"
+              data-surface-level="raised"
+              data-panel-padding="sm"
+              data-gap="xs"
+            >
+
+              <header class="card-header">
+                <p class="meta">Conversion rate</p>
+              </header>
+
+              <div class="card-body stack" data-gap="xs">
+                <p class="metric-value">24.8%</p>
+                <p class="caption">+3.2 points this month</p>
+              </div>
+
+            </article>
+
+
+            <!-- Feature -->
+
+            <article
+              class="card panel surface stack"
+              data-gap="sm"
+            >
+
+              <header class="card-header stack" data-gap="xs">
+                <p class="eyebrow">01</p>
+
+                <h3 class="card-title heading" data-heading-level="3">
+                  Capture
+                </h3>
+              </header>
+
+              <div class="card-body">
+                <p class="paragraph">
+                  Collect structured requests from every relevant acquisition
+                  channel.
+                </p>
+              </div>
+
+            </article>
+
+
+            <!-- Action -->
+
+            <article
+              class="card panel surface stack"
+              data-surface-level="floating"
+              data-gap="md"
+            >
+
+              <header class="card-header stack" data-gap="xs">
+                <p class="eyebrow">Next step</p>
+
+                <h3 class="card-title heading" data-heading-level="3">
+                  Review qualified leads
+                </h3>
+              </header>
+
+              <div class="card-body">
+                <p class="paragraph">
+                  Twelve leads have passed the current qualification threshold.
+                </p>
+              </div>
+
+              <footer class="card-footer">
+                <a class="button" href="#">
+                  Review leads
+                </a>
+              </footer>
+
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================================================================ -->
+    <!-- Long content stress test                                         -->
+    <!-- ================================================================ -->
+
+    <section class="section surface" data-section-padding="lg">
+      <div class="container" data-container-width="wide">
+
+        <div class="stack" data-gap="2xl">
+
+          <header class="stack preview-intro" data-gap="sm">
+            <p class="eyebrow">Resilience</p>
+
+            <h2 class="heading">
+              Uneven content and wrapping
+            </h2>
+
+            <p class="paragraph">
+              A useful card pattern must survive realistic title lengths,
+              body lengths, wrapping actions, and unequal sibling content.
+            </p>
+          </header>
+
+
+          <div class="grid" data-grid-column="sm" data-gap="lg">
+
+
+            <article
+              class="card panel surface stack"
+              data-surface-level="raised"
+              data-gap="md"
+            >
+
+              <header class="card-header">
+                <h3 class="card-title heading" data-heading-level="3">
+                  Short title
+                </h3>
+              </header>
+
+              <div class="card-body">
+                <p class="paragraph">
+                  A short amount of supporting copy.
+                </p>
+              </div>
+
+              <footer class="card-footer">
+                <a class="button" href="#">
+                  Open
+                </a>
+              </footer>
+
+            </article>
+
+
+            <article
+              class="card panel surface stack"
+              data-surface-level="raised"
+              data-gap="md"
+            >
+
+              <header class="card-header">
+                <h3 class="card-title heading" data-heading-level="3">
+                  A significantly longer title that should wrap naturally
+                  without damaging the card layout
+                </h3>
+              </header>
+
+              <div class="card-body">
+                <p class="paragraph">
+                  This card intentionally contains more text than its siblings.
+                  It tests min-inline-size behavior, natural text wrapping,
+                  equal grid participation, and footer placement when card
+                  content lengths differ significantly.
+                </p>
+              </div>
+
+              <footer class="card-footer">
+                <div class="card-actions">
+                  <a class="button" href="#">
+                    Primary action
+                  </a>
+
+                  <button
+                    class="button"
+                    data-button-type="outline"
+                    type="button"
+                  >
+                    Secondary action with longer text
+                  </button>
+                </div>
+              </footer>
+
+            </article>
+
+
+            <article
+              class="card panel surface stack"
+              data-surface-level="raised"
+              data-gap="md"
+            >
+
+              <header class="card-header">
+                <h3 class="card-title heading" data-heading-level="3">
+                  Medium content
+                </h3>
+              </header>
+
+              <div class="card-body">
+                <p class="paragraph">
+                  Enough content to produce a realistic middle case between
+                  the shortest and longest cards in the grid.
+                </p>
+              </div>
+
+              <footer class="card-footer">
+                <a
+                  class="button"
+                  data-button-type="ghost"
+                  href="#"
+                >
+                  Learn more
+                </a>
+              </footer>
+
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+  </main>
+
+</body>
+</html>

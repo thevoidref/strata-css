@@ -1,0 +1,41 @@
+/* 50-patterns/card/parts.css */
+
+:where(
+  .card-header,
+  .card-body,
+  .card-footer,
+  .card-actions
+) {
+  min-inline-size:          0;
+}
+
+:where(.card-title) {
+  margin:                   0;
+}
+
+.card-media {
+  display:                  block;
+
+  inline-size:              100%;
+  max-inline-size:          100%;
+}
+
+.card-media > img,
+img.card-media,
+picture.card-media > img {
+  display:                  block;
+
+  inline-size:              100%;
+  block-size:               auto;
+}
+
+.card-actions {
+  display:                  flex;
+  flex-wrap:                wrap;
+  align-items:              center;
+  gap:                      var(--gap-sm);
+}
+
+.card-footer {
+  margin-block-start:         auto;
+}

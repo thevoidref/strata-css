@@ -3,7 +3,7 @@
 @import './00-foundation/_index.css';
 @import './10-base/_index.css';
 @import './20-primitives/_index.css';
-@import './30-components/_index.css';
+@import './30-wrappers/_index.css';
 @import './40-layouts/_index.css';
 @import './50-patterns/_index.css';
 @import './60-pages/_index.css';

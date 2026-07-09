@@ -1,9 +1,12 @@
 /* 30-wrappers/panel.css */
 
 .panel {
-  --panel-padding:          var(--panel-padding-md);
-  
-  padding:                  var(--panel-padding);
+  --panel-padding:              var(--panel-padding-md);
+  --panel-header-gap:           var(--gap-lg);
+  --panel-content-gap:          var(--gap-xl);
+  --panel-header-border:        var(--border-base);
+
+  padding:                      var(--panel-padding);
 }
 
 
@@ -14,3 +17,17 @@
 .panel[data-panel-padding="none"]   { --panel-padding: 0; }
 .panel[data-panel-padding="sm"]     { --panel-padding: var(--panel-padding-sm); }
 .panel[data-panel-padding="lg"]     { --panel-padding: var(--panel-padding-lg); }
+
+
+/* -------------------------------------------------------------------------- */
+/* Parts */
+/* -------------------------------------------------------------------------- */
+
+:where(.panel > .panel-header) {
+  padding-block-end:            var(--panel-header-gap);
+  border-block-end:             var(--panel-header-border);
+}
+
+.panel > .panel-header + * {
+  margin-block-start:           var(--panel-content-gap);
+}

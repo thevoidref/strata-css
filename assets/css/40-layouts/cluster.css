@@ -6,3 +6,10 @@
   flex-wrap:                wrap;
   align-items:              center;
 }
+
+.cluster[data-nowrap] {
+  flex-wrap:                nowrap;
+}
+.cluster[data-nowrap] > * {
+  flex-shrink: 0;
+}

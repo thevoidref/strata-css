@@ -31,7 +31,7 @@
   transition:           var(--chip-transition);
 }
 
-.chip[data-chip-hover="true"]:hover {
+.chip[data-chip-hover]:hover {
   transform:            var(--chip-hover-transform);
   --chip-shadow:        var(--chip-shadow-hover);
 }

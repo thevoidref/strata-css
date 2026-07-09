@@ -5,15 +5,15 @@ picture,
 video,
 canvas,
 svg {
-  display: block;
-  max-width: 100%;
+  display:        block;
+  max-width:      100%;
 }
 
 img,
 video {
-  height: auto;
+  height:         auto;
 }
 
 img::selection {
-	background: transparent;
+	background:     transparent;
 }

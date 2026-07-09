@@ -23,205 +23,204 @@
 
 <body>
 
-<main class="shell" data-gap="3xl">
+<main class="shell">
 
   <header class="stack container" data-container-width="expanded">
-
-    <p class="eyebrow">
-      Actions
-    </p>
-
-    <h1 class="heading" data-heading-level="1">
-      Action primitives preview
-    </h1>
-
-    <p class="paragraph paragraph--lead">
+    <p class="eyebrow">Actions</p>
+    <h1 class="heading" data-heading-level="1">Action primitives preview</h1>
+    <p class="paragraph" data-paragraph-type="lead">
       Preview every interactive primitive, variant and state.
     </p>
 
+    <div class="cluster" data-gap="md">
+      <span class="chip" data-chip-hover>Link</span>
+      <span class="chip" data-chip-hover>Button</span>
+      <span class="chip" data-chip-hover>Icons</span>
+    </div>
   </header>
 
-  <!-- Link -->
-  <section class="section">
+  <section class="region">
     <div class="container" data-container-width="expanded">
-      <div class="panel surface">
-        <div class="panel-header">
-          <h2 class="heading">
-            Link
-          </h2>
-        </div>
+      <div class="spans">
 
-        <div class="grid">
+        <!-- Button -->
+        <article class="span" data-span="12">
+          <div class="panel surface">
+            <div class="panel-header">
+              <h2 class="heading">
+                Button
+              </h2>
+            </div>
+            <div class="grid">
 
-          <div class="cluster">
-            <span class="label">Default</span>
-            <a href="#" class="link">Regular link</a>
+              <!-- Solid -->
+              <div class="cluster">
+                <span class="label">Solid</span>
+
+                <button class="button">
+                  Button
+                </button>
+
+                <button class="button" data-button-size="small">
+                  Button Small
+                </button>
+
+                <button class="button" data-button-size="large">
+                  Button Large
+                </button>
+
+                <button class="button" disabled>
+                  Disabled
+                </button>
+              </div>
+
+              <!-- Outline -->
+              <div class="cluster">
+                <span class="label">Outline</span>
+
+                <button class="button" data-button-type="outline">
+                  Button
+                </button>
+
+                <button class="button" data-button-type="outline" data-button-size="small">
+                  Button Small
+                </button>
+
+                <button class="button" data-button-type="outline" data-button-size="large">
+                  Button Large
+                </button>
+
+                <button class="button" data-button-type="outline" disabled>
+                  Disabled
+                </button>
+              </div>
+
+              <!-- Ghost -->
+              <div class="cluster">
+                <span class="label">Ghost</span>
+
+                <button class="button" data-button-type="ghost">
+                  Button
+                </button>
+
+                <button class="button" data-button-type="ghost" data-button-size="small">
+                  Button Small
+                </button>
+
+                <button class="button" data-button-type="ghost" data-button-size="large">
+                  Button Large
+                </button>
+
+                <button class="button" data-button-type="ghost" disabled>
+                  Disabled
+                </button>
+              </div>
+
+              <!-- Max -->
+              <div class="stack" >
+                <span class="label">Max</span>
+
+                <button class="button" data-button-size="max">
+                  Button Max
+                </button>
+              </div>
+
+            </div>
           </div>
+        </article>
 
-          <div class="cluster">
-            <span class="label">Muted</span>
-            <a href="#" class="link" data-link-type="muted">Muted link</a>
+        <!-- Button Icon -->
+        <article class="span" data-span="6">
+          <div class="panel surface">
+            <div class="panel-header">
+              <h2 class="heading">
+                Icon Button
+              </h2>
+            </div>
+
+            <div class="grid">
+
+              <div class="cluster">
+                <span class="label">Solid</span>
+
+                <button class="button" data-button-shape="icon" aria-label="Search">🔍</button>
+                <button class="button" data-button-shape="icon" aria-label="Close">✕</button>
+                <button class="button" data-button-shape="icon" disabled aria-label="Disabled">★</button>
+              </div>
+
+              <div class="cluster">
+                <span class="label">Outline</span>
+
+                <button class="button" data-button-shape="icon"
+                data-button-type="outline" aria-label="Search">🔍</button>
+                <button class="button" data-button-shape="icon"
+                data-button-type="outline" aria-label="Edit">✎</button>
+              </div>
+
+              <div class="cluster">
+                <span class="label">Ghost</span>
+
+                <button class="button" data-button-shape="icon"
+                data-button-type="ghost" aria-label="Menu">☰</button>
+                <button class="button" data-button-shape="icon"
+                data-button-type="ghost" aria-label="Refresh">↻</button>
+              </div>
+
+              <div class="cluster">
+                <span class="label">Sizes</span>
+
+                <button class="button" data-button-shape="icon" 
+                data-button-size="small" aria-label="Small favorite">★</button>
+                <button class="button" data-button-shape="icon" aria-label="Medium favorite">★</button>
+                <button class="button" data-button-shape="icon"
+                data-button-size="large" aria-label="Large
+                favorite">★</button>
+              </div>
+
+            </div> 
           </div>
+        </article>
 
-          <div class="cluster">
-            <span class="label">Subtle</span>
-            <a href="#" class="link" data-link-type="subtle">Subtle link</a>
+        <!-- Link -->
+        <article class="span" data-span="6">
+          <div class="panel surface">
+            <div class="panel-header">
+              <h2 class="heading">
+                Link
+              </h2>
+            </div>
+
+            <div class="grid">
+
+              <div class="cluster">
+                <span class="label">Default</span>
+                <a href="#" class="link">Regular link</a>
+              </div>
+
+              <div class="cluster">
+                <span class="label">Muted</span>
+                <a href="#" class="link" data-link-type="muted">Muted link</a>
+              </div>
+
+              <div class="cluster">
+                <span class="label">Subtle</span>
+                <a href="#" class="link" data-link-type="subtle">Subtle link</a>
+              </div>
+
+              <div class="cluster">
+                <span class="label">Disabled</span>
+                <a class="link" aria-disabled="true">
+                  Disabled link
+                </a>
+              </div>
+
+            </div>
           </div>
+        </article>
 
-          <div class="cluster">
-            <span class="label">Disabled</span>
-            <a class="link" aria-disabled="true">
-              Disabled link
-            </a>
-          </div>
-
-        </div>
       </div>
     </div>
   </section>
-
-  <!-- Button -->
-  <section class="section">
-    <div class="container" data-container-width="expanded">
-      <div class="panel surface">
-        <div class="panel-header">
-          <h2 class="heading">
-            Button
-          </h2>
-        </div>
-        <div class="grid">
-
-          <!-- Solid -->
-          <div class="cluster">
-            <span class="label">Solid</span>
-
-            <button class="button">
-              Button
-            </button>
-
-            <button class="button" data-button-size="small">
-              Button Small
-            </button>
-
-            <button class="button" data-button-size="large">
-              Button Large
-            </button>
-
-            <button class="button" disabled>
-              Disabled
-            </button>
-          </div>
-
-          <!-- Outline -->
-          <div class="cluster">
-            <span class="label">Outline</span>
-
-            <button class="button" data-button-type="outline">
-              Button
-            </button>
-
-            <button class="button" data-button-type="outline" data-button-size="small">
-              Button Small
-            </button>
-
-            <button class="button" data-button-type="outline" data-button-size="large">
-              Button Large
-            </button>
-
-            <button class="button" data-button-type="outline" disabled>
-              Disabled
-            </button>
-          </div>
-
-          <!-- Ghost -->
-          <div class="cluster">
-            <span class="label">Ghost</span>
-
-            <button class="button" data-button-type="ghost">
-              Button
-            </button>
-
-            <button class="button" data-button-type="ghost" data-button-size="small">
-              Button Small
-            </button>
-
-            <button class="button" data-button-type="ghost" data-button-size="large">
-              Button Large
-            </button>
-
-            <button class="button" data-button-type="ghost" disabled>
-              Disabled
-            </button>
-          </div>
-
-          <!-- Max -->
-          <div class="stack" >
-            <span class="label">Max</span>
-
-            <button class="button" data-button-size="max">
-              Button Max
-            </button>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Icon Button -->
-  <section class="section">
-    <div class="container" data-container-width="expanded">
-      <div class="panel surface">
-        <div class="panel-header">
-          <h2 class="heading">
-            Icon Button
-          </h2>
-        </div>
-
-        <div class="grid">
-
-          <div class="cluster">
-            <span class="label">Solid</span>
-
-            <button class="button" data-button-shape="icon" aria-label="Search">🔍</button>
-            <button class="button" data-button-shape="icon" aria-label="Close">✕</button>
-            <button class="button" data-button-shape="icon" disabled aria-label="Disabled">★</button>
-          </div>
-
-          <div class="cluster">
-            <span class="label">Outline</span>
-
-            <button class="button" data-button-shape="icon"
-            data-button-type="outline" aria-label="Search">🔍</button>
-            <button class="button" data-button-shape="icon"
-            data-button-type="outline" aria-label="Edit">✎</button>
-          </div>
-
-          <div class="cluster">
-            <span class="label">Ghost</span>
-
-            <button class="button" data-button-shape="icon"
-            data-button-type="ghost" aria-label="Menu">☰</button>
-            <button class="button" data-button-shape="icon"
-            data-button-type="ghost" aria-label="Refresh">↻</button>
-          </div>
-
-          <div class="cluster">
-            <span class="label">Sizes</span>
-
-            <button class="button" data-button-shape="icon" 
-            data-button-size="small" aria-label="Small favorite">★</button>
-            <button class="button" data-button-shape="icon" aria-label="Medium favorite">★</button>
-            <button class="button" data-button-shape="icon"
-            data-button-size="large" aria-label="Large
-            favorite">★</button>
-          </div>
-
-        </div> 
-      </div>
-    </div>
-  </section>
-
 </main>
 
 </body>

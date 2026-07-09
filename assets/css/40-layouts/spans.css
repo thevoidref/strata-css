@@ -6,9 +6,13 @@
 }
 
 .span {
-  grid-column:            span 1;
+  grid-column:            span 12;
+}
+.span > :is(.surface, .panel) {
+  block-size:             100%;
 }
 
+.span[data-span="1"]  { grid-column: span 1; }
 .span[data-span="2"]  { grid-column: span 2; }
 .span[data-span="3"]  { grid-column: span 3; }
 .span[data-span="4"]  { grid-column: span 4; }
@@ -19,4 +23,3 @@
 .span[data-span="9"]  { grid-column: span 9; }
 .span[data-span="10"] { grid-column: span 10; }
 .span[data-span="11"] { grid-column: span 11; }
-.span[data-span="12"] { grid-column: span 12; }

@@ -1,0 +1,6 @@
+/* 50-patterns/card/_index.css */
+
+@import "default.css";
+@import "parts.css";
+@import "states.css";
+@import "variants.css";

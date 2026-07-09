@@ -1,0 +1,11 @@
+/* 40-layouts/rules/children.css */
+
+:where(
+  .grid,
+  .columns,
+  .spans,
+  .cluster,
+  .stack
+) > * {
+  min-inline-size: 0;
+}

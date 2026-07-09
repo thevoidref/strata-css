@@ -43,3 +43,7 @@
 :is(.stack, .cluster, .grid, .columns)[data-align="stretch"] {
   align-items:              stretch;
 }
+
+:is(.stack, .cluster, .grid, .columns)[data-align="between"] {
+  align-items:              space-between;
+}

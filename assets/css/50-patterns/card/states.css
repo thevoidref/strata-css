@@ -1,0 +1,12 @@
+/* 50-patterns/card/states.css */
+
+
+/* -------------------------------------------------------------------------- */
+/* Current */
+/* -------------------------------------------------------------------------- */
+
+.card[aria-current="true"],
+.card[aria-current="page"] {
+  outline:                  var(--outline-size) solid var(--outline-color);
+  outline-offset:           var(--outline-offset);
+}

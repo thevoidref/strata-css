@@ -1,7 +1,7 @@
-/* 40-layouts/region.css */
+/* 30-wrappers/region.css */
 
 .region {
-  --region-padding:         var(--region-padding-md)
+  --region-padding:         var(--region-padding-md);
   
   padding-block:            var(--region-padding);
 }

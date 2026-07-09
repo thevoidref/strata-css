@@ -102,17 +102,19 @@
 
   --heading-fg:             var(--text-strong);
   --h3-fg:                  var(--text-primary);
+  --subtitle-fg:            var(--text-secondary);
 
   --paragraph-fg:           inherit;
   --lead-fg:                var(--text-primary);
   --muted-fg:               var(--text-muted);
-  --prose-fg:               var(--paragraph-fg);
+  --prose-fg:               var(--text-primary);
 
-  --subtitle-fg:            var(--text-secondary);
-  --caption-fg:             var(--text-secondary);
-  --eyebrow-fg:             var(--text-accent);
   --label-fg:               var(--text-secondary);
-  --meta-fg:                var(--text-muted);
+  --caption-fg:             var(--text-muted);
+
+  --eyebrow-fg:             var(--text-accent);
+  
+  --meta-fg:                var(--text-primary);
 
   --blockquote-fg:          var(--text-secondary);
   

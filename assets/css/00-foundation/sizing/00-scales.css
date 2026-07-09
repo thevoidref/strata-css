@@ -43,10 +43,10 @@
   /* -------------------------------------------------------------------------- */
 
   --control-height-xs:            calc(1.5rem * var(--component-scale));
-  --control-height-sm:            calc(2.5rem * var(--component-scale));
-  --control-height-md:            calc(3rem * var(--component-scale));
-  --control-height-lg:            calc(3.5rem * var(--component-scale));
-  --control-height-xl:            calc(4.5rem * var(--component-scale));
+  --control-height-sm:            calc(2rem * var(--component-scale));
+  --control-height-md:            calc(2.75rem * var(--component-scale));
+  --control-height-lg:            calc(3.25rem * var(--component-scale));
+  --control-height-xl:            calc(3.75rem * var(--component-scale));
 
 
   /* -------------------------------------------------------------------------- */

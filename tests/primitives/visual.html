@@ -16,25 +16,6 @@
         var(--page-bg);
     }
 
-    .shell {
-      width: min(100% - calc(var(--site-margin) * 2), var(--container-wide-width));
-      margin-inline: auto;
-      padding-block: var(--section-padding-lg);
-    }
-
-    .panel {
-      padding: var(--spacing-48);
-
-      border: var(--border-base);
-      border-radius: var(--radius-lg);
-
-      background: var(--surface-bg);
-    }
-
-    .panel-header {
-      margin-bottom: var(--spacing-48);
-    }
-    
     .preview-item {
       display: grid;
       gap: var(--spacing-12);
@@ -65,25 +46,31 @@
   </style>
 </head>
 
-<body>
+<body class="shell">
+<header class="stack container" data-container-width="expanded" data-gap="xl">
+  <p class="eyebrow">Visuals</p>
+  <h1 class="heading" data-heading-level="1">
+    Visual primitives preview
+  </h1>
+  <p class="paragraph paragraph--lead">
+    Preview every visual primitive, variant, shape and state.
+  </p>
 
-<main class="shell stack" data-gap="3xl">
-
-  <header class="stack">
-    <p class="eyebrow">Visuals</p>
-
-    <h1 class="heading heading--1">
-      Visual primitives preview
-    </h1>
-
-    <p class="paragraph paragraph--lead">
-      Preview every visual primitive, variant, shape and state.
-    </p>
-  </header>
-
+  <div class="cluster" data-gap="md">
+    <span class="chip" data-chip-hover>Surfaces</span>
+    <span class="chip" data-chip-hover>Avatar</span>
+    <span class="chip" data-chip-hover>Chips</span>
+    <span class="chip" data-chip-hover>Dividers</span>
+    <span class="chip" data-chip-hover>Icons</span>
+    <span class="chip" data-chip-hover>Images</span>
+  </div>
+</header>
+<main>
+<section class="region">
+<div class="container" data-container-width="expanded">
+<div class="grid">
   <!-- Surface -->
-
-  <section class="panel">
+  <article class="panel surface">
     <div class="panel-header">
       <h2 class="heading">Surface</h2>
     </div>
@@ -109,11 +96,10 @@
         <span class="label">Floating</span>
       </div>
     </div>
-  </section>
+  </article>
 
   <!-- Avatar -->
-   
-  <section class="panel">
+  <article class="panel surface" data-span="6">
     <div class="panel-header">
       <h2 class="heading">Avatar</h2>
     </div>
@@ -141,11 +127,10 @@
         </span>
       </div>
     </div>
-  </section>
+  </article>
 
   <!-- Chip -->
-   
-  <section class="panel">
+  <article class="panel surface" data-span="6">
     <div class="panel-header">
       <h2 class="heading">Chip</h2>
     </div>
@@ -171,11 +156,10 @@
         <span class="chip" data-chip-tone="green" data-chip-hover="true">Playful</span>
       </div>
     </div>
-  </section>
+  </article>
 
   <!-- Divider -->
-   
-  <section class="panel">
+  <article class="panel surface">
     <div class="panel-header">
       <h2 class="heading">Divider</h2>
     </div>
@@ -208,11 +192,10 @@
         <span>Right content</span>
       </div>
     </div>
-  </section>
+  </article>
 
   <!-- Icon -->
-   
-  <section class="panel">
+  <article class="panel surface" data-span="4">
     <div class="panel-header">
       <h2 class="heading">Icon</h2>
     </div>
@@ -258,11 +241,10 @@
         </span>
       </div>
     </div>
-  </section>
+  </article>
 
   <!-- Image -->
-   
-  <section class="panel">
+  <article class="panel surface" data-span="8">
     <div class="panel-header">
       <h2 class="heading">Image</h2>
     </div>
@@ -303,9 +285,11 @@
         </figure>
       </div>
     </div>
-  </section>
-
+  </article>
+</div>
+</div>
+</section>
 </main>
-
 </body>
+
 </html>
