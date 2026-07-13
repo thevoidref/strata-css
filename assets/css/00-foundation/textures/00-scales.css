@@ -1,0 +1,23 @@
+/* 00-foundation/textures/00-scales.css */
+
+:root {
+  /* ------------------------------------------------------------------------ */
+  /* Tile sizes */
+  /* ------------------------------------------------------------------------ */
+
+  --texture-size-xs:             8px;
+  --texture-size-sm:             16px;
+  --texture-size-md:             32px;
+  --texture-size-lg:             64px;
+  --texture-size-xl:             128px;
+
+
+  /* ------------------------------------------------------------------------ */
+  /* Opacity */
+  /* ------------------------------------------------------------------------ */
+
+  --texture-opacity-subtle:      0.03;
+  --texture-opacity-soft:        var(--opacity-5);
+  --texture-opacity-base:        var(--opacity-10);
+  --texture-opacity-strong:      var(--opacity-15);
+}

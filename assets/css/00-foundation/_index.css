@@ -1,17 +1,11 @@
 /* 00-foundation/_index.css */
 
 @import "./borders/_index.css";
-
 @import "./colors/_index.css";
-
-@import "./motion/_index.css";
-
-@import "./opacity/_index.css";
-
-@import "./shadow/_index.css";
-
+@import "./decorations/_index.css";
+@import "./motions/_index.css";
+@import "./shadows/_index.css";
 @import "./sizing/_index.css";
-
 @import "./spacing/_index.css";
-
 @import "./text/_index.css";
+@import "./textures/_index.css";

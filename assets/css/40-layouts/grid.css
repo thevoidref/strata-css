@@ -20,6 +20,9 @@
 .grid[data-grid-column="lg"] { --column-size: 20rem; }
 .grid[data-grid-column="xl"] { --column-size: 24rem; }
 
+.grid[data-grid-column="2"] {
+  grid-template-columns: repeat(2, 1fr);
+}
 
 /* -------------------------------------------------------------------------- */
 /* Auto Rows */

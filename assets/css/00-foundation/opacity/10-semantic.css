@@ -1,57 +1,11 @@
 /* 00-foundation/opacity/10-semantic.css */
 
 :root {
-
-  /* -------------------------------------------------------------------------- */
-  /* Semantic Opacity */
-  /* -------------------------------------------------------------------------- */
-
-  --opacity-visible:             var(--opacity-100);
-
-  --opacity-muted:               var(--opacity-80);
-
-  --opacity-placeholder:         var(--opacity-60);
-
-  --opacity-disabled:            var(--opacity-40);
-  
-  --opacity-sublte:              var(--opacity-20);
-
-  --opacity-ghost:               var(--opacity-10);
-
-  --opacity-hidden:              var(--opacity-0);
-
-}
-
-/* -------------------------------------------------------------------------- */
-/* Theme Shadow Opacity */
-/* -------------------------------------------------------------------------- */
-
-[data-theme="dark"] {
-
-  --shadow-color:                var(--color-shadow-dark-channel);
-
-  --shadow-opacity-sm:           var(--opacity-30);
-
-  --shadow-opacity-md:           var(--opacity-40);
-
-  --shadow-opacity-lg:           var(--opacity-50);
-
-  --shadow-opacity-xl:           var(--opacity-60);
-
-  --shadow-opacity-inner:        var(--opacity-30);
-}
-
-[data-theme="light"] {
-
-  --shadow-color:                var(--color-shadow-warm-channel);
-
-  --shadow-opacity-sm:           var(--opacity-15);
-
-  --shadow-opacity-md:           var(--opacity-20);
-
-  --shadow-opacity-lg:           var(--opacity-30);
-
-  --shadow-opacity-xl:           var(--opacity-40);
-
-  --shadow-opacity-inner:        var(--opacity-15);
+  --opacity-visible:              var(--opacity-100);
+  --opacity-muted:                var(--opacity-80);
+  --opacity-placeholder:          var(--opacity-60);
+  --opacity-disabled:             var(--opacity-40);
+  --opacity-sublte:               var(--opacity-20);
+  --opacity-ghost:                var(--opacity-10);
+  --opacity-hidden:               var(--opacity-0);
 }

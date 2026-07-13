@@ -1,140 +1,109 @@
-/* 90-utilities/layout/display.css */
+/* 90-utilities/display.css */
 
-/* Base display utilities */
+/* -------------------------------------------------------------------------- */
+/* Base */
+/* -------------------------------------------------------------------------- */
 
-.u-display-none {
-  display: none;
+[data-display="block"] {
+  display:                  block;
 }
 
-.u-display-block {
-  display: block;
+[data-display="inline"] {
+  display:                  inline;
 }
 
-.u-display-inline {
-  display: inline;
+[data-display="inline-block"] {
+  display:                  inline-block;
 }
 
-.u-display-inline-block {
-  display: inline-block;
+[data-display="contents"] {
+  display:                  contents;
 }
 
-.u-display-flex {
-  display: flex;
+[data-display="none"] {
+  display:                  none;
 }
 
-.u-display-inline-flex {
-  display: inline-flex;
-}
 
-.u-display-grid {
-  display: grid;
-}
+/* ========================================================================== */
+/* Responsive: below 50em                                                     */
+/* ========================================================================== */
 
-.u-display-contents {
-  display: contents;
-}
-
-/* Medium container */
 @container responsive (width < 50em) {
-  .u-display-none-50 {
-    display: none;
+
+  [data-display-50="block"] {
+    display:                block;
   }
 
-  .u-display-block-50 {
-    display: block;
+  [data-display-50="inline"] {
+    display:                inline;
   }
 
-  .u-display-inline-50 {
-    display: inline;
+  [data-display-50="inline-block"] {
+    display:                inline-block;
   }
 
-  .u-display-inline-block-50 {
-    display: inline-block;
+  [data-display-50="contents"] {
+    display:                contents;
   }
 
-  .u-display-flex-50 {
-    display: flex;
-  }
-
-  .u-display-inline-flex-50 {
-    display: inline-flex;
-  }
-
-  .u-display-grid-50 {
-    display: grid;
-  }
-
-  .u-display-contents-50 {
-    display: contents;
+  [data-display-50="none"] {
+    display:                none;
   }
 }
 
-/* Small container */
+
+/* ========================================================================== */
+/* Responsive: below 35em                                                     */
+/* ========================================================================== */
+
 @container responsive (width < 35em) {
-  .u-display-none-35 {
-    display: none;
+
+  [data-display-35="block"] {
+    display:                block;
   }
 
-  .u-display-block-35 {
-    display: block;
+  [data-display-35="inline"] {
+    display:                inline;
   }
 
-  .u-display-inline-35 {
-    display: inline;
+  [data-display-35="inline-block"] {
+    display:                inline-block;
   }
 
-  .u-display-inline-block-35 {
-    display: inline-block;
+  [data-display-35="contents"] {
+    display:                contents;
   }
 
-  .u-display-flex-35 {
-    display: flex;
-  }
-
-  .u-display-inline-flex-35 {
-    display: inline-flex;
-  }
-
-  .u-display-grid-35 {
-    display: grid;
-  }
-
-  .u-display-contents-35 {
-    display: contents;
+  [data-display-35="none"] {
+    display:                none;
   }
 }
 
-/* Extra-small container */
+
+/* ========================================================================== */
+/* Responsive: below 20em                                                     */
+/* ========================================================================== */
+
 @container responsive (width < 20em) {
-  .u-display-none-20 {
-    display: none;
+
+  [data-display-20="block"] {
+    display:                block;
   }
 
-  .u-display-block-20 {
-    display: block;
+  [data-display-20="inline"] {
+    display:                inline;
   }
 
-  .u-display-inline-20 {
-    display: inline;
+  [data-display-20="inline-block"] {
+    display:                inline-block;
   }
 
-  .u-display-inline-block-20 {
-    display: inline-block;
+  [data-display-20="contents"] {
+    display:                contents;
   }
 
-  .u-display-flex-20 {
-    display: flex;
-  }
-
-  .u-display-inline-flex-20 {
-    display: inline-flex;
-  }
-
-  .u-display-grid-20 {
-    display: grid;
-  }
-
-  .u-display-contents-20 {
-    display: contents;
+  [data-display-20="none"] {
+    display:                none;
   }
 }

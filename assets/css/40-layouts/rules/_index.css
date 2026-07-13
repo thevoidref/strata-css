@@ -1,5 +1,8 @@
 /* 40-layouts/rules/_index.css */
 
+@import "./alignment.css";
+@import "./order.css";
+
 @import "./children.css";
 @import "./columns.css";
 @import "./gap.css";

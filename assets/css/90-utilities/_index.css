@@ -1,6 +1,7 @@
 /* 90-utilities/_index.css */
 
 @import "./layout/_index.css";
+@import "./media/_index.css";
 
 @import "./background-slot.css";
 @import "./hide.css";
@@ -9,3 +10,5 @@
 
 @import "./margin-trim.css";
 @import "./numbers.css";
+
+@import "./text-alignment.css";

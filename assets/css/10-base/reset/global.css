@@ -13,13 +13,12 @@
 
 html {
   scrollbar-gutter:   stable;
-  font-size:          16px;
 }
 
 body {
-  min-height:         100svh;
-
-  background-color:   var(--page-bg);
+  background:   
+    radial-gradient(circle at 15% 0%, rgb(184 187 38 / 0.08), transparent 32rem),
+    var(--page-bg);
   color:              var(--text-primary);
 
   font-family:        var(--paragraph-family);
@@ -27,6 +26,8 @@ body {
   font-weight:        var(--paragraph-weight);
   line-height:        var(--paragraph-line-height);
   letter-spacing:     var(--paragraph-letter-spacing);
+
+  overflow-x:         hidden;
 
   -webkit-font-smoothing:   antialiased;
   -moz-osx-font-smoothing:  grayscale;

@@ -1,0 +1,1051 @@
+/* 40-layouts/rules/alignment.css */
+
+/* -------------------------------------------------------------------------- */
+/* Layout roots */
+/* -------------------------------------------------------------------------- */
+
+:where(
+  .stack,
+  .cluster,
+  .grid,
+  .columns,
+  .spans
+)[data-align="start"] {
+  align-items:              start;
+}
+
+:where(
+  .stack,
+  .cluster,
+  .grid,
+  .columns,
+  .spans
+)[data-align="center"] {
+  align-items:              center;
+}
+
+:where(
+  .stack,
+  .cluster,
+  .grid,
+  .columns,
+  .spans
+)[data-align="end"] {
+  align-items:              end;
+}
+
+:where(
+  .stack,
+  .cluster,
+  .grid,
+  .columns,
+  .spans
+)[data-align="stretch"] {
+  align-items:              stretch;
+}
+
+:where(
+  .stack,
+  .cluster,
+  .grid,
+  .columns,
+  .spans
+)[data-align="baseline"] {
+  align-items:              baseline;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Content justification */
+/* -------------------------------------------------------------------------- */
+
+:where(
+  .stack,
+  .cluster,
+  .grid,
+  .columns,
+  .spans
+)[data-justify="start"] {
+  justify-content:          start;
+}
+
+:where(
+  .stack,
+  .cluster,
+  .grid,
+  .columns,
+  .spans
+)[data-justify="center"] {
+  justify-content:          center;
+}
+
+:where(
+  .stack,
+  .cluster,
+  .grid,
+  .columns,
+  .spans
+)[data-justify="end"] {
+  justify-content:          end;
+}
+
+:where(
+  .stack,
+  .cluster,
+  .grid,
+  .columns,
+  .spans
+)[data-justify="stretch"] {
+  justify-content:          stretch;
+}
+
+:where(
+  .stack,
+  .cluster,
+  .grid,
+  .columns,
+  .spans
+)[data-justify="between"] {
+  justify-content:          space-between;
+}
+
+:where(
+  .stack,
+  .cluster,
+  .grid,
+  .columns,
+  .spans
+)[data-justify="around"] {
+  justify-content:          space-around;
+}
+
+:where(
+  .stack,
+  .cluster,
+  .grid,
+  .columns,
+  .spans
+)[data-justify="evenly"] {
+  justify-content:          space-evenly;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Multi-line / multi-track alignment */
+/* -------------------------------------------------------------------------- */
+
+:where(
+  .stack,
+  .cluster,
+  .grid,
+  .columns,
+  .spans
+)[data-align-content="start"] {
+  align-content:            start;
+}
+
+:where(
+  .stack,
+  .cluster,
+  .grid,
+  .columns,
+  .spans
+)[data-align-content="center"] {
+  align-content:            center;
+}
+
+:where(
+  .stack,
+  .cluster,
+  .grid,
+  .columns,
+  .spans
+)[data-align-content="end"] {
+  align-content:            end;
+}
+
+:where(
+  .stack,
+  .cluster,
+  .grid,
+  .columns,
+  .spans
+)[data-align-content="stretch"] {
+  align-content:            stretch;
+}
+
+:where(
+  .stack,
+  .cluster,
+  .grid,
+  .columns,
+  .spans
+)[data-align-content="between"] {
+  align-content:            space-between;
+}
+
+:where(
+  .stack,
+  .cluster,
+  .grid,
+  .columns,
+  .spans
+)[data-align-content="around"] {
+  align-content:            space-around;
+}
+
+:where(
+  .stack,
+  .cluster,
+  .grid,
+  .columns,
+  .spans
+)[data-align-content="evenly"] {
+  align-content:            space-evenly;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Grid item justification */
+/* -------------------------------------------------------------------------- */
+
+:where(
+  .grid,
+  .columns,
+  .spans
+)[data-justify-items="start"] {
+  justify-items:            start;
+}
+
+:where(
+  .grid,
+  .columns,
+  .spans
+)[data-justify-items="center"] {
+  justify-items:            center;
+}
+
+:where(
+  .grid,
+  .columns,
+  .spans
+)[data-justify-items="end"] {
+  justify-items:            end;
+}
+
+:where(
+  .grid,
+  .columns,
+  .spans
+)[data-justify-items="stretch"] {
+  justify-items:            stretch;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Child alignment */
+/* -------------------------------------------------------------------------- */
+
+:where(
+  .stack,
+  .cluster,
+  .grid,
+  .columns,
+  .spans
+) > [data-align-self="auto"] {
+  align-self:               auto;
+}
+
+:where(
+  .stack,
+  .cluster,
+  .grid,
+  .columns,
+  .spans
+) > [data-align-self="start"] {
+  align-self:               start;
+}
+
+:where(
+  .stack,
+  .cluster,
+  .grid,
+  .columns,
+  .spans
+) > [data-align-self="center"] {
+  align-self:               center;
+}
+
+:where(
+  .stack,
+  .cluster,
+  .grid,
+  .columns,
+  .spans
+) > [data-align-self="end"] {
+  align-self:               end;
+}
+
+:where(
+  .stack,
+  .cluster,
+  .grid,
+  .columns,
+  .spans
+) > [data-align-self="stretch"] {
+  align-self:               stretch;
+}
+
+:where(
+  .stack,
+  .cluster,
+  .grid,
+  .columns,
+  .spans
+) > [data-align-self="baseline"] {
+  align-self:               baseline;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Grid child justification */
+/* -------------------------------------------------------------------------- */
+
+:where(
+  .grid,
+  .columns,
+  .spans
+) > [data-justify-self="auto"] {
+  justify-self:             auto;
+}
+
+:where(
+  .grid,
+  .columns,
+  .spans
+) > [data-justify-self="start"] {
+  justify-self:             start;
+}
+
+:where(
+  .grid,
+  .columns,
+  .spans
+) > [data-justify-self="center"] {
+  justify-self:             center;
+}
+
+:where(
+  .grid,
+  .columns,
+  .spans
+) > [data-justify-self="end"] {
+  justify-self:             end;
+}
+
+:where(
+  .grid,
+  .columns,
+  .spans
+) > [data-justify-self="stretch"] {
+  justify-self:             stretch;
+}
+
+
+/* ========================================================================== */
+/* Responsive: below 50em                                                     */
+/* ========================================================================== */
+
+@container responsive (width < 50em) {
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-50="start"] {
+    align-items:            start;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-50="center"] {
+    align-items:            center;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-50="end"] {
+    align-items:            end;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-50="stretch"] {
+    align-items:            stretch;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-50="baseline"] {
+    align-items:            baseline;
+  }
+
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-justify-50="start"] {
+    justify-content:        start;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-justify-50="center"] {
+    justify-content:        center;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-justify-50="end"] {
+    justify-content:        end;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-justify-50="stretch"] {
+    justify-content:        stretch;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-justify-50="between"] {
+    justify-content:        space-between;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-justify-50="around"] {
+    justify-content:        space-around;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-justify-50="evenly"] {
+    justify-content:        space-evenly;
+  }
+
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-content-50="start"] {
+    align-content:          start;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-content-50="center"] {
+    align-content:          center;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-content-50="end"] {
+    align-content:          end;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-content-50="stretch"] {
+    align-content:          stretch;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-content-50="between"] {
+    align-content:          space-between;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-content-50="around"] {
+    align-content:          space-around;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-content-50="evenly"] {
+    align-content:          space-evenly;
+  }
+
+
+  :where(
+    .grid,
+    .columns,
+    .spans
+  )[data-justify-items-50="start"] {
+    justify-items:          start;
+  }
+
+  :where(
+    .grid,
+    .columns,
+    .spans
+  )[data-justify-items-50="center"] {
+    justify-items:          center;
+  }
+
+  :where(
+    .grid,
+    .columns,
+    .spans
+  )[data-justify-items-50="end"] {
+    justify-items:          end;
+  }
+
+  :where(
+    .grid,
+    .columns,
+    .spans
+  )[data-justify-items-50="stretch"] {
+    justify-items:          stretch;
+  }
+}
+
+
+/* ========================================================================== */
+/* Responsive: below 35em                                                     */
+/* ========================================================================== */
+
+@container responsive (width < 35em) {
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-35="start"] {
+    align-items:            start;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-35="center"] {
+    align-items:            center;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-35="end"] {
+    align-items:            end;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-35="stretch"] {
+    align-items:            stretch;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-35="baseline"] {
+    align-items:            baseline;
+  }
+
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-justify-35="start"] {
+    justify-content:        start;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-justify-35="center"] {
+    justify-content:        center;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-justify-35="end"] {
+    justify-content:        end;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-justify-35="stretch"] {
+    justify-content:        stretch;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-justify-35="between"] {
+    justify-content:        space-between;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-justify-35="around"] {
+    justify-content:        space-around;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-justify-35="evenly"] {
+    justify-content:        space-evenly;
+  }
+
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-content-35="start"] {
+    align-content:          start;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-content-35="center"] {
+    align-content:          center;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-content-35="end"] {
+    align-content:          end;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-content-35="stretch"] {
+    align-content:          stretch;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-content-35="between"] {
+    align-content:          space-between;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-content-35="around"] {
+    align-content:          space-around;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-content-35="evenly"] {
+    align-content:          space-evenly;
+  }
+
+
+  :where(
+    .grid,
+    .columns,
+    .spans
+  )[data-justify-items-35="start"] {
+    justify-items:          start;
+  }
+
+  :where(
+    .grid,
+    .columns,
+    .spans
+  )[data-justify-items-35="center"] {
+    justify-items:          center;
+  }
+
+  :where(
+    .grid,
+    .columns,
+    .spans
+  )[data-justify-items-35="end"] {
+    justify-items:          end;
+  }
+
+  :where(
+    .grid,
+    .columns,
+    .spans
+  )[data-justify-items-35="stretch"] {
+    justify-items:          stretch;
+  }
+}
+
+
+/* ========================================================================== */
+/* Responsive: below 20em                                                     */
+/* ========================================================================== */
+
+@container responsive (width < 20em) {
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-20="start"] {
+    align-items:            start;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-20="center"] {
+    align-items:            center;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-20="end"] {
+    align-items:            end;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-20="stretch"] {
+    align-items:            stretch;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-20="baseline"] {
+    align-items:            baseline;
+  }
+
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-justify-20="start"] {
+    justify-content:        start;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-justify-20="center"] {
+    justify-content:        center;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-justify-20="end"] {
+    justify-content:        end;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-justify-20="stretch"] {
+    justify-content:        stretch;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-justify-20="between"] {
+    justify-content:        space-between;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-justify-20="around"] {
+    justify-content:        space-around;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-justify-20="evenly"] {
+    justify-content:        space-evenly;
+  }
+
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-content-20="start"] {
+    align-content:          start;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-content-20="center"] {
+    align-content:          center;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-content-20="end"] {
+    align-content:          end;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-content-20="stretch"] {
+    align-content:          stretch;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-content-20="between"] {
+    align-content:          space-between;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-content-20="around"] {
+    align-content:          space-around;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  )[data-align-content-20="evenly"] {
+    align-content:          space-evenly;
+  }
+
+
+  :where(
+    .grid,
+    .columns,
+    .spans
+  )[data-justify-items-20="start"] {
+    justify-items:          start;
+  }
+
+  :where(
+    .grid,
+    .columns,
+    .spans
+  )[data-justify-items-20="center"] {
+    justify-items:          center;
+  }
+
+  :where(
+    .grid,
+    .columns,
+    .spans
+  )[data-justify-items-20="end"] {
+    justify-items:          end;
+  }
+
+  :where(
+    .grid,
+    .columns,
+    .spans
+  )[data-justify-items-20="stretch"] {
+    justify-items:          stretch;
+  }
+}

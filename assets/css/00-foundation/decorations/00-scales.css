@@ -1,0 +1,43 @@
+/* 00-foundation/decorations/00-scales.css */
+
+:root {
+  /* ------------------------------------------------------------------------ */
+  /* Position X */
+  /* ------------------------------------------------------------------------ */
+
+  --decoration-x-start:          12%;
+  --decoration-x-start-wide:     20%;
+
+  --decoration-x-center-left:    38%;
+  --decoration-x-center:         50%;
+  --decoration-x-center-right:   62%;
+
+  --decoration-x-end-wide:       80%;
+  --decoration-x-end:            88%;
+
+
+  /* ------------------------------------------------------------------------ */
+  /* Position Y */
+  /* ------------------------------------------------------------------------ */
+
+  --decoration-y-top:            0%;
+  --decoration-y-top-offset:     12%;
+
+  --decoration-y-center-high:    32%;
+  --decoration-y-center:         50%;
+  --decoration-y-center-low:     68%;
+
+  --decoration-y-bottom-offset:  88%;
+  --decoration-y-bottom:         100%;
+
+
+  /* ------------------------------------------------------------------------ */
+  /* Radius */
+  /* ------------------------------------------------------------------------ */
+
+  --decoration-radius-xs:        16rem;
+  --decoration-radius-sm:        24rem;
+  --decoration-radius-md:        32rem;
+  --decoration-radius-lg:        48rem;
+  --decoration-radius-xl:        64rem;
+}

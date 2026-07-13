@@ -1,0 +1,135 @@
+/* 90-utilities/rules/text-alignment.css */
+
+/* -------------------------------------------------------------------------- */
+/* Text alignment */
+/* -------------------------------------------------------------------------- */
+
+[data-text-align="start"] {
+  text-align:               start;
+}
+
+[data-text-align="center"] {
+  text-align:               center;
+}
+
+[data-text-align="end"] {
+  text-align:               end;
+}
+
+[data-text-align="justify"] {
+  text-align:               justify;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Text wrapping */
+/* -------------------------------------------------------------------------- */
+
+[data-text-wrap="wrap"] {
+  text-wrap:                wrap;
+}
+
+[data-text-wrap="nowrap"] {
+  text-wrap:                nowrap;
+}
+
+[data-text-wrap="balance"] {
+  text-wrap:                balance;
+}
+
+[data-text-wrap="pretty"] {
+  text-wrap:                pretty;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Text transformation */
+/* -------------------------------------------------------------------------- */
+
+[data-text-transform="none"] {
+  text-transform:           none;
+}
+
+[data-text-transform="uppercase"] {
+  text-transform:           uppercase;
+}
+
+[data-text-transform="lowercase"] {
+  text-transform:           lowercase;
+}
+
+[data-text-transform="capitalize"] {
+  text-transform:           capitalize;
+}
+
+
+/* ========================================================================== */
+/* Responsive: below 50em                                                     */
+/* ========================================================================== */
+
+@container responsive (width < 50em) {
+
+  [data-text-align-50="start"] {
+    text-align:             start;
+  }
+
+  [data-text-align-50="center"] {
+    text-align:             center;
+  }
+
+  [data-text-align-50="end"] {
+    text-align:             end;
+  }
+
+  [data-text-align-50="justify"] {
+    text-align:             justify;
+  }
+}
+
+
+/* ========================================================================== */
+/* Responsive: below 35em                                                     */
+/* ========================================================================== */
+
+@container responsive (width < 35em) {
+
+  [data-text-align-35="start"] {
+    text-align:             start;
+  }
+
+  [data-text-align-35="center"] {
+    text-align:             center;
+  }
+
+  [data-text-align-35="end"] {
+    text-align:             end;
+  }
+
+  [data-text-align-35="justify"] {
+    text-align:             justify;
+  }
+}
+
+
+/* ========================================================================== */
+/* Responsive: below 20em                                                     */
+/* ========================================================================== */
+
+@container responsive (width < 20em) {
+
+  [data-text-align-20="start"] {
+    text-align:             start;
+  }
+
+  [data-text-align-20="center"] {
+    text-align:             center;
+  }
+
+  [data-text-align-20="end"] {
+    text-align:             end;
+  }
+
+  [data-text-align-20="justify"] {
+    text-align:             justify;
+  }
+}

@@ -1,0 +1,229 @@
+/* 40-layouts/rules/order.css */
+
+/* -------------------------------------------------------------------------- */
+/* Base */
+/* -------------------------------------------------------------------------- */
+
+:where(
+  .stack,
+  .cluster,
+  .grid,
+  .columns,
+  .spans
+) > [data-order="first"] {
+  order:                    -999;
+}
+
+:where(
+  .stack,
+  .cluster,
+  .grid,
+  .columns,
+  .spans
+) > [data-order="early"] {
+  order:                    -1;
+}
+
+:where(
+  .stack,
+  .cluster,
+  .grid,
+  .columns,
+  .spans
+) > [data-order="normal"] {
+  order:                    0;
+}
+
+:where(
+  .stack,
+  .cluster,
+  .grid,
+  .columns,
+  .spans
+) > [data-order="late"] {
+  order:                    1;
+}
+
+:where(
+  .stack,
+  .cluster,
+  .grid,
+  .columns,
+  .spans
+) > [data-order="last"] {
+  order:                    999;
+}
+
+
+/* ========================================================================== */
+/* Responsive: below 50em                                                     */
+/* ========================================================================== */
+
+@container responsive (width < 50em) {
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  ) > [data-order-50="first"] {
+    order:                  -999;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  ) > [data-order-50="early"] {
+    order:                  -1;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  ) > [data-order-50="normal"] {
+    order:                  0;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  ) > [data-order-50="late"] {
+    order:                  1;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  ) > [data-order-50="last"] {
+    order:                  999;
+  }
+}
+
+
+/* ========================================================================== */
+/* Responsive: below 35em                                                     */
+/* ========================================================================== */
+
+@container responsive (width < 35em) {
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  ) > [data-order-35="first"] {
+    order:                  -999;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  ) > [data-order-35="early"] {
+    order:                  -1;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  ) > [data-order-35="normal"] {
+    order:                  0;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  ) > [data-order-35="late"] {
+    order:                  1;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  ) > [data-order-35="last"] {
+    order:                  999;
+  }
+}
+
+
+/* ========================================================================== */
+/* Responsive: below 20em                                                     */
+/* ========================================================================== */
+
+@container responsive (width < 20em) {
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  ) > [data-order-20="first"] {
+    order:                  -999;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  ) > [data-order-20="early"] {
+    order:                  -1;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  ) > [data-order-20="normal"] {
+    order:                  0;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  ) > [data-order-20="late"] {
+    order:                  1;
+  }
+
+  :where(
+    .stack,
+    .cluster,
+    .grid,
+    .columns,
+    .spans
+  ) > [data-order-20="last"] {
+    order:                  999;
+  }
+}

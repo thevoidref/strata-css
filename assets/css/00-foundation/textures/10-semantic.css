@@ -1,0 +1,62 @@
+/* 00-foundation/textures/10-semantic.css */
+
+:root {
+
+  /* ------------------------------------------------------------------------ */
+  /* Positions */
+  /* ------------------------------------------------------------------------ */
+
+  /* X */
+
+  --texture-x-start:           12%;
+  --texture-x-start-wide:      20%;
+
+  --texture-x-center-left:     38%;
+  --texture-x-center:          50%;
+  --texture-x-center-right:    62%;
+
+  --texture-x-end-wide:        80%;
+  --texture-x-end:             88%;
+
+  /* Y */
+
+  --texture-y-top:             0%;
+  --texture-y-top-offset:      12%;
+
+  --texture-y-center-high:     32%;
+  --texture-y-center:          50%;
+  --texture-y-center-low:      68%;
+
+  --texture-y-bottom-offset:   88%;
+  --texture-y-bottom:          100%;
+
+  
+  /* ------------------------------------------------------------------------ */
+
+  --texture-noise-size:          180px;
+  --texture-grid-size:           var(--texture-size-md);
+  --texture-dots-size:           var(--texture-size-sm);
+
+  /* Images */
+
+  --texture-noise:
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+
+  --texture-grid:
+    linear-gradient(
+      rgb(255 255 255 / 0.04) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgb(255 255 255 / 0.04) 1px,
+      transparent 1px
+    );
+
+  --texture-dots:
+    radial-gradient(
+      circle,
+      rgb(255 255 255 / 0.08) 1px,
+      transparent 1px
+    );
+}
