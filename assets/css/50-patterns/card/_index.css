@@ -2,5 +2,6 @@
 
 @import "default.css";
 @import "parts.css";
+@import "rules.css";
 @import "states.css";
 @import "variants.css";

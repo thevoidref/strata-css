@@ -1,0 +1,55 @@
+/* 50-patterns/visual/mask/default.css */
+
+.mask,
+.maskable {
+  --mask-image:       none;
+
+  --mask-size:        cover;
+
+  --mask-position-x:  center;
+  --mask-position-y:  center;
+
+  --mask-repeat:      no-repeat;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Global mask */
+/* -------------------------------------------------------------------------- */
+
+.mask {
+  -webkit-mask-image: var(--mask-image);
+  -webkit-mask-size: var(--mask-size);
+  -webkit-mask-position:
+    var(--mask-position-x)
+    var(--mask-position-y);
+  -webkit-mask-repeat: var(--mask-repeat);
+
+  mask-image: var(--mask-image);
+  mask-size: var(--mask-size);
+  mask-position:
+    var(--mask-position-x)
+    var(--mask-position-y);
+  mask-repeat: var(--mask-repeat);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Generated-layer mask */
+/* -------------------------------------------------------------------------- */
+
+.texture.maskable::before {
+  -webkit-mask-image: var(--mask-image);
+  -webkit-mask-size: var(--mask-size);
+  -webkit-mask-position:
+    var(--mask-position-x)
+    var(--mask-position-y);
+  -webkit-mask-repeat: var(--mask-repeat);
+
+  mask-image: var(--mask-image);
+  mask-size: var(--mask-size);
+  mask-position:
+    var(--mask-position-x)
+    var(--mask-position-y);
+  mask-repeat: var(--mask-repeat);
+}

@@ -15,12 +15,6 @@
   --site-width: 1180px;
   --radius: 18px;
 }
-
-body::before {
-  content: ""; position: fixed; inset: 0; pointer-events: none; opacity: .13; z-index: 20;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.15'/%3E%3C/svg%3E");
-}
-
 .site-container { width: min(calc(100% - 40px), var(--site-width)); margin-inline: auto; }
 .sr-only { position: absolute; width: 1px; height: 1px; clip: rect(0,0,0,0); overflow: hidden; }
 
@@ -47,7 +41,7 @@ body::before {
 .hero-grid { position: relative; display: grid; grid-template-columns: 1.04fr .96fr; gap: clamp(50px, 7vw, 100px); align-items: center; }
 .kicker { display: flex; align-items: center; gap: 10px; color: var(--ch-muted); font-size: .72rem; text-transform: uppercase; letter-spacing: .16em; font-weight: 600; }
 .kicker > span { width: 24px; height: 1px; background: var(--ch-accent); box-shadow: 0 0 16px var(--ch-accent); }
-.hero h1 { max-width: 660px; margin-top: 25px; font: 700 clamp(3rem, 5.4vw, 4.7rem)/.98 "Manrope", sans-serif; letter-spacing: -.065em; text-wrap: balance; }
+.hero h1 { max-width: 660px; margin-top: 25px; font: 700 clamp(3rem, 5.4vw, 5.6rem)/.98 "Manrope", sans-serif; letter-spacing: -.065em; text-wrap: balance; }
 .hero h1 em { color: var(--ch-accent-soft); font-style: normal; }
 .hero-lead { max-width: 590px; margin-top: 28px; color: var(--ch-muted); font-size: clamp(1rem, 1.5vw, 1.15rem); line-height: 1.72; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }

@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Mask Preview</title>
+
+    <link rel="stylesheet" href="../../assets/css/style.css">
+
+    <style>
+        body {
+            background-color: var(--page-bg);
+        }
+
+        .demo {
+            min-block-size: 18rem;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body class="shell">
+
+<header
+    class="stack container"
+    data-container-width="expanded"
+>
+    <p class="eyebrow">Patterns</p>
+
+    <h1
+        class="heading"
+        data-heading-level="1"
+    >
+        Mask Preview
+    </h1>
+
+    <p
+        class="paragraph"
+        data-paragraph-type="lead"
+    >
+        Testing mask recipes on complete elements and generated texture layers.
+    </p>
+</header>
+
+<main>
+
+<section
+    class="region container spans"
+    data-container-width="expanded"
+    data-columns="12"
+>
+
+    <!-- Reference -->
+
+    <article
+        class="panel surface texture span demo"
+        data-texture-grid
+        data-texture-size="md"
+        data-texture-opacity="strong"
+        data-texture-color="purple"
+    >
+        <header class="panel-header">
+            <p class="eyebrow">Reference</p>
+            <h2 class="heading">No Mask</h2>
+        </header>
+
+        <p class="paragraph">
+            Unmasked reference texture.
+        </p>
+    </article>
+
+
+    <!-- Fade Top -->
+
+    <article
+        class="panel surface texture maskable span demo"
+        data-texture-grid
+        data-texture-size="md"
+        data-texture-opacity="strong"
+        data-texture-color="purple"
+        data-mask="fade-top"
+    >
+        <header class="panel-header">
+            <p class="eyebrow">Linear Mask</p>
+            <h2 class="heading">Fade Top</h2>
+        </header>
+
+        <p class="paragraph">
+            The texture fades toward the top edge.
+        </p>
+    </article>
+
+
+    <!-- Fade Bottom -->
+
+    <article
+        class="panel surface texture maskable span demo"
+        data-texture-grid
+        data-texture-size="md"
+        data-texture-opacity="strong"
+        data-texture-color="purple"
+        data-mask="fade-bottom"
+    >
+        <header class="panel-header">
+            <p class="eyebrow">Linear Mask</p>
+            <h2 class="heading">Fade Bottom</h2>
+        </header>
+
+        <p class="paragraph">
+            The texture fades toward the bottom edge.
+        </p>
+    </article>
+
+
+    <!-- Fade Left -->
+
+    <article
+        class="panel surface texture maskable span demo"
+        data-texture-grid
+        data-texture-size="md"
+        data-texture-opacity="strong"
+        data-texture-color="purple"
+        data-mask="fade-left"
+    >
+        <header class="panel-header">
+            <p class="eyebrow">Linear Mask</p>
+            <h2 class="heading">Fade Left</h2>
+        </header>
+
+        <p class="paragraph">
+            The texture fades toward the left edge.
+        </p>
+    </article>
+
+
+    <!-- Fade Right -->
+
+    <article
+        class="panel surface texture maskable span demo"
+        data-texture-grid
+        data-texture-size="md"
+        data-texture-opacity="strong"
+        data-texture-color="purple"
+        data-mask="fade-right"
+    >
+        <header class="panel-header">
+            <p class="eyebrow">Linear Mask</p>
+            <h2 class="heading">Fade Right</h2>
+        </header>
+
+        <p class="paragraph">
+            The texture fades toward the right edge.
+        </p>
+    </article>
+
+
+    <!-- Radial -->
+
+    <article
+        class="panel surface texture maskable span demo"
+        data-texture-grid
+        data-texture-size="md"
+        data-texture-opacity="strong"
+        data-texture-color="purple"
+        data-mask="radial"
+        data-mask-x="center"
+        data-mask-y="center"
+    >
+        <header class="panel-header">
+            <p class="eyebrow">Radial Mask</p>
+            <h2 class="heading">Radial</h2>
+        </header>
+
+        <p class="paragraph">
+            Circular visibility concentrated around the center.
+        </p>
+    </article>
+
+
+    <!-- Spotlight Start -->
+
+    <article
+        class="panel surface texture maskable span demo"
+        data-texture-grid
+        data-texture-size="md"
+        data-texture-opacity="strong"
+        data-texture-color="purple"
+        data-mask="spotlight"
+        data-mask-x="start"
+        data-mask-y="center"
+    >
+        <header class="panel-header">
+            <p class="eyebrow">Spotlight</p>
+            <h2 class="heading">Start</h2>
+        </header>
+
+        <p class="paragraph">
+            Focused mask near the inline start.
+        </p>
+    </article>
+
+
+    <!-- Spotlight Center -->
+
+    <article
+        class="panel surface texture maskable span demo"
+        data-texture-grid
+        data-texture-size="md"
+        data-texture-opacity="strong"
+        data-texture-color="purple"
+        data-mask="spotlight"
+        data-mask-x="center"
+        data-mask-y="center"
+    >
+        <header class="panel-header">
+            <p class="eyebrow">Spotlight</p>
+            <h2 class="heading">Center</h2>
+        </header>
+
+        <p class="paragraph">
+            Focused mask at the center.
+        </p>
+    </article>
+
+
+    <!-- Spotlight End -->
+
+    <article
+        class="panel surface texture maskable span demo"
+        data-texture-grid
+        data-texture-size="md"
+        data-texture-opacity="strong"
+        data-texture-color="purple"
+        data-mask="spotlight"
+        data-mask-x="end"
+        data-mask-y="center"
+    >
+        <header class="panel-header">
+            <p class="eyebrow">Spotlight</p>
+            <h2 class="heading">End</h2>
+        </header>
+
+        <p class="paragraph">
+            Focused mask near the inline end.
+        </p>
+    </article>
+
+
+    <!-- Ellipse -->
+
+    <article
+        class="panel surface texture maskable span demo"
+        data-texture-grid
+        data-texture-size="md"
+        data-texture-opacity="strong"
+        data-texture-color="purple"
+        data-mask="ellipse"
+        data-mask-x="center"
+        data-mask-y="center"
+    >
+        <header class="panel-header">
+            <p class="eyebrow">Radial Mask</p>
+            <h2 class="heading">Ellipse</h2>
+        </header>
+
+        <p class="paragraph">
+            Elliptical visibility concentrated around the center.
+        </p>
+    </article>
+
+
+    <!-- Vignette -->
+
+    <article
+        class="panel surface texture maskable span demo"
+        data-texture-grid
+        data-texture-size="md"
+        data-texture-opacity="strong"
+        data-texture-color="purple"
+        data-mask="vignette"
+        data-mask-x="center"
+        data-mask-y="center"
+    >
+        <header class="panel-header">
+            <p class="eyebrow">Radial Mask</p>
+            <h2 class="heading">Vignette</h2>
+        </header>
+
+        <p class="paragraph">
+            Texture stays visible in the center and fades near the edges.
+        </p>
+    </article>
+
+
+    <!-- Size: Contain -->
+
+    <article
+        class="panel surface texture maskable span demo"
+        data-texture-grid
+        data-texture-size="md"
+        data-texture-opacity="strong"
+        data-texture-color="purple"
+        data-mask="radial"
+        data-mask-size="contain"
+        data-mask-x="center"
+        data-mask-y="center"
+    >
+        <header class="panel-header">
+            <p class="eyebrow">Mask Size</p>
+            <h2 class="heading">Contain</h2>
+        </header>
+
+        <p class="paragraph">
+            Radial mask using the contain preset.
+        </p>
+    </article>
+
+
+    <!-- Size: Cover -->
+
+    <article
+        class="panel surface texture maskable span demo"
+        data-texture-grid
+        data-texture-size="md"
+        data-texture-opacity="strong"
+        data-texture-color="purple"
+        data-mask="radial"
+        data-mask-size="cover"
+        data-mask-x="center"
+        data-mask-y="center"
+    >
+        <header class="panel-header">
+            <p class="eyebrow">Mask Size</p>
+            <h2 class="heading">Cover</h2>
+        </header>
+
+        <p class="paragraph">
+            Radial mask using the cover preset.
+        </p>
+    </article>
+
+
+    <!-- Whole Element -->
+
+    <article
+        class="panel surface mask span demo"
+        data-mask="ellipse"
+    >
+        <header class="panel-header">
+            <p class="eyebrow">Element Mask</p>
+            <h2 class="heading">Whole Element</h2>
+        </header>
+
+        <p class="paragraph">
+            The mask affects the panel, content, background and border.
+        </p>
+    </article>
+
+</section>
+
+</main>
+
+</body>
+
+</html>

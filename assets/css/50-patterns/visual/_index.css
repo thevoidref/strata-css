@@ -1,0 +1,5 @@
+/* 50-patterns/visual/_index.css */
+
+@import "./decoration/_index.css";
+@import "./mask/_index.css";
+@import "./texture/_index.css";

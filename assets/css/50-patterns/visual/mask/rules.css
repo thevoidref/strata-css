@@ -1,0 +1,65 @@
+/* 50-patterns/visual/mask/rules.css */
+
+
+/* -------------------------------------------------------------------------- */
+/* Position X */
+/* -------------------------------------------------------------------------- */
+
+:is(.mask, .maskable)[data-mask-x="start"] {
+  --mask-position-x: 0%;
+}
+
+:is(.mask, .maskable)[data-mask-x="center"] {
+  --mask-position-x: 50%;
+}
+
+:is(.mask, .maskable)[data-mask-x="end"] {
+  --mask-position-x: 100%;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Position Y */
+/* -------------------------------------------------------------------------- */
+
+:is(.mask, .maskable)[data-mask-y="top"] {
+  --mask-position-y: 0%;
+}
+
+:is(.mask, .maskable)[data-mask-y="center"] {
+  --mask-position-y: 50%;
+}
+
+:is(.mask, .maskable)[data-mask-y="bottom"] {
+  --mask-position-y: 100%;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Size */
+/* -------------------------------------------------------------------------- */
+
+:is(.mask, .maskable)[data-mask-size="contain"] {
+  --mask-size: contain;
+}
+
+:is(.mask, .maskable)[data-mask-size="cover"] {
+  --mask-size: cover;
+}
+
+:is(.mask, .maskable)[data-mask-size="auto"] {
+  --mask-size: auto;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Repeat */
+/* -------------------------------------------------------------------------- */
+
+:is(.mask, .maskable)[data-mask-repeat="repeat"] {
+  --mask-repeat: repeat;
+}
+
+:is(.mask, .maskable)[data-mask-repeat="no-repeat"] {
+  --mask-repeat: no-repeat;
+}

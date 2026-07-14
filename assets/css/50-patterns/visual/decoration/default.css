@@ -1,0 +1,32 @@
+/* 50-patterns/visual/decoration/default.css */
+
+.decoration {
+  /* ------------------------------------------------------------------------ */
+  /* Shared defaults */
+  /* ------------------------------------------------------------------------ */
+
+  --decoration-x:              var(--position-x-start);
+  --decoration-y:              var(--position-y-top);
+
+  --decoration-radius:         var(--decoration-radius-md);
+
+  --decoration-opacity:        var(--decoration-opacity-soft);
+  --decoration-color:          var(--accent-rgb);
+
+  --decoration-width:          var(--decoration-radius-lg);
+  --decoration-height:         var(--decoration-radius-sm);
+
+  --decoration-angle:          135deg;
+  --decoration-stop:           70%;
+
+  --decoration-repeat:         no-repeat;
+  --decoration-size:           auto;
+  --decoration-position:       center;
+
+  --decoration-recipe:         none;
+
+  background-image:            var(--decoration-recipe);
+  background-repeat:           var(--decoration-repeat);
+  background-size:             var(--decoration-size);
+  background-position:         var(--decoration-position);
+}

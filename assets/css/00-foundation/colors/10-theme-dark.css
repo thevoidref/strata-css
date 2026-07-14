@@ -215,6 +215,22 @@
   --accent-primary-ring:          var(--accent-green-ring);
 
 
+    /* Channels */
+
+  --rgb-neutral:                  var(--color-dark-channel);
+  --rgb-warm:                     var(--color-warm-channel);
+  --rgb-inverse:                  var(--color-light-channel);
+
+  --rgb-green:                    var(--color-green-300-channel);
+  --rgb-yellow:                   var(--color-yellow-300-channel);
+  --rgb-blue:                     var(--color-blue-300-channel);
+  --rgb-orange:                   var(--color-orange-300-channel);
+  --rgb-red:                      var(--color-red-300-channel);
+  --rgb-purple:                   var(--color-purple-300-channel);
+  --rgb-aqua:                     var(--color-aqua-300-channel);
+
+  --rgb-accent:                   var(--rgb-green);
+
   /* -------------------------------------------------------------------------- */
   /* Link */
   /* -------------------------------------------------------------------------- */

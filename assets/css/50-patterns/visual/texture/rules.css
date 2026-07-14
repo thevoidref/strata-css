@@ -1,0 +1,138 @@
+/* 50-patterns/visual/texture/rules.css */
+
+/* -------------------------------------------------------------------------- */
+/* Size */
+/* -------------------------------------------------------------------------- */
+
+.texture[data-texture-size="xs"] {
+  --texture-size: var(--texture-size-xs);
+  --texture-gap:  var(--texture-size-xs);
+}
+
+.texture[data-texture-size="sm"] {
+  --texture-size: var(--texture-size-sm);
+  --texture-gap:  var(--texture-size-sm);
+}
+
+.texture[data-texture-size="md"] {
+  --texture-size: var(--texture-size-md);
+  --texture-gap:  var(--texture-size-md);
+}
+
+.texture[data-texture-size="lg"] {
+  --texture-size: var(--texture-size-lg);
+  --texture-gap:  var(--texture-size-lg);
+}
+
+.texture[data-texture-size="xl"] {
+  --texture-size: var(--texture-size-xl);
+  --texture-gap:  var(--texture-size-xl);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Opacity */
+/* -------------------------------------------------------------------------- */
+
+.texture[data-texture-opacity="subtle"] {
+  --texture-opacity: var(--texture-opacity-subtle);
+}
+
+.texture[data-texture-opacity="soft"] {
+  --texture-opacity: var(--texture-opacity-soft);
+}
+
+.texture[data-texture-opacity="base"] {
+  --texture-opacity: var(--texture-opacity-base);
+}
+
+.texture[data-texture-opacity="strong"] {
+  --texture-opacity: var(--texture-opacity-strong);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Color */
+/* -------------------------------------------------------------------------- */
+
+.texture[data-texture-color="neutral"] {
+  --texture-color: var(--neutral-rgb);
+}
+
+.texture[data-texture-color="inverse"] {
+  --texture-color: var(--inverse-rgb);
+}
+
+.texture[data-texture-color="warm"] {
+  --texture-color: var(--warm-rgb);
+}
+
+.texture[data-texture-color="green"] {
+  --texture-color: var(--rgb-green);
+}
+
+.texture[data-texture-color="yellow"] {
+  --texture-color: var(--rgb-yellow);
+}
+
+.texture[data-texture-color="blue"] {
+  --texture-color: var(--rgb-blue);
+}
+
+.texture[data-texture-color="orange"] {
+  --texture-color: var(--rgb-orange);
+}
+
+.texture[data-texture-color="red"] {
+  --texture-color: var(--rgb-red);
+}
+
+.texture[data-texture-color="purple"] {
+  --texture-color: var(--rgb-purple);
+}
+
+.texture[data-texture-color="aqua"] {
+  --texture-color: var(--rgb-aqua);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Blend */
+/* -------------------------------------------------------------------------- */
+
+.texture[data-texture-blend="normal"] {
+  --texture-blend: normal;
+}
+
+.texture[data-texture-blend="overlay"] {
+  --texture-blend: overlay;
+}
+
+.texture[data-texture-blend="soft-light"] {
+  --texture-blend: soft-light;
+}
+
+.texture[data-texture-blend="multiply"] {
+  --texture-blend: multiply;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Angle */
+/* -------------------------------------------------------------------------- */
+
+.texture[data-texture-angle="vertical"] {
+  --texture-angle: 90deg;
+}
+
+.texture[data-texture-angle="diagonal"] {
+  --texture-angle: 135deg;
+}
+
+.texture[data-texture-angle="horizontal"] {
+  --texture-angle: 180deg;
+}
+
+.texture[data-texture-angle="diagonal-reverse"] {
+  --texture-angle: 45deg;
+}

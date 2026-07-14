@@ -16,9 +16,7 @@ html {
 }
 
 body {
-  background:   
-    radial-gradient(circle at 15% 0%, rgb(184 187 38 / 0.08), transparent 32rem),
-    var(--page-bg);
+  background-color:   var(--bg-page);
   color:              var(--text-primary);
 
   font-family:        var(--paragraph-family);

@@ -11,4 +11,13 @@
   --measure-md:                 var(--measure-40);
   --measure-lg:                 var(--measure-56);
   --measure-xl:                 var(--measure-72);
+
+
+  /* ------------------------------------------------------------------------ */
+  /* Visual */
+  /* ------------------------------------------------------------------------ */
+
+  --texture-noise-size:         180px;
+  --texture-grid-size:          var(--texture-size-md);
+  --texture-dots-size:          var(--texture-size-sm);
 }

@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Texture Preview</title>
+
+    <link rel="stylesheet" href="../../assets/css/style.css">
+
+    <style>
+
+        body {
+            background-color: var(--page-bg);
+        }
+
+        .demo {
+            min-block-size: 18rem;
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+
+<body class="shell">
+
+<header
+    class="stack container"
+    data-container-width="expanded"
+>
+
+    <p class="eyebrow">
+        Patterns
+    </p>
+
+    <h1
+        class="heading"
+        data-heading-level="1"
+    >
+        Texture Preview
+    </h1>
+
+    <p
+        class="paragraph"
+        data-paragraph-type="lead"
+    >
+        Testing texture recipes, colors, tile sizes, opacity, blend modes and
+        directions.
+    </p>
+
+</header>
+
+<main>
+
+<section
+    class="region container spans"
+    data-container-width="expanded"
+    data-columns="12"
+>
+
+    <!-- Noise -->
+
+    <article class="panel surface texture span demo"
+        data-texture-noise="dense"
+    >
+
+        <header class="panel-header">
+
+            <p class="eyebrow">
+                Recipe
+            </p>
+
+            <h2 class="heading">
+                Noise
+            </h2>
+
+        </header>
+
+        <p class="paragraph">
+            SVG fractal noise.
+        </p>
+
+    </article>
+
+
+    <!-- Grid -->
+
+    <article class="panel surface texture span demo"
+        data-texture-grid
+        data-texture-size="lg"
+        data-texture-opacity="base"
+        data-texture-color="purple"
+    >
+
+        <header class="panel-header">
+
+            <p class="eyebrow">
+                Recipe
+            </p>
+
+            <h2 class="heading">
+                Grid
+            </h2>
+
+        </header>
+
+        <p class="paragraph">
+            Repeating two-axis grid.
+        </p>
+
+    </article>
+
+
+    <!-- Dots -->
+
+    <article class="panel surface texture span demo"
+        data-texture-dots
+        data-texture-size="sm"
+        data-texture-opacity="base"
+        data-texture-color="orange"
+    >
+
+        <header class="panel-header">
+
+            <p class="eyebrow">
+                Recipe
+            </p>
+
+            <h2 class="heading">
+                Dots
+            </h2>
+
+        </header>
+
+        <p class="paragraph">
+            Repeating dot pattern.
+        </p>
+
+    </article>
+
+
+    <!-- Lines -->
+
+    <article class="panel surface texture span demo"
+        data-texture-lines
+        data-texture-size="sm"
+        data-texture-angle="diagonal"
+        data-texture-opacity="base"
+        data-texture-color="red"
+    >
+
+        <header class="panel-header">
+
+            <p class="eyebrow">
+                Recipe
+            </p>
+
+            <h2 class="heading">
+                Lines
+            </h2>
+
+        </header>
+
+        <p class="paragraph">
+            Repeating diagonal lines.
+        </p>
+
+    </article>
+
+
+    <!-- Vertical -->
+
+    <article class="panel surface texture span demo"
+        data-texture-lines
+        data-texture-size="lg"
+        data-texture-angle="vertical"
+        data-texture-opacity="base"
+        data-texture-color="blue"
+    >
+
+        <header class="panel-header">
+
+            <p class="eyebrow">
+                Direction
+            </p>
+
+            <h2 class="heading">
+                Vertical
+            </h2>
+
+        </header>
+
+        <p class="paragraph">
+            Vertical line preset.
+        </p>
+
+    </article>
+
+
+    <!-- Reverse -->
+
+    <article class="panel surface texture span demo"
+        data-texture-lines
+        data-texture-size="md"
+        data-texture-angle="diagonal-reverse"
+        data-texture-opacity="base"
+        data-texture-color="yellow"
+    >
+
+        <header class="panel-header">
+
+            <p class="eyebrow">
+                Direction
+            </p>
+
+            <h2 class="heading">
+                Reverse
+            </h2>
+
+        </header>
+
+        <p class="paragraph">
+            Reverse diagonal preset.
+        </p>
+
+    </article>
+
+
+    <!-- Subtle -->
+
+    <article class="panel surface texture span demo"
+        data-texture-grid
+        data-texture-size="lg"
+        data-texture-opacity="subtle"
+        data-texture-color="white"
+    >
+
+        <header class="panel-header">
+
+            <p class="eyebrow">
+                Opacity
+            </p>
+
+            <h2 class="heading">
+                Subtle
+            </h2>
+
+        </header>
+
+        <p class="paragraph">
+            Low opacity grid.
+        </p>
+
+    </article>
+
+
+    <!-- Strong -->
+
+    <article class="panel surface texture span demo"
+        data-texture-grid
+        data-texture-size="lg"
+        data-texture-opacity="strong"
+        data-texture-color="white"
+    >
+
+        <header class="panel-header">
+
+            <p class="eyebrow">
+                Opacity
+            </p>
+
+            <h2 class="heading">
+                Strong
+            </h2>
+
+        </header>
+
+        <p class="paragraph">
+            High opacity grid.
+        </p>
+
+    </article>
+
+
+    <!-- XS -->
+
+    <article class="panel surface texture span demo"
+        data-texture-dots
+        data-texture-size="xs"
+        data-texture-opacity="base"
+        data-texture-color="orange"
+    >
+
+        <header class="panel-header">
+
+            <p class="eyebrow">
+                Tile Size
+            </p>
+
+            <h2 class="heading">
+                Extra Small
+            </h2>
+
+        </header>
+
+        <p class="paragraph">
+            Dense dot spacing.
+        </p>
+
+    </article>
+
+
+    <!-- XL -->
+
+    <article class="panel surface texture span demo"
+        data-texture-dots
+        data-texture-size="xl"
+        data-texture-opacity="base"
+        data-texture-color="green"
+    >
+
+        <header class="panel-header">
+
+            <p class="eyebrow">
+                Tile Size
+            </p>
+
+            <h2 class="heading">
+                Extra Large
+            </h2>
+
+        </header>
+
+        <p class="paragraph">
+            Sparse dot spacing.
+        </p>
+
+    </article>
+
+
+    <!-- Normal -->
+
+    <article class="panel surface texture span demo"
+        data-texture-lines
+        data-texture-size="md"
+        data-texture-opacity="base"
+        data-texture-blend="normal"
+    >
+
+        <header class="panel-header">
+
+            <p class="eyebrow">
+                Blend Mode
+            </p>
+
+            <h2 class="heading">
+                Normal
+            </h2>
+
+        </header>
+
+        <p class="paragraph">
+            Standard compositing.
+        </p>
+
+    </article>
+
+
+    <!-- Soft Light -->
+
+    <article class="panel surface texture span demo"
+        data-texture-lines
+        data-texture-size="md"
+        data-texture-opacity="base"
+        data-texture-blend="soft-light"
+    >
+
+        <header class="panel-header">
+
+            <p class="eyebrow">
+                Blend Mode
+            </p>
+
+            <h2 class="heading">
+                Soft Light
+            </h2>
+
+        </header>
+
+        <p class="paragraph">
+            Gentle light blending.
+        </p>
+
+    </article>
+
+
+    <!-- Overlay -->
+
+    <article class="panel surface texture span demo"
+        data-texture-lines
+        data-texture-size="md"
+        data-texture-opacity="base"
+        data-texture-blend="overlay"
+    >
+
+        <header class="panel-header">
+
+            <p class="eyebrow">
+                Blend Mode
+            </p>
+
+            <h2 class="heading">
+                Overlay
+            </h2>
+
+        </header>
+
+        <p class="paragraph">
+            High-contrast overlay blending.
+        </p>
+
+    </article>
+
+
+    <!-- Multiply -->
+
+    <article class="panel surface texture span demo"
+        data-texture-lines
+        data-texture-size="md"
+        data-texture-opacity="base"
+        data-texture-blend="multiply"
+    >
+
+        <header class="panel-header">
+
+            <p class="eyebrow">
+                Blend Mode
+            </p>
+
+            <h2 class="heading">
+                Multiply
+            </h2>
+
+        </header>
+
+        <p class="paragraph">
+            Darkening blend mode.
+        </p>
+
+    </article>
+
+</section>
+
+</main>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+/* 50-patterns/visual/texture/default.css */
+
+.texture {
+  --texture-image:       none;
+  --texture-size:        var(--texture-size-md);
+  --texture-opacity:     var(--texture-opacity-soft);
+  --texture-color:       var(--inverse-rgb);
+
+  --texture-position-x:  0;
+  --texture-position-y:  0;
+
+  --texture-repeat:      repeat;
+  --texture-blend:       normal;
+
+  --texture-angle:       135deg;
+  --texture-gap:         12px;
+
+  position:              relative;
+  isolation:             isolate;
+}
+
+.texture::before {
+  content:               "";
+  position:              absolute;
+  inset:                 0;
+  z-index:               -1;
+  pointer-events:        none;
+
+  background-image:      var(--texture-image);
+  background-size:       var(--texture-size);
+  background-position:
+    var(--texture-position-x)
+    var(--texture-position-y);
+  background-repeat:     var(--texture-repeat);
+
+  opacity:               var(--texture-opacity);
+  mix-blend-mode:        var(--texture-blend);
+}
+
+body.texture[data-texture-fixed]::before {
+  position:              fixed;
+  z-index:               999;
+}

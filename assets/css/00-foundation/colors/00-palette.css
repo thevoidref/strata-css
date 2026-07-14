@@ -138,12 +138,12 @@
 
 
   /* -------------------------------------------------------------------------- */
-  /* Shadow Channels */
+  /* RGB Channels */
   /* -------------------------------------------------------------------------- */
 
-  --color-shadow-dark-channel:    0 0 0;
-  --color-shadow-warm-channel:    60 56 54;
-  --color-shadow-light-channel:   249 245 215;
+  --color-dark-channel:           0 0 0;
+  --color-warm-channel:           60 56 54;
+  --color-light-channel:          249 245 215;
 
   --color-green-300-channel:      203 213 93;
   --color-green-700-channel:      121 116 14;

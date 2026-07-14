@@ -2,10 +2,9 @@
 
 @import "./borders/_index.css";
 @import "./colors/_index.css";
-@import "./decorations/_index.css";
 @import "./motions/_index.css";
 @import "./shadows/_index.css";
 @import "./sizing/_index.css";
 @import "./spacing/_index.css";
 @import "./text/_index.css";
-@import "./textures/_index.css";
+@import "./visual/_index.css";

@@ -1,0 +1,55 @@
+/* 00-foundation/visual/10-semantic.css */
+
+:root {
+  
+  /* ------------------------------------------------------------------------ */
+  /* Global Semantic */
+  /* ------------------------------------------------------------------------ */
+
+  --opacity-visible:              var(--opacity-100);
+  --opacity-muted:                var(--opacity-80);
+  --opacity-placeholder:          var(--opacity-60);
+  --opacity-disabled:             var(--opacity-40);
+  --opacity-sublte:               var(--opacity-20);
+  --opacity-ghost:                var(--opacity-10);
+  --opacity-hidden:               var(--opacity-0);
+
+
+  /* ------------------------------------------------------------------------ */
+  /* Texture Images */
+  /* ------------------------------------------------------------------------ */
+
+  /* Noise */
+  
+  --texture-noise-subtle:
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.20' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  --texture-noise-paper:
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.35' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  --texture-noise-film:
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  --texture-noise-dense:
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.10' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+
+  --texture-noise: var(--texture-noise-film);
+
+
+  /* Pattern */
+
+  --texture-grid:
+    linear-gradient(
+      rgb(255 255 255 / 0.04) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgb(255 255 255 / 0.04) 1px,
+      transparent 1px
+    );
+
+  --texture-dots:
+    radial-gradient(
+      circle,
+      rgb(255 255 255 / 0.08) 1px,
+      transparent 1px
+    );
+}

@@ -1,0 +1,253 @@
+/* 50-patterns/visual/decoration/variants.css */
+
+/* -------------------------------------------------------------------------- */
+/* Glow */
+/* -------------------------------------------------------------------------- */
+
+.decoration[data-decoration="glow"] {
+  --decoration-recipe:
+    radial-gradient(
+      circle at
+      var(--decoration-x)
+      var(--decoration-y),
+
+      rgb(
+        var(--decoration-color)
+        /
+        var(--decoration-opacity)
+      ),
+
+      transparent
+      var(--decoration-radius)
+    );
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Ellipse */
+/* -------------------------------------------------------------------------- */
+
+.decoration[data-decoration="ellipse"] {
+  --decoration-recipe:
+    radial-gradient(
+      ellipse
+      var(--decoration-width)
+      var(--decoration-height)
+
+      at
+      var(--decoration-x)
+      var(--decoration-y),
+
+      rgb(
+        var(--decoration-color)
+        /
+        var(--decoration-opacity)
+      ),
+
+      transparent 100%
+    );
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Spotlight */
+/* -------------------------------------------------------------------------- */
+
+.decoration[data-decoration="spotlight"] {
+  --decoration-recipe:
+    radial-gradient(
+      circle at
+      var(--decoration-x)
+      var(--decoration-y),
+
+      rgb(
+        var(--decoration-color)
+        /
+        var(--decoration-opacity)
+      )
+      0,
+
+      rgb(
+        var(--decoration-color)
+        /
+        calc(var(--decoration-opacity) * 1.45)
+      )
+      35%,
+
+      transparent
+      var(--decoration-radius)
+    );
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Wash */
+/* -------------------------------------------------------------------------- */
+
+.decoration[data-decoration="wash"] {
+  --decoration-recipe:
+    radial-gradient(
+      ellipse
+      var(--decoration-width)
+      var(--decoration-height)
+
+      at
+      var(--decoration-x)
+      var(--decoration-y),
+
+      rgb(
+        var(--decoration-color)
+        /
+        var(--decoration-opacity)
+      )
+      0,
+
+      transparent 75%
+    );
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Duo */
+/* -------------------------------------------------------------------------- */
+
+.decoration[data-decoration="duo"] {
+  --decoration-x-2:             var(--position-x-end);
+  --decoration-y-2:             var(--position-y-center-low);
+
+  --decoration-radius-2:        var(--decoration-radius-lg);
+
+  --decoration-opacity-2:       var(--decoration-opacity-subtle);
+  --decoration-color-2:         var(--warm-rgb);
+
+  --decoration-recipe:
+    radial-gradient(
+      circle at
+      var(--decoration-x)
+      var(--decoration-y),
+
+      rgb(
+        var(--decoration-color)
+        /
+        var(--decoration-opacity)
+      ),
+
+      transparent
+      var(--decoration-radius)
+    ),
+
+    radial-gradient(
+      circle at
+      var(--decoration-x-2)
+      var(--decoration-y-2),
+
+      rgb(
+        var(--decoration-color-2)
+        /
+        var(--decoration-opacity-2)
+      ),
+
+      transparent
+      var(--decoration-radius-2)
+    );
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Linear */
+/* -------------------------------------------------------------------------- */
+
+.decoration[data-decoration="linear"] {
+  --decoration-recipe:
+    linear-gradient(
+      var(--decoration-angle),
+
+      rgb(
+        var(--decoration-color)
+        /
+        var(--decoration-opacity)
+      )
+      0,
+
+      transparent
+      var(--decoration-stop)
+    );
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Edge */
+/* -------------------------------------------------------------------------- */
+
+.decoration[data-decoration="edge"] {
+  --decoration-edge-direction:  to right;
+
+  --decoration-recipe:
+    linear-gradient(
+      var(--decoration-edge-direction),
+
+      rgb(
+        var(--decoration-color)
+        /
+        var(--decoration-opacity)
+      )
+      0,
+
+      transparent
+      var(--decoration-radius)
+    );
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Vignette */
+/* -------------------------------------------------------------------------- */
+
+.decoration[data-decoration="vignette"] {
+  --decoration-color:           var(--inverse-rgb);
+  --decoration-opacity:         var(--decoration-opacity-base);
+
+  --decoration-recipe:
+    radial-gradient(
+      ellipse at center,
+
+      transparent 45%,
+
+      rgb(
+        var(--decoration-color)
+        /
+        var(--decoration-opacity)
+      )
+      100%
+    );
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Conic */
+/* -------------------------------------------------------------------------- */
+
+.decoration[data-decoration="conic"] {
+  --decoration-recipe:
+    conic-gradient(
+      from
+      var(--decoration-angle)
+
+      at
+      var(--decoration-x)
+      var(--decoration-y),
+
+      transparent 0deg,
+
+      rgb(
+        var(--decoration-color)
+        /
+        var(--decoration-opacity)
+      )
+      90deg,
+
+      transparent 180deg,
+
+      transparent 360deg
+    );
+}

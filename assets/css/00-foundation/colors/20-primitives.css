@@ -426,4 +426,17 @@
   --progress-fg:                  currentColor;
   --progress-bg:                  inherit;
 
+
+  /* -------------------------------------------------------------------------- */
+  /* RGB Channels */
+  /* -------------------------------------------------------------------------- */
+
+  --neutral-rgb:                  var(--rgb-neutral);
+  --inverse-rgb:                  var(--rgb-inverse);
+  --warm-rgb:                     var(--rgb-warm);
+  --accent-rgb:                   var(--rgb-accent);
+  --success-rgb:                  var(--rgb-aqua);
+  --warning-rgb:                  var(--rgb-yellow);
+  --danger-rgb:                   var(--rgb-red);
+  --info-rgb:                     var(--rgb-blue);
 }

@@ -65,4 +65,26 @@
   /* -------------------------------------------------------------------------- */
 
   --touch-target-min:             2.75rem;
+
+
+  /* ------------------------------------------------------------------------ */
+  /* Visual */
+  /* ------------------------------------------------------------------------ */
+
+  /* Texture */
+
+  --texture-size-xs:        8px;
+  --texture-size-sm:        16px;
+  --texture-size-md:        32px;
+  --texture-size-lg:        64px;
+  --texture-size-xl:        128px;
+
+
+  /* Decoration */
+
+  --decoration-radius-xs:        16rem;
+  --decoration-radius-sm:        24rem;
+  --decoration-radius-md:        32rem;
+  --decoration-radius-lg:        48rem;
+  --decoration-radius-xl:        64rem;
 }

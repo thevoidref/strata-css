@@ -1,0 +1,89 @@
+/* 50-patterns/visual/texture/variants.css */
+
+
+/* -------------------------------------------------------------------------- */
+/* Noise */
+/* -------------------------------------------------------------------------- */
+
+.texture[data-texture-noise] {
+  --texture-image:        var(--texture-noise);
+  --texture-render-size:  180px 180px;
+  --texture-opacity:      0.15;
+  --texture-blend:        soft-light;
+}
+
+.texture[data-texture-noise]::before {
+  background-size:        var(--texture-render-size);
+}
+
+.texture[data-texture-noise="subtle"] {
+  --texture-image:        var(--texture-noise-subtle);
+  --texture-opacity:      0.02;
+}
+.texture[data-texture-noise="paper"] {
+  --texture-image:        var(--texture-noise-paper);
+  --texture-opacity:      0.035;
+}
+.texture[data-texture-noise="film"] {
+  --texture-image:        var(--texture-noise-film);
+  --texture-opacity:      0.05;
+}
+.texture[data-texture-noise="dense"] {
+  --texture-image:        var(--texture-noise-dense);
+  --texture-opacity:      0.08;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Grid */
+/* -------------------------------------------------------------------------- */
+
+.texture[data-texture-grid] {
+  --texture-image:
+    linear-gradient(
+      rgb(var(--texture-color) / 1) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgb(var(--texture-color) / 1) 1px,
+      transparent 1px
+    );
+
+  --texture-grid-size:
+    var(--texture-size) var(--texture-size),
+    var(--texture-size) var(--texture-size);
+}
+
+.texture[data-texture="grid"]::before {
+  background-size:  var(--texture-grid-size);
+}
+
+/* -------------------------------------------------------------------------- */
+/* Dots */
+/* -------------------------------------------------------------------------- */
+
+.texture[data-texture-dots] {
+  --texture-image:
+    radial-gradient(
+      circle,
+      rgb(var(--texture-color) / 1) 2px,
+      transparent 2px
+    );
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Lines */
+/* -------------------------------------------------------------------------- */
+
+.texture[data-texture-lines] {
+  --texture-image:
+    repeating-linear-gradient(
+      var(--texture-angle),
+      rgb(var(--texture-color) / 1) 0 2px,
+      transparent 1px var(--texture-gap)
+    );
+
+  --texture-size: auto;
+}

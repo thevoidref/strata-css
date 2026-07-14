@@ -1,0 +1,287 @@
+/* 50-patterns/visual/decoration/rules.css */
+
+/* -------------------------------------------------------------------------- */
+/* Position X */
+/* -------------------------------------------------------------------------- */
+
+.decoration[data-decoration-x="start"] {
+  --decoration-x: var(--position-x-start);
+}
+
+.decoration[data-decoration-x="start-wide"] {
+  --decoration-x: var(--position-x-start-wide);
+}
+
+.decoration[data-decoration-x="center-left"] {
+  --decoration-x: var(--position-x-center-left);
+}
+
+.decoration[data-decoration-x="center"] {
+  --decoration-x: var(--position-x-center);
+}
+
+.decoration[data-decoration-x="center-right"] {
+  --decoration-x: var(--position-x-center-right);
+}
+
+.decoration[data-decoration-x="end-wide"] {
+  --decoration-x: var(--position-x-end-wide);
+}
+
+.decoration[data-decoration-x="end"] {
+  --decoration-x: var(--position-x-end);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Position Y */
+/* -------------------------------------------------------------------------- */
+
+.decoration[data-decoration-y="top"] {
+  --decoration-y: var(--position-y-top);
+}
+
+.decoration[data-decoration-y="top-offset"] {
+  --decoration-y: var(--position-y-top-offset);
+}
+
+.decoration[data-decoration-y="center-high"] {
+  --decoration-y: var(--position-y-center-high);
+}
+
+.decoration[data-decoration-y="center"] {
+  --decoration-y: var(--position-y-center);
+}
+
+.decoration[data-decoration-y="center-low"] {
+  --decoration-y: var(--position-y-center-low);
+}
+
+.decoration[data-decoration-y="bottom-offset"] {
+  --decoration-y: var(--position-y-bottom-offset);
+}
+
+.decoration[data-decoration-y="bottom"] {
+  --decoration-y: var(--position-y-bottom);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Radius */
+/* -------------------------------------------------------------------------- */
+
+.decoration[data-decoration-radius="xs"] {
+  --decoration-radius: var(--decoration-radius-xs);
+}
+
+.decoration[data-decoration-radius="sm"] {
+  --decoration-radius: var(--decoration-radius-sm);
+}
+
+.decoration[data-decoration-radius="md"] {
+  --decoration-radius: var(--decoration-radius-md);
+}
+
+.decoration[data-decoration-radius="lg"] {
+  --decoration-radius: var(--decoration-radius-lg);
+}
+
+.decoration[data-decoration-radius="xl"] {
+  --decoration-radius: var(--decoration-radius-xl);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Opacity */
+/* -------------------------------------------------------------------------- */
+
+.decoration[data-decoration-opacity="subtle"] {
+  --decoration-opacity: var(--decoration-opacity-subtle);
+}
+
+.decoration[data-decoration-opacity="soft"] {
+  --decoration-opacity: var(--decoration-opacity-soft);
+}
+
+.decoration[data-decoration-opacity="base"] {
+  --decoration-opacity: var(--decoration-opacity-base);
+}
+
+.decoration[data-decoration-opacity="strong"] {
+  --decoration-opacity: var(--decoration-opacity-strong);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Color */
+/* -------------------------------------------------------------------------- */
+
+.decoration[data-decoration-color="neutral"] {
+  --decoration-color: var(--rgb-neutral);
+}
+
+.decoration[data-decoration-color="inverse"] {
+  --decoration-color: var(--rgb-inverse);
+}
+
+.decoration[data-decoration-color="warm"] {
+  --decoration-color: var(--rgb-warm);
+}
+
+.decoration[data-decoration-color="accent"] {
+  --decoration-color: var(--rgb-accent);
+}
+
+
+.decoration[data-decoration-color="green"] {
+  --decoration-color: var(--rgb-green);
+}
+
+.decoration[data-decoration-color="yellow"] {
+  --decoration-color: var(--rgb-yellow);
+}
+
+.decoration[data-decoration-color="blue"] {
+  --decoration-color: var(--rgb-blue);
+}
+
+.decoration[data-decoration-color="orange"] {
+  --decoration-color: var(--rgb-orange);
+}
+
+.decoration[data-decoration-color="red"] {
+  --decoration-color: var(--rgb-red);
+}
+
+.decoration[data-decoration-color="purple"] {
+  --decoration-color: var(--rgb-purple);
+}
+
+.decoration[data-decoration-color="aqua"] {
+  --decoration-color: var(--rgb-aqua);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Width */
+/* -------------------------------------------------------------------------- */
+
+.decoration[data-decoration-width="xs"] {
+  --decoration-width: var(--decoration-radius-xs);
+}
+
+.decoration[data-decoration-width="sm"] {
+  --decoration-width: var(--decoration-radius-sm);
+}
+
+.decoration[data-decoration-width="md"] {
+  --decoration-width: var(--decoration-radius-md);
+}
+
+.decoration[data-decoration-width="lg"] {
+  --decoration-width: var(--decoration-radius-lg);
+}
+
+.decoration[data-decoration-width="xl"] {
+  --decoration-width: var(--decoration-radius-xl);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Height */
+/* -------------------------------------------------------------------------- */
+
+.decoration[data-decoration-height="xs"] {
+  --decoration-height: var(--decoration-radius-xs);
+}
+
+.decoration[data-decoration-height="sm"] {
+  --decoration-height: var(--decoration-radius-sm);
+}
+
+.decoration[data-decoration-height="md"] {
+  --decoration-height: var(--decoration-radius-md);
+}
+
+.decoration[data-decoration-height="lg"] {
+  --decoration-height: var(--decoration-radius-lg);
+}
+
+.decoration[data-decoration-height="xl"] {
+  --decoration-height: var(--decoration-radius-xl);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Angle */
+/* -------------------------------------------------------------------------- */
+
+.decoration[data-decoration-angle="right"] {
+  --decoration-angle: 0deg;
+}
+
+.decoration[data-decoration-angle="bottom-right"] {
+  --decoration-angle: 45deg;
+}
+
+.decoration[data-decoration-angle="bottom"] {
+  --decoration-angle: 90deg;
+}
+
+.decoration[data-decoration-angle="bottom-left"] {
+  --decoration-angle: 135deg;
+}
+
+.decoration[data-decoration-angle="left"] {
+  --decoration-angle: 180deg;
+}
+
+.decoration[data-decoration-angle="top-left"] {
+  --decoration-angle: 225deg;
+}
+
+.decoration[data-decoration-angle="top"] {
+  --decoration-angle: 270deg;
+}
+
+.decoration[data-decoration-angle="top-right"] {
+  --decoration-angle: 315deg;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Stop */
+/* -------------------------------------------------------------------------- */
+
+.decoration[data-decoration-stop="early"] {
+  --decoration-stop: 50%;
+}
+
+.decoration[data-decoration-stop="base"] {
+  --decoration-stop: 70%;
+}
+
+.decoration[data-decoration-stop="late"] {
+  --decoration-stop: 90%;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Edge */
+/* -------------------------------------------------------------------------- */
+
+.decoration[data-decoration-edge="top"] {
+  --decoration-edge-direction: to bottom;
+}
+
+.decoration[data-decoration-edge="right"] {
+  --decoration-edge-direction: to left;
+}
+
+.decoration[data-decoration-edge="bottom"] {
+  --decoration-edge-direction: to top;
+}
+
+.decoration[data-decoration-edge="left"] {
+  --decoration-edge-direction: to right;
+}

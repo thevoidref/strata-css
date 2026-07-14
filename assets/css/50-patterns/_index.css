@@ -1,3 +1,5 @@
 /* 50-patterns/_index.css */
 
 @import "./card/_index.css";
+
+@import "./visual/_index.css";

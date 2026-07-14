@@ -1,0 +1,23 @@
+/* 00-foundation/visual/20-primitives.css */
+
+:root {
+
+  /* ------------------------------------------------------------------------ */
+  /* Texture Opacity */
+  /* ------------------------------------------------------------------------ */
+
+  --texture-opacity-subtle:     0.025;
+  --texture-opacity-soft:       0.05;
+  --texture-opacity-base:       0.08;
+  --texture-opacity-strong:     0.12;
+
+
+  /* ------------------------------------------------------------------------ */
+  /* Decoration Opacity */
+  /* ------------------------------------------------------------------------ */
+
+  --decoration-opacity-subtle:  0.03;
+  --decoration-opacity-soft:    0.05;
+  --decoration-opacity-base:    0.08;
+  --decoration-opacity-strong:  0.13;
+}
