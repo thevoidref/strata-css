@@ -156,7 +156,7 @@
     </article>
 
 
-    <!-- Radial Center -->
+    <!-- Radial -->
 
     <article
         class="panel surface texture maskable span demo"
@@ -165,9 +165,34 @@
         data-texture-opacity="strong"
         data-texture-color="purple"
         data-mask="radial"
+        data-mask-x="center"
+        data-mask-y="center"
     >
         <header class="panel-header">
-            <p class="eyebrow">Radial</p>
+            <p class="eyebrow">Radial Mask</p>
+            <h2 class="heading">Radial</h2>
+        </header>
+
+        <p class="paragraph">
+            Circular visibility concentrated around the center.
+        </p>
+    </article>
+
+
+    <!-- Spotlight Center -->
+
+    <article
+        class="panel surface texture maskable span demo"
+        data-texture-grid
+        data-texture-size="md"
+        data-texture-opacity="strong"
+        data-texture-color="purple"
+        data-mask="spotlight"
+        data-mask-x="center"
+        data-mask-y="center"
+    >
+        <header class="panel-header">
+            <p class="eyebrow">Spotlight</p>
             <h2 class="heading">Center</h2>
         </header>
 
@@ -177,7 +202,7 @@
     </article>
 
 
-    <!-- Radial Start -->
+    <!-- Spotlight Start -->
 
     <article
         class="panel surface texture maskable span demo"
@@ -185,12 +210,12 @@
         data-texture-size="md"
         data-texture-opacity="strong"
         data-texture-color="purple"
-        data-mask="radial"
+        data-mask="spotlight"
         data-mask-x="start"
         data-mask-y="center"
     >
         <header class="panel-header">
-            <p class="eyebrow">Radial</p>
+            <p class="eyebrow">Spotlight</p>
             <h2 class="heading">Start</h2>
         </header>
 
@@ -200,7 +225,7 @@
     </article>
 
 
-    <!-- Radial End -->
+    <!-- Spotlight End -->
 
     <article
         class="panel surface texture maskable span demo"
@@ -208,12 +233,12 @@
         data-texture-size="md"
         data-texture-opacity="strong"
         data-texture-color="purple"
-        data-mask="radial"
+        data-mask="spotlight"
         data-mask-x="end"
         data-mask-y="center"
     >
         <header class="panel-header">
-            <p class="eyebrow">Radial</p>
+            <p class="eyebrow">Spotlight</p>
             <h2 class="heading">End</h2>
         </header>
 
@@ -242,6 +267,29 @@
 
         <p class="paragraph">
             Elliptical visibility concentrated around the center.
+        </p>
+    </article>
+
+
+    <!-- Vignette -->
+
+    <article
+        class="panel surface texture maskable span demo"
+        data-texture-grid
+        data-texture-size="md"
+        data-texture-opacity="strong"
+        data-texture-color="purple"
+        data-mask="vignette"
+        data-mask-x="center"
+        data-mask-y="center"
+    >
+        <header class="panel-header">
+            <p class="eyebrow">Radial Mask</p>
+            <h2 class="heading">Vignette</h2>
+        </header>
+
+        <p class="paragraph">
+            Texture stays visible in the center and fades near the edges.
         </p>
     </article>
 

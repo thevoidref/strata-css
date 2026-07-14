@@ -11,8 +11,8 @@
 }
 
 .maskable {
-  --mask-fade-hold: 20%;
-  --mask-fade-end:  85%;
+  --mask-fade-hold: 15%;
+  --mask-fade-end:  65%;
 }
 
 
@@ -87,44 +87,53 @@
     );
 }
 
-
 /* -------------------------------------------------------------------------- */
-/* Radial */
+/* Radial & Spotlight - Ellipse & Vignette */
 /* -------------------------------------------------------------------------- */
 
 :is(.mask, .maskable)[data-mask="radial"] {
-  --mask-image:
-    radial-gradient(
-      circle
-      at
-      var(--mask-position-x)
-      var(--mask-position-y),
-
-      black 0%,
-      black calc(100% - var(--mask-fade-end)),
-
-      transparent calc(100% - var(--mask-fade-hold)),
-      transparent 100%
-    );
+  --mask-shape:  circle;
+  --mask-extent: 100%;
 }
 
-
-/* -------------------------------------------------------------------------- */
-/* Ellipse */
-/* -------------------------------------------------------------------------- */
+:is(.mask, .maskable)[data-mask="spotlight"] {
+  --mask-shape:  circle;
+  --mask-extent: 75%;
+}
 
 :is(.mask, .maskable)[data-mask="ellipse"] {
+  --mask-shape:  ellipse;
+  --mask-extent: 90%;
+}
+
+:is(.mask, .maskable)[data-mask="vignette"] {
+  --mask-shape:  ellipse;
+  --mask-extent: 80%;
+}
+
+:is(.mask, .maskable):is(
+  [data-mask="radial"],
+  [data-mask="spotlight"],
+  [data-mask="ellipse"],
+  [data-mask="vignette"]
+) {
   --mask-image:
     radial-gradient(
-      ellipse
+      var(--mask-shape)
       at
       var(--mask-position-x)
       var(--mask-position-y),
 
       black 0%,
-      black calc(100% - var(--mask-fade-end)),
+      black max(
+        0%,
+        calc(var(--mask-extent) - var(--mask-fade-end))
+      ),
 
-      transparent calc(100% - var(--mask-fade-hold)),
+      transparent max(
+        0%,
+        calc(var(--mask-extent) - var(--mask-fade-hold))
+      ),
       transparent 100%
     );
 }
