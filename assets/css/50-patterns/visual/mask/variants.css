@@ -6,13 +6,13 @@
 /* -------------------------------------------------------------------------- */
 
 .mask {
-  --mask-fade-hold:  0%;
-  --mask-fade-end:   25%;
+  --mask-fade-hold: 0%;
+  --mask-fade-end:  25%;
 }
 
 .maskable {
-  --mask-fade-hold:  20%;
-  --mask-fade-end:   60%;
+  --mask-fade-hold: 20%;
+  --mask-fade-end:  85%;
 }
 
 
@@ -100,27 +100,11 @@
       var(--mask-position-x)
       var(--mask-position-y),
 
-      black var(--mask-fade-end),
-      transparent calc(100% - var(--mask-fade-hold))
-    );
-}
+      black 0%,
+      black calc(100% - var(--mask-fade-end)),
 
-
-/* -------------------------------------------------------------------------- */
-/* Spotlight */
-/* -------------------------------------------------------------------------- */
-
-:is(.mask, .maskable)[data-mask="spotlight"] {
-  --mask-image:
-    radial-gradient(
-      circle
-      at
-      var(--mask-position-x)
-      var(--mask-position-y),
-
-      black 20%,
-      black var(--mask-fade-end),
-      transparent calc(75% - var(--mask-fade-hold))
+      transparent calc(100% - var(--mask-fade-hold)),
+      transparent 100%
     );
 }
 
@@ -137,25 +121,10 @@
       var(--mask-position-x)
       var(--mask-position-y),
 
-      black calc(90% - var(--mask-fade-end)),
-      transparent calc(90% - var(--mask-fade-hold))
-    );
-}
+      black 0%,
+      black calc(100% - var(--mask-fade-end)),
 
-
-/* -------------------------------------------------------------------------- */
-/* Vignette */
-/* -------------------------------------------------------------------------- */
-
-:is(.mask, .maskable)[data-mask="vignette"] {
-  --mask-image:
-    radial-gradient(
-      ellipse
-      at
-      var(--mask-position-x)
-      var(--mask-position-y),
-
-      black calc(80% - var(--mask-fade-end)),
-      transparent calc(80% - var(--mask-fade-hold))
+      transparent calc(100% - var(--mask-fade-hold)),
+      transparent 100%
     );
 }

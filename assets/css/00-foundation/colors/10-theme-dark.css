@@ -201,18 +201,18 @@
 
     /* Accent Primary */
 
-  --accent-primary-bg:            var(--accent-green-bg);
-  --accent-primary-bg-hover:      var(--accent-green-bg-hover);
-  --accent-primary-bg-active:     var(--accent-green-bg-active);
+  --accent-primary-bg:            var(--accent-aqua-bg);
+  --accent-primary-bg-hover:      var(--accent-aqua-bg-hover);
+  --accent-primary-bg-active:     var(--accent-aqua-bg-active);
 
-  --accent-primary-fg:            var(--accent-green-fg);
-  --accent-primary-fg-hover:      var(--accent-green-fg-hover);
+  --accent-primary-fg:            var(--accent-aqua-fg);
+  --accent-primary-fg-hover:      var(--accent-aqua-fg-hover);
 
-  --accent-primary-border:        var(--accent-green-border);
-  --accent-primary-border-hover:  var(--accent-green-border-hover);
-  --accent-primary-border-active: var(--accent-green-border-active);
+  --accent-primary-border:        var(--accent-aqua-border);
+  --accent-primary-border-hover:  var(--accent-aqua-border-hover);
+  --accent-primary-border-active: var(--accent-aqua-border-active);
 
-  --accent-primary-ring:          var(--accent-green-ring);
+  --accent-primary-ring:          var(--accent-aqua-ring);
 
 
     /* Channels */
@@ -229,7 +229,7 @@
   --rgb-purple:                   var(--color-purple-300-channel);
   --rgb-aqua:                     var(--color-aqua-300-channel);
 
-  --rgb-accent:                   var(--rgb-green);
+  --rgb-accent:                   var(--rgb-aqua);
 
   /* -------------------------------------------------------------------------- */
   /* Link */

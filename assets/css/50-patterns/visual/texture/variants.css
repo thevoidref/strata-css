@@ -22,11 +22,11 @@
 }
 .texture[data-texture-noise="paper"] {
   --texture-image:        var(--texture-noise-paper);
-  --texture-opacity:      0.035;
+  --texture-opacity:      0.045;
 }
 .texture[data-texture-noise="film"] {
   --texture-image:        var(--texture-noise-film);
-  --texture-opacity:      0.05;
+  --texture-opacity:      0.125;
 }
 .texture[data-texture-noise="dense"] {
   --texture-image:        var(--texture-noise-dense);
@@ -51,11 +51,10 @@
     );
 
   --texture-grid-size:
-    var(--texture-size) var(--texture-size),
     var(--texture-size) var(--texture-size);
 }
 
-.texture[data-texture="grid"]::before {
+.texture[data-texture-grid]::before {
   background-size:  var(--texture-grid-size);
 }
 
