@@ -1,0 +1,6 @@
+/* 50-patterns/motion/_index.css */
+
+@import "default.css";
+@import "rules.css";
+@import "states.css";
+@import "variants.css";

@@ -1,0 +1,45 @@
+/* 50-patterns/motion/states.css */
+
+/* -------------------------------------------------------------------------- */
+/* Idle */
+/* -------------------------------------------------------------------------- */
+
+html[data-motion-ready]
+.motion[data-motion-state="idle"] {
+  opacity:   var(--motion-from-opacity);
+  transform: var(--motion-from-transform);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Active */
+/* -------------------------------------------------------------------------- */
+
+html[data-motion-ready]
+.motion:is(
+  [data-motion-state="active"],
+  [data-motion-state="complete"]
+) {
+  opacity:   1;
+  transform: none;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Rendering Hint */
+/* -------------------------------------------------------------------------- */
+
+html[data-motion-ready]
+.motion:is(
+  [data-motion-state="idle"],
+  [data-motion-state="active"]
+) {
+  will-change:
+    opacity,
+    transform;
+}
+
+html[data-motion-ready]
+.motion[data-motion-state="complete"] {
+  will-change: auto;
+}

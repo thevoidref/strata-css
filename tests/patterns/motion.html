@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Motion Preview</title>
+
+    <link rel="stylesheet" href="../../assets/css/style.css">
+
+    <style>
+        body {
+            background-color: var(--page-bg);
+        }
+
+        .motion-preview {
+            min-block-size: 100svh;
+            align-content: center;
+        }
+
+        .demo {
+            min-block-size: 18rem;
+        }
+
+        .motion-card-trigger > .demo {
+            min-block-size: 100%;
+        }
+
+        .motion-note {
+            max-inline-size: 42rem;
+        }
+
+        .motion-controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .motion-controls button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body
+    class="shell texture"
+    data-texture-noise="dense"
+    data-texture-fixed
+>
+
+    <!-- --------------------------------------------------------------------- -->
+    <!-- Header -->
+    <!-- --------------------------------------------------------------------- -->
+
+    <header
+        class="stack container motion-preview"
+        data-container-width="expanded"
+    >
+        <div
+            class="motion-trigger"
+            data-motion-trigger="load"
+        >
+            <p
+                class="eyebrow motion"
+                data-motion="fade"
+            >
+                Patterns
+            </p>
+        </div>
+
+        <div
+            class="motion-trigger"
+            data-motion-trigger="load"
+        >
+            <h1
+                class="heading motion"
+                data-heading-level="1"
+                data-motion="fade-up"
+                data-motion-duration="lg"
+            >
+                Motion Preview
+            </h1>
+        </div>
+
+        <div
+            class="motion-trigger"
+            data-motion-trigger="load"
+        >
+            <p
+                class="paragraph motion motion-note"
+                data-paragraph-type="lead"
+                data-motion="fade-up"
+                data-motion-delay="sm"
+            >
+                Testing entrance recipes, viewport triggers, timing,
+                translation, easing, repetition, manual activation and
+                staggered groups.
+            </p>
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- ----------------------------------------------------------------- -->
+        <!-- Entrance Recipes -->
+        <!-- ----------------------------------------------------------------- -->
+
+        <section
+            class="region container motion-preview"
+            data-container-width="expanded"
+        >
+            <header class="stack">
+                <div
+                    class="motion-trigger"
+                    data-motion-trigger="view"
+                >
+                    <p
+                        class="eyebrow motion"
+                        data-motion="fade-up"
+                    >
+                        Entrance Recipes
+                    </p>
+                </div>
+
+                <div
+                    class="motion-trigger"
+                    data-motion-trigger="view"
+                >
+                    <h2
+                        class="heading motion"
+                        data-motion="fade-up"
+                        data-motion-delay="xs"
+                    >
+                        Core motion variants
+                    </h2>
+                </div>
+            </header>
+
+
+            <div
+                class="spans"
+                data-columns="12"
+            >
+
+                <!-- Fade -->
+
+                <div
+                    class="span motion-trigger motion-card-trigger"
+                    data-motion-trigger="view"
+                >
+                    <article
+                        class="panel surface demo motion"
+                        data-motion="fade"
+                    >
+                        <header class="panel-header stack">
+                            <p class="eyebrow">
+                                Recipe
+                            </p>
+
+                            <h3 class="heading">
+                                Fade
+                            </h3>
+                        </header>
+
+                        <p class="paragraph">
+                            Opacity-only entrance.
+                        </p>
+                    </article>
+                </div>
+
+
+                <!-- Fade Up -->
+
+                <div
+                    class="span motion-trigger motion-card-trigger"
+                    data-motion-trigger="view"
+                >
+                    <article
+                        class="panel surface demo motion"
+                        data-motion="fade-up"
+                        data-motion-translate="md"
+                    >
+                        <header class="panel-header stack">
+                            <p class="eyebrow">
+                                Recipe
+                            </p>
+
+                            <h3 class="heading">
+                                Fade Up
+                            </h3>
+                        </header>
+
+                        <p class="paragraph">
+                            Enters from below and travels upward.
+                        </p>
+                    </article>
+                </div>
+
+
+                <!-- Fade Down -->
+
+                <div
+                    class="span motion-trigger motion-card-trigger"
+                    data-motion-trigger="view"
+                >
+                    <article
+                        class="panel surface demo motion"
+                        data-motion="fade-down"
+                        data-motion-translate="md"
+                    >
+                        <header class="panel-header stack">
+                            <p class="eyebrow">
+                                Recipe
+                            </p>
+
+                            <h3 class="heading">
+                                Fade Down
+                            </h3>
+                        </header>
+
+                        <p class="paragraph">
+                            Enters from above and travels downward.
+                        </p>
+                    </article>
+                </div>
+
+
+                <!-- Fade Left -->
+
+                <div
+                    class="span motion-trigger motion-card-trigger"
+                    data-motion-trigger="view"
+                >
+                    <article
+                        class="panel surface demo motion"
+                        data-motion="fade-left"
+                        data-motion-translate="md"
+                    >
+                        <header class="panel-header stack">
+                            <p class="eyebrow">
+                                Recipe
+                            </p>
+
+                            <h3 class="heading">
+                                Fade Left
+                            </h3>
+                        </header>
+
+                        <p class="paragraph">
+                            Enters from the right and travels left.
+                        </p>
+                    </article>
+                </div>
+
+
+                <!-- Fade Right -->
+
+                <div
+                    class="span motion-trigger motion-card-trigger"
+                    data-motion-trigger="view"
+                >
+                    <article
+                        class="panel surface demo motion"
+                        data-motion="fade-right"
+                        data-motion-translate="md"
+                    >
+                        <header class="panel-header stack">
+                            <p class="eyebrow">
+                                Recipe
+                            </p>
+
+                            <h3 class="heading">
+                                Fade Right
+                            </h3>
+                        </header>
+
+                        <p class="paragraph">
+                            Enters from the left and travels right.
+                        </p>
+                    </article>
+                </div>
+
+
+                <!-- Scale In -->
+
+                <div
+                    class="span motion-trigger motion-card-trigger"
+                    data-motion-trigger="view"
+                >
+                    <article
+                        class="panel surface demo motion"
+                        data-motion="scale-in"
+                    >
+                        <header class="panel-header stack">
+                            <p class="eyebrow">
+                                Recipe
+                            </p>
+
+                            <h3 class="heading">
+                                Scale In
+                            </h3>
+                        </header>
+
+                        <p class="paragraph">
+                            Fades in from a subtly reduced scale.
+                        </p>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ----------------------------------------------------------------- -->
+        <!-- Timing -->
+        <!-- ----------------------------------------------------------------- -->
+
+        <section
+            class="region container motion-preview"
+            data-container-width="expanded"
+        >
+            <header class="stack">
+                <div
+                    class="motion-trigger"
+                    data-motion-trigger="view"
+                >
+                    <p
+                        class="eyebrow motion"
+                        data-motion="fade-up"
+                    >
+                        Timing
+                    </p>
+                </div>
+
+                <div
+                    class="motion-trigger"
+                    data-motion-trigger="view"
+                >
+                    <h2
+                        class="heading motion"
+                        data-motion="fade-up"
+                        data-motion-delay="xs"
+                    >
+                        Duration, translation and easing
+                    </h2>
+                </div>
+            </header>
+
+
+            <div
+                class="spans"
+                data-columns="12"
+            >
+
+                <!-- Short -->
+
+                <div
+                    class="span motion-trigger motion-card-trigger"
+                    data-motion-trigger="view"
+                >
+                    <article
+                        class="panel surface demo motion"
+                        data-motion="fade-up"
+                        data-motion-duration="sm"
+                        data-motion-translate="sm"
+                    >
+                        <header class="panel-header stack">
+                            <p class="eyebrow">
+                                Duration: sm
+                            </p>
+
+                            <h3 class="heading">
+                                Short
+                            </h3>
+                        </header>
+
+                        <p class="paragraph">
+                            Small movement with a short transition.
+                        </p>
+                    </article>
+                </div>
+
+
+                <!-- Medium -->
+
+                <div
+                    class="span motion-trigger motion-card-trigger"
+                    data-motion-trigger="view"
+                >
+                    <article
+                        class="panel surface demo motion"
+                        data-motion="fade-up"
+                        data-motion-duration="md"
+                        data-motion-translate="md"
+                    >
+                        <header class="panel-header stack">
+                            <p class="eyebrow">
+                                Duration: md
+                            </p>
+
+                            <h3 class="heading">
+                                Medium
+                            </h3>
+                        </header>
+
+                        <p class="paragraph">
+                            Balanced default for most interface elements.
+                        </p>
+                    </article>
+                </div>
+
+
+                <!-- Long -->
+
+                <div
+                    class="span motion-trigger motion-card-trigger"
+                    data-motion-trigger="view"
+                >
+                    <article
+                        class="panel surface demo motion"
+                        data-motion="fade-up"
+                        data-motion-duration="lg"
+                        data-motion-translate="lg"
+                    >
+                        <header class="panel-header stack">
+                            <p class="eyebrow">
+                                Duration: lg
+                            </p>
+
+                            <h3 class="heading">
+                                Long
+                            </h3>
+                        </header>
+
+                        <p class="paragraph">
+                            Larger movement for prominent sections.
+                        </p>
+                    </article>
+                </div>
+
+
+                <!-- Standard -->
+
+                <div
+                    class="span motion-trigger motion-card-trigger"
+                    data-motion-trigger="view"
+                >
+                    <article
+                        class="panel surface demo motion"
+                        data-motion="fade-left"
+                        data-motion-easing="standard"
+                    >
+                        <header class="panel-header stack">
+                            <p class="eyebrow">
+                                Easing: standard
+                            </p>
+
+                            <h3 class="heading">
+                                Standard
+                            </h3>
+                        </header>
+
+                        <p class="paragraph">
+                            Controlled acceleration and deceleration.
+                        </p>
+                    </article>
+                </div>
+
+
+                <!-- Out -->
+
+                <div
+                    class="span motion-trigger motion-card-trigger"
+                    data-motion-trigger="view"
+                >
+                    <article
+                        class="panel surface demo motion"
+                        data-motion="fade-left"
+                        data-motion-easing="out"
+                    >
+                        <header class="panel-header stack">
+                            <p class="eyebrow">
+                                Easing: out
+                            </p>
+
+                            <h3 class="heading">
+                                Out
+                            </h3>
+                        </header>
+
+                        <p class="paragraph">
+                            Fast entrance with a soft landing.
+                        </p>
+                    </article>
+                </div>
+
+
+                <!-- In Out -->
+
+                <div
+                    class="span motion-trigger motion-card-trigger"
+                    data-motion-trigger="view"
+                >
+                    <article
+                        class="panel surface demo motion"
+                        data-motion="fade-left"
+                        data-motion-easing="in-out"
+                    >
+                        <header class="panel-header stack">
+                            <p class="eyebrow">
+                                Easing: in-out
+                            </p>
+
+                            <h3 class="heading">
+                                In Out
+                            </h3>
+                        </header>
+
+                        <p class="paragraph">
+                            Smooth acceleration through the full transition.
+                        </p>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ----------------------------------------------------------------- -->
+        <!-- Stagger -->
+        <!-- ----------------------------------------------------------------- -->
+
+        <section
+            class="region container motion-preview"
+            data-container-width="expanded"
+        >
+            <header class="stack">
+                <div
+                    class="motion-trigger"
+                    data-motion-trigger="view"
+                >
+                    <p
+                        class="eyebrow motion"
+                        data-motion="fade-up"
+                    >
+                        Orchestration
+                    </p>
+                </div>
+
+                <div
+                    class="motion-trigger"
+                    data-motion-trigger="view"
+                >
+                    <h2
+                        class="heading motion"
+                        data-motion="fade-up"
+                        data-motion-delay="xs"
+                    >
+                        Staggered group
+                    </h2>
+                </div>
+
+                <div
+                    class="motion-trigger"
+                    data-motion-trigger="view"
+                >
+                    <p
+                        class="paragraph motion"
+                        data-motion="fade-up"
+                        data-motion-delay="sm"
+                    >
+                        The group owns the trigger. Each child owns its own
+                        recipe.
+                    </p>
+                </div>
+            </header>
+
+
+            <div
+                class="spans motion-trigger motion-group"
+                data-columns="12"
+                data-motion-trigger="view"
+                data-motion-stagger="sm"
+            >
+
+                <article
+                    class="panel surface span demo motion"
+                    data-motion="fade-up"
+                >
+                    <header class="panel-header stack">
+                        <p class="eyebrow">
+                            Item 01
+                        </p>
+
+                        <h3 class="heading">
+                            First
+                        </h3>
+                    </header>
+
+                    <p class="paragraph">
+                        First item in the sequence.
+                    </p>
+                </article>
+
+
+                <article
+                    class="panel surface span demo motion"
+                    data-motion="fade-up"
+                >
+                    <header class="panel-header stack">
+                        <p class="eyebrow">
+                            Item 02
+                        </p>
+
+                        <h3 class="heading">
+                            Second
+                        </h3>
+                    </header>
+
+                    <p class="paragraph">
+                        Second item in the sequence.
+                    </p>
+                </article>
+
+
+                <article
+                    class="panel surface span demo motion"
+                    data-motion="fade-up"
+                >
+                    <header class="panel-header stack">
+                        <p class="eyebrow">
+                            Item 03
+                        </p>
+
+                        <h3 class="heading">
+                            Third
+                        </h3>
+                    </header>
+
+                    <p class="paragraph">
+                        Third item in the sequence.
+                    </p>
+                </article>
+
+
+                <article
+                    class="panel surface span demo motion"
+                    data-motion="fade-up"
+                >
+                    <header class="panel-header stack">
+                        <p class="eyebrow">
+                            Item 04
+                        </p>
+
+                        <h3 class="heading">
+                            Fourth
+                        </h3>
+                    </header>
+
+                    <p class="paragraph">
+                        Fourth item in the sequence.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- ----------------------------------------------------------------- -->
+        <!-- Repeat -->
+        <!-- ----------------------------------------------------------------- -->
+
+        <section
+            class="region container motion-preview"
+            data-container-width="expanded"
+        >
+            <header class="stack">
+                <div
+                    class="motion-trigger"
+                    data-motion-trigger="view"
+                >
+                    <p
+                        class="eyebrow motion"
+                        data-motion="fade-up"
+                    >
+                        Playback
+                    </p>
+                </div>
+
+                <div
+                    class="motion-trigger"
+                    data-motion-trigger="view"
+                >
+                    <h2
+                        class="heading motion"
+                        data-motion="fade-up"
+                        data-motion-delay="xs"
+                    >
+                        Repeating motion
+                    </h2>
+                </div>
+            </header>
+
+
+            <div
+                class="motion-trigger"
+                data-motion-trigger="view"
+                data-motion-repeat
+            >
+                <article
+                    class="panel surface demo motion"
+                    data-motion="scale-in"
+                >
+                    <header class="panel-header stack">
+                        <p class="eyebrow">
+                            Repeat enabled
+                        </p>
+
+                        <h3 class="heading">
+                            Enter and leave the viewport
+                        </h3>
+                    </header>
+
+                    <p class="paragraph">
+                        This card resets when its stable trigger leaves the
+                        viewport and replays when it enters again.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+
+        <!-- ----------------------------------------------------------------- -->
+        <!-- Manual -->
+        <!-- ----------------------------------------------------------------- -->
+
+        <section
+            class="region container motion-preview"
+            data-container-width="expanded"
+        >
+            <header class="stack">
+                <p class="eyebrow">
+                    Manual Control
+                </p>
+
+                <h2 class="heading">
+                    Manual activation
+                </h2>
+            </header>
+
+
+            <div
+                id="manual-motion-trigger"
+                class="motion-trigger"
+                data-motion-trigger="manual"
+            >
+                <article
+                    class="panel surface demo motion"
+                    data-motion="scale-in"
+                >
+                    <header class="panel-header stack">
+                        <p class="eyebrow">
+                            Trigger: manual
+                        </p>
+
+                        <h3 class="heading">
+                            Controlled element
+                        </h3>
+                    </header>
+
+                    <p class="paragraph">
+                        This element is controlled by the buttons below.
+                    </p>
+                </article>
+            </div>
+
+
+            <div class="motion-controls">
+                <button
+                    id="manual-motion-activate"
+                    class="button"
+                    type="button"
+                >
+                    Activate
+                </button>
+
+                <button
+                    id="manual-motion-reset"
+                    class="button"
+                    type="button"
+                >
+                    Reset
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- --------------------------------------------------------------------- -->
+    <!-- Motion Controller -->
+    <!-- --------------------------------------------------------------------- -->
+
+    <script type="module">
+        import { motion } from "../../assets/js/motion.js";
+
+        const trigger = document.querySelector(
+            "#manual-motion-trigger"
+        );
+
+        const activateButton = document.querySelector(
+            "#manual-motion-activate"
+        );
+
+        const resetButton = document.querySelector(
+            "#manual-motion-reset"
+        );
+
+        activateButton.addEventListener("click", () => {
+            motion.activate(trigger);
+        });
+
+        resetButton.addEventListener("click", () => {
+            motion.reset(trigger);
+        });
+    </script>
+
+</body>
+
+</html>

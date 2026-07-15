@@ -16,6 +16,7 @@
   --radius: 18px;
 }
 .site-container { width: min(calc(100% - 40px), var(--site-width)); margin-inline: auto; }
+
 .sr-only { position: absolute; width: 1px; height: 1px; clip: rect(0,0,0,0); overflow: hidden; }
 
 .site-header { position: fixed; inset: 0 0 auto; z-index: 50; transition: .3s ease; }
@@ -39,7 +40,15 @@
 
 
 
-.hero-glow { position: absolute; width: 520px; aspect-ratio: 1; right: 3%; top: 15%; border-radius: 50%; background: rgb(var(--rgb-accent) / .07); filter: blur(90px); }
+.hero-glow { 
+  position: absolute; 
+  width: 520px; 
+  aspect-ratio: 1; 
+  right: 3%; top: 15%; 
+  border-radius: 50%; 
+  background: rgb(var(--rgb-accent) / .07); 
+  filter: blur(90px); 
+}
 
 .hero-grid { position: relative; display: grid; grid-template-columns: 1.04fr .96fr; gap: clamp(50px, 7vw, 100px); align-items: center; }
 

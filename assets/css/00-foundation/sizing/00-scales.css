@@ -3,88 +3,75 @@
 :root {
 
   /* -------------------------------------------------------------------------- */
-  /* Global */
+  /* Hero Height (FLUID)                                                        */
   /* -------------------------------------------------------------------------- */
-
-  --site-margin:                  var(--spacing-24);
-  --gutter:                       var(--spacing-16);
-  --gap:                          var(--spacing-12);
-
-  /* -------------------------------------------------------------------------- */
-  /* Hero Height */
-  /* -------------------------------------------------------------------------- */
-
-  --hero-min-height:              clamp(31.25rem, 70svh, 68.75rem);
+  
+  --hero-min-height: clamp(32rem, 70svh, 68rem);
 
 
   /* -------------------------------------------------------------------------- */
-  /* Container Width */
+  /* Container Width (STATIC)                                                   */
   /* -------------------------------------------------------------------------- */
-
-  --container-width-narrow:       calc(35rem * var(--container-scale));
-  --container-width-default:      calc(50rem * var(--container-scale));
-  --container-width-expanded:     calc(67.5rem * var(--container-scale));
-  --container-width-wide:         calc(80rem * var(--container-scale));
-
-
-  /* -------------------------------------------------------------------------- */
-  /* Text Measure */
-  /* -------------------------------------------------------------------------- */
-
-  --measure-10:                   14ch;
-  --measure-24:                   24ch;
-  --measure-40:                   40ch;
-  --measure-56:                   56ch;
-  --measure-72:                   72ch;
+  
+  --container-width-narrow:   36rem;    /* 576px */
+  --container-width-default:  48rem;    /* 768px - Optimal for reading text */
+  --container-width-expanded: 64rem;    /* 1024px */
+  --container-width-wide:     80rem;    /* 1280px - Optimal for SaaS dashboards */
 
 
   /* -------------------------------------------------------------------------- */
-  /* Control Height */
+  /* Text Measure (STATIC)                                                      */
   /* -------------------------------------------------------------------------- */
-
-  --control-height-xs:            calc(1.5rem * var(--component-scale));
-  --control-height-sm:            calc(2rem * var(--component-scale));
-  --control-height-md:            calc(2.75rem * var(--component-scale));
-  --control-height-lg:            calc(3.25rem * var(--component-scale));
-  --control-height-xl:            calc(3.75rem * var(--component-scale));
-
-
-  /* -------------------------------------------------------------------------- */
-  /* Icon Size */
-  /* -------------------------------------------------------------------------- */
-
-  --icon-size-xs:                 0.75rem;
-  --icon-size-sm:                 0.875rem;
-  --icon-size-md:                 1rem;
-  --icon-size-lg:                 1.25rem;
-  --icon-size-xl:                 1.5rem;
+  
+  --measure-10: 14ch;
+  --measure-24: 24ch;
+  --measure-40: 40ch;
+  --measure-56: 56ch;
+  --measure-72: 72ch;
 
 
   /* -------------------------------------------------------------------------- */
-  /* Touch Target */
+  /* Control Height (STATIC)                                                    */
   /* -------------------------------------------------------------------------- */
+  
+  --control-height-xs: 1.5rem;   /* 24px */
+  --control-height-sm: 2rem;     /* 32px */
+  --control-height-md: 2.75rem;  /* 44px */
+  --control-height-lg: 3.25rem;  /* 52px */
+  --control-height-xl: 3.75rem;  /* 60px */
 
-  --touch-target-min:             2.75rem;
+
+  /* -------------------------------------------------------------------------- */
+  /* Icon Size (STATIC)                                                         */
+  /* -------------------------------------------------------------------------- */
+  
+  --icon-size-xs: 0.75rem;
+  --icon-size-sm: 1rem;
+  --icon-size-md: 1.25rem;
+  --icon-size-lg: 1.5rem;
+  --icon-size-xl: 2rem;
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Touch Target (STATIC)                                                      */
+  /* -------------------------------------------------------------------------- */
+  
+  --touch-target-min: 2.75rem; /* 44px - WCAG standard */
 
 
   /* ------------------------------------------------------------------------ */
-  /* Visual */
+  /* Visual (STATIC)                                                          */
   /* ------------------------------------------------------------------------ */
 
-  /* Texture */
+  --texture-size-xs: 8px;
+  --texture-size-sm: 16px;
+  --texture-size-md: 32px;
+  --texture-size-lg: 64px;
+  --texture-size-xl: 128px;
 
-  --texture-size-xs:        8px;
-  --texture-size-sm:        16px;
-  --texture-size-md:        32px;
-  --texture-size-lg:        64px;
-  --texture-size-xl:        128px;
-
-
-  /* Decoration */
-
-  --decoration-radius-xs:        16rem;
-  --decoration-radius-sm:        24rem;
-  --decoration-radius-md:        32rem;
-  --decoration-radius-lg:        48rem;
-  --decoration-radius-xl:        64rem;
+  --decoration-radius-xs: 16rem;
+  --decoration-radius-sm: 24rem;
+  --decoration-radius-md: 32rem;
+  --decoration-radius-lg: 48rem;
+  --decoration-radius-xl: 64rem;
 }

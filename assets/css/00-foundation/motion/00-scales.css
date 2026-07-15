@@ -1,0 +1,173 @@
+/* 00-foundation/motion/00-scales.css */
+
+:root {
+
+  /* -------------------------------------------------------------------------- */
+  /* Easing */
+  /* -------------------------------------------------------------------------- */
+
+  --ease-linear:                   linear;
+
+  --ease-standard:                 cubic-bezier(0.2, 0, 0, 1);
+  --ease-in:                       cubic-bezier(0.4, 0, 1, 1);
+  --ease-out:                      cubic-bezier(0.16, 1.00, 0.30, 1.00);
+  --ease-in-out:                   cubic-bezier(0.65, 0.00, 0.35, 1.00);
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Duration */
+  /* -------------------------------------------------------------------------- */
+
+  --motion-duration-none:         0ms;
+  --motion-duration-sm:           120ms;
+  --motion-duration-md:           180ms;
+  --motion-duration-lg:           320ms;
+  --motion-duration-xl:           520ms;
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Delay */
+  /* -------------------------------------------------------------------------- */
+
+  --motion-delay-none:            0ms;
+  --motion-delay-xs:              60ms;
+  --motion-delay-sm:              120ms;
+  --motion-delay-md:              180ms;
+  --motion-delay-lg:              280ms;
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Stagger */
+  /* -------------------------------------------------------------------------- */
+
+  --motion-stagger-none:          0ms;
+  --motion-stagger-xs:            50ms;
+  --motion-stagger-sm:            80ms;
+  --motion-stagger-md:            120ms;
+  --motion-stagger-lg:            180ms;
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Translation */
+  /* -------------------------------------------------------------------------- */
+
+  --motion-translate-none:        0;
+  --motion-translate-sm:          0.5rem;
+  --motion-translate-md:          1rem;
+  --motion-translate-lg:          1.5rem;
+  --motion-translate-xl:          2rem;
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Scale */
+  /* -------------------------------------------------------------------------- */
+
+  --motion-scale-none:            1;
+  --motion-scale-pressed:         0.96;
+  --motion-scale-subtle:          1.02;
+  --motion-scale-pop:             1.04;
+  --motion-scale-emphasis:        1.08;
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Rotation */
+  /* -------------------------------------------------------------------------- */
+
+  --motion-rotate-none:           0deg;
+  --motion-rotate-xs:             2deg;
+  --motion-rotate-sm:             4deg;
+  --motion-rotate-md:             8deg;
+  --motion-rotate-lg:             12deg;
+
+
+  /* -------------------------------------------------------------------------- */
+  /* Blur */
+  /* -------------------------------------------------------------------------- */
+
+  --motion-blur-none:             0;
+  --motion-blur-sm:               0.5rem;
+  --motion-blur-md:               1rem;
+  --motion-blur-lg:               1.5rem;
+  --motion-blur-xl:               2rem;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Reduced Motion */
+/* -------------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+
+    /* ------------------------------------------------------------------------ */
+    /* Duration */
+    /* ------------------------------------------------------------------------ */
+
+    --motion-duration-sm:         var(--motion-duration-none);
+    --motion-duration-md:         var(--motion-duration-none);
+    --motion-duration-lg:         var(--motion-duration-none);
+    --motion-duration-xl:         var(--motion-duration-none);
+
+
+    /* ------------------------------------------------------------------------ */
+    /* Delay */
+    /* ------------------------------------------------------------------------ */
+
+    --motion-delay-xs:            var(--motion-delay-none);
+    --motion-delay-sm:            var(--motion-delay-none);
+    --motion-delay-md:            var(--motion-delay-none);
+    --motion-delay-lg:            var(--motion-delay-none);
+
+
+    /* ------------------------------------------------------------------------ */
+    /* Stagger */
+    /* ------------------------------------------------------------------------ */
+
+    --motion-stagger-xs:          var(--motion-stagger-none);
+    --motion-stagger-sm:          var(--motion-stagger-none);
+    --motion-stagger-md:          var(--motion-stagger-none);
+    --motion-stagger-lg:          var(--motion-stagger-none);
+
+
+    /* ------------------------------------------------------------------------ */
+    /* Translation */
+    /* ------------------------------------------------------------------------ */
+
+    --motion-translate-xs:        var(--motion-translate-none);
+    --motion-translate-sm:        var(--motion-translate-none);
+    --motion-translate-md:        var(--motion-translate-none);
+    --motion-translate-lg:        var(--motion-translate-none);
+    --motion-translate-xl:        var(--motion-translate-none);
+    --motion-translate-2xl:       var(--motion-translate-none);
+
+
+    /* ------------------------------------------------------------------------ */
+    /* Scale */
+    /* ------------------------------------------------------------------------ */
+
+    --motion-scale-pressed:       var(--motion-scale-none);
+    --motion-scale-subtle:        var(--motion-scale-none);
+    --motion-scale-pop:           var(--motion-scale-none);
+    --motion-scale-emphasis:      var(--motion-scale-none);
+
+
+    /* ------------------------------------------------------------------------ */
+    /* Rotation */
+    /* ------------------------------------------------------------------------ */
+
+    --motion-rotate-xs:           var(--motion-rotate-none);
+    --motion-rotate-sm:           var(--motion-rotate-none);
+    --motion-rotate-md:           var(--motion-rotate-none);
+    --motion-rotate-lg:           var(--motion-rotate-none);
+
+
+    /* ------------------------------------------------------------------------ */
+    /* Blur */
+    /* ------------------------------------------------------------------------ */
+
+    --motion-blur-sm:             var(--motion-blur-none);
+    --motion-blur-md:             var(--motion-blur-none);
+    --motion-blur-lg:             var(--motion-blur-none);
+    --motion-blur-xl:             var(--motion-blur-none);
+  }
+}

@@ -1,0 +1,97 @@
+/* 50-patterns/motion/rules.css */
+
+/* -------------------------------------------------------------------------- */
+/* Easing */
+/* -------------------------------------------------------------------------- */
+
+.motion[data-motion-easing="standard"] {
+  --motion-easing: var(--ease-standard);
+}
+
+.motion[data-motion-easing="out"] {
+  --motion-easing: var(--ease-out);
+}
+
+.motion[data-motion-easing="in-out"] {
+  --motion-easing: var(--ease-in-out);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Duration */
+/* -------------------------------------------------------------------------- */
+
+.motion[data-motion-duration="sm"] {
+  --motion-duration: var(--motion-duration-sm);
+}
+
+.motion[data-motion-duration="md"] {
+  --motion-duration: var(--motion-duration-md);
+}
+
+.motion[data-motion-duration="lg"] {
+  --motion-duration: var(--motion-duration-lg);
+}
+
+.motion[data-motion-duration="xl"] {
+  --motion-duration: var(--motion-duration-xl);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Delay */
+/* -------------------------------------------------------------------------- */
+
+.motion[data-motion-delay="xs"] {
+  --motion-delay: var(--motion-delay-xs);
+}
+
+.motion[data-motion-delay="sm"] {
+  --motion-delay: var(--motion-delay-sm);
+}
+
+.motion[data-motion-delay="md"] {
+  --motion-delay: var(--motion-delay-md);
+}
+
+.motion[data-motion-delay="lg"] {
+  --motion-delay: var(--motion-delay-lg);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Stagger */
+/* -------------------------------------------------------------------------- */
+
+.motion-group[data-motion-stagger="xs"] {
+  --motion-stagger: var(--motion-stagger-xs);
+}
+
+.motion-group[data-motion-stagger="sm"] {
+  --motion-stagger: var(--motion-stagger-sm);
+}
+
+.motion-group[data-motion-stagger="md"] {
+  --motion-stagger: var(--motion-stagger-md);
+}
+
+.motion-group[data-motion-stagger="lg"] {
+  --motion-stagger: var(--motion-stagger-lg);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Translation */
+/* -------------------------------------------------------------------------- */
+
+.motion[data-motion-translate="sm"] {
+  --motion-translate: var(--motion-translate-sm);
+}
+
+.motion[data-motion-translate="md"] {
+  --motion-translate: var(--motion-translate-md);
+}
+
+.motion[data-motion-translate="lg"] {
+  --motion-translate: var(--motion-translate-lg);
+}

@@ -1,0 +1,38 @@
+/* 50-patterns/motion/default.css */
+
+.motion {
+  --motion-duration:        var(--motion-duration-md);
+  --motion-delay:           0ms;
+  --motion-stagger-delay:   0ms;
+  --motion-easing:          var(--ease-out);
+  --motion-translate:       var(--motion-translate-md);
+  --motion-from-opacity:    1;
+  --motion-from-transform:  none;
+
+  opacity:   1;
+  transform: none;
+
+  transition-property:
+    opacity,
+    transform;
+
+  transition-duration:        var(--motion-duration);
+
+  transition-timing-function: var(--motion-easing);
+
+  transition-delay:
+    calc(
+      var(--motion-delay) +
+      var(--motion-stagger-delay)
+    );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion {
+    opacity:              1 !important;
+    transform:            none !important;
+
+    transition-duration:  0.01ms !important;
+    transition-delay:     0ms !important;
+  }
+}

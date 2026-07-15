@@ -1,0 +1,81 @@
+/* 50-patterns/motion/variants.css */
+
+
+/* -------------------------------------------------------------------------- */
+/* Fade */
+/* -------------------------------------------------------------------------- */
+
+.motion[data-motion="fade"] {
+  --motion-from-opacity: 0;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Fade Up */
+/* -------------------------------------------------------------------------- */
+
+.motion[data-motion="fade-up"] {
+  --motion-from-opacity:   0;
+  --motion-from-transform: translate3d(
+    0,
+    var(--motion-translate),
+    0
+  );
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Fade Down */
+/* -------------------------------------------------------------------------- */
+
+.motion[data-motion="fade-down"] {
+  --motion-from-opacity:   0;
+  --motion-from-transform: translate3d(
+    0,
+    calc(var(--motion-translate) * -1),
+    0
+  );
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Fade Left */
+/* -------------------------------------------------------------------------- */
+
+.motion[data-motion="fade-left"] {
+  --motion-from-opacity:   0;
+  --motion-from-transform: translate3d(
+    var(--motion-translate),
+    0,
+    0
+  );
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Fade Right */
+/* -------------------------------------------------------------------------- */
+
+.motion[data-motion="fade-right"] {
+  --motion-from-opacity:   0;
+  --motion-from-transform: translate3d(
+    calc(var(--motion-translate) * -1),
+    0,
+    0
+  );
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Scale In */
+/* -------------------------------------------------------------------------- */
+
+.motion[data-motion="scale-in"] {
+  --motion-from-opacity:   0;
+  --motion-from-transform: scale(var(--motion-scale-in));
+}
+
+.motion[data-motion="scale-out"] {
+  --motion-from-opacity:   1;
+  --motion-from-transform: scale(var(--motion-scale-out));
+}
